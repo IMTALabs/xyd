@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('change-language/{language}', [LandingController::class, 'changeLanguage'])->name('change-language');
+
 Route::get('/', [LandingController::class, 'home'])->name('home');
 
 Route::get('/contact-us', [LandingController::class, 'contactUs'])->name('contact-us');

@@ -55,7 +55,7 @@
                           class="col-span-2 px-2 py-1 placeholder:text-xs placeholder:text-primary row-span-1 bg-[#f5eccb]"
                           placeholder="Please enter your problem so that we can assist you *"></textarea>
 
-                <div class="w-3/4 p-4 col-span-2 bg-[#f5eccb] mx-auto flex items-center gap-4 text-sm mt-2">
+                <div class="w-full lg:w-3/4 p-4 col-span-2 bg-[#f5eccb] mx-auto flex items-center gap-4 text-sm mt-2">
                     <input type="checkbox">
                     Our privacy policy contains detailed information about our handling of personal information.
                 </div>

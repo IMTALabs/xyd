@@ -30,13 +30,13 @@ return [
     |--------------------------------------------------------------------------
     | Excluded directories
     |--------------------------------------------------------------------------
-    | 
+    |
     | Here you define which directories are excluded from scan.
     |
     */
-	
+
     'excluded_directories' => ['vendor', 'storage', 'public', 'node_modules'],
-	
+
     /*
     |--------------------------------------------------------------------------
     | Extensions
@@ -71,4 +71,11 @@ return [
     */
 
     'project_id' => env('POEDITOR_PROJECT_ID'),
+
+    'key'                 => '86f4ce5f409f4abebe6c5013ae2af7c8',
+    'source_locale'       => 'en',
+    'target_locales'      => ['zh-Hans', 'vi'],
+
+    /* Directories to scan for Gettext strings */
+    'gettext_parse_paths' => ['app', 'resources'],
 ];
