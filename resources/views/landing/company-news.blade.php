@@ -31,7 +31,7 @@
                             class="px-8 py-1 text-sm bg-primary rounded-full text-secondary">{{ __('New Release') }}</span>
                         <h2 class="mt-4 text-3xl font-semibold line-clamp-2 text-primary">{{ $post->title }}</h2>
                         <span
-                            class="mt-4 block text-primary text-xs">{{ $post->created_at->toDateTimeLocalString() }}</span>
+                            class="mt-4 block text-primary text-xs">{{ $post->created_at->format('d/m/y') }}</span>
                         <p class="text-primary mt-2 text-sm line-clamp-4">{{ $post->description }}</p>
                         <a href="#" class="block mt-8 text-primary text-xl">{{ __('Read full story') }} ...</a>
                     </div>
