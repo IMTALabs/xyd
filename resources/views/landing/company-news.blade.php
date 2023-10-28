@@ -27,16 +27,13 @@
                 <div class="border-b border-primary flex max-lg:flex-col gap-8 pb-8">
                     <img src="{{ Storage::url($post->image) }}" class="w-full lg:w-1/2 object-cover" alt="">
                     <div>
-                        <span class="px-8 py-1 text-sm bg-primary rounded-full text-secondary">New release</span>
-                        <h2 class="mt-4 text-3xl font-semibold line-clamp-2 text-primary">Head line of the article</h2>
-                        <span class="mt-4 block text-primary text-xs">2023/10/10</span>
-                        <p class="text-primary mt-2 text-sm line-clamp-4">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing
-                            elit. A architecto deserunt fuga minus, molestiae
-                            nam nisi quidem saepe! Accusantium aliquid assumenda atque consectetur, nesciunt pariatur
-                            quae quam
-                            quod saepe veniam.</p>
-                        <a href="#" class="block mt-8 text-primary text-xl">Read full story ...</a>
+                        <span
+                            class="px-8 py-1 text-sm bg-primary rounded-full text-secondary">{{ __('New Release') }}</span>
+                        <h2 class="mt-4 text-3xl font-semibold line-clamp-2 text-primary">{{ $post->title }}</h2>
+                        <span
+                            class="mt-4 block text-primary text-xs">{{ $post->created_at->toDateTimeLocalString() }}</span>
+                        <p class="text-primary mt-2 text-sm line-clamp-4">{{ $post->description }}</p>
+                        <a href="#" class="block mt-8 text-primary text-xl">{{ __('Read full story') }} ...</a>
                     </div>
                 </div>
             @endforeach
