@@ -5,7 +5,7 @@
 
     <div class="max-lg:px-4">
         <div class="py-16 text-primary">
-            <ul class="mx-auto flex w-full lg:w-3/4 items-center whitespace-nowrap overflow-auto [&_svg]:shrink-0">
+            <ul class="container mx-auto flex w-full items-center overflow-auto whitespace-nowrap [&_svg]:shrink-0">
                 <a href="{{ route('home') }}">{{ __("Home") }}</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                     <path fill="currentColor"
@@ -20,84 +20,143 @@
             </ul>
         </div>
 
-        <h1 class="mx-auto w-full lg:w-3/4 text-3xl font-medium text-primary">{{ __('Consulting and Quotation') }}</h1>
+        <h1 class="container mx-auto w-full text-3xl font-medium text-primary">{{ __('Consulting and Quotation') }}</h1>
 
-        <div class="flex flex-col gap-8 w-full lg:w-3/5 mx-auto pt-16">
-            <div class="flex gap-4 items-center">
-                <div class="w-20 h-20 shrink-0 rounded-full shadow-xl bg-secondary flex items-center justify-center">
-                    <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-secondary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 256">
-                            <path fill="currentColor"
-                                  d="M172 232a4 4 0 0 1-4 4H88a4 4 0 0 1 0-8h80a4 4 0 0 1 4 4Zm40-128a83.59 83.59 0 0 1-32.11 66.06A20.2 20.2 0 0 0 172 186v6a12 12 0 0 1-12 12H96a12 12 0 0 1-12-12v-6a20 20 0 0 0-7.76-15.81A83.58 83.58 0 0 1 44 104.47C43.75 59 80.52 21.09 126 20a84 84 0 0 1 86 84Zm-8 0a76 76 0 0 0-77.83-76C85 29 51.77 63.27 52 104.43a75.62 75.62 0 0 0 29.17 59.43A28 28 0 0 1 92 186v6a4 4 0 0 0 4 4h64a4 4 0 0 0 4-4v-6a28.14 28.14 0 0 1 10.94-22.2A75.62 75.62 0 0 0 204 104Zm-67.34-51.94a4 4 0 0 0-1.32 7.88C153.53 63 169 78.45 172.06 96.67A4 4 0 0 0 176 100a3.88 3.88 0 0 0 .67-.06a4 4 0 0 0 3.27-4.61a53.51 53.51 0 0 0-43.28-43.27Z"/>
-                        </svg>
+        <div class="container mx-auto grid w-full grid-cols-4 gap-10 pt-16">
+            <div class="relative col-span-full lg:col-span-1 flex aspect-square items-center justify-center">
+                <div class="absolute inset-0 flex justify-center rounded-full pt-2 bg-primary rotate-[135deg] z-[-2]">
+                    <div class="rounded-tl-full rounded-tr-full bg-white w-[calc(100%-1rem)] h-1/2 relative"></div>
+                </div>
+                <div
+                    class="max-lg:hidden absolute top-1/2 left-1/2 flex h-1/4 w-1/2 translate-x-1/2 -translate-y-1/2 items-center justify-center bg-white z-[-1]"
+                    style="clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);">
+                    <div class="w-[calc(100%-2rem)] h-[calc(100%-1rem)] bg-primary flex items-center justify-center"
+                         style="clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);">
+                        <div class="w-[calc(100%-2rem)] h-[calc(100%-1rem)] bg-white"
+                             style="clip-path: polygon(0% 0%, 77% 0%, 100% 50%, 77% 100%, 0% 100%);">
+                        </div>
                     </div>
                 </div>
-                <div class="text-primary flex flex-col">
-                    <span class="text-xl font-medium">{{ __('Business Philosophy') }}</span>
-                    <span class="text-sm">{{ __('Building a career with integrity, developing by brand.') }}</span>
+
+                <div
+                    class="absolute top-0 left-0 z-10 flex h-1/4 w-1/4 items-center justify-center rounded-full bg-primary">
+                    <div
+                        class="text-primary bg-secondary w-[calc(100%-10px)] h-[calc(100%-10px)] rounded-full flex items-center justify-center text-center text-4xl font-bold">
+                        1
+                    </div>
+                </div>
+
+                <div
+                    class="w-[calc(100%-3rem)] h-[calc(100%-3rem)] rounded-full bg-secondary shadow-2xl flex flex-col justify-center items-center text-center text-primary p-4">
+                    <h2 class="font-bold xl:text-3xl">{{ __('Professional') }}</h2>
+                    <p class="text-xs mt-4 xl:text-base">
+                        {{ __('Highly specialized consultants. Personalize service according to your requirements') }}
+                    </p>
                 </div>
             </div>
 
-            <div class="flex gap-4 items-center">
-                <div class="w-20 h-20 shrink-0 rounded-full shadow-xl bg-secondary flex items-center justify-center">
-                    <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-secondary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 256"><path fill="currentColor" d="M237 147.44a4 4 0 0 1-5.48-1.4c-8.33-14-20.93-22-34.56-22a4 4 0 0 1-1.2-.2a36.76 36.76 0 0 1-3.8.2a4 4 0 0 1 0-8a28 28 0 1 0-27.12-35a4 4 0 0 1-7.75-2a36 36 0 1 1 54 39.48c10.81 3.85 20.51 12 27.31 23.48a4 4 0 0 1-1.4 5.44ZM187.46 214a4 4 0 0 1-1.46 5.46a3.93 3.93 0 0 1-2 .54a4 4 0 0 1-3.46-2a61 61 0 0 0-105.08 0a4 4 0 0 1-6.92-4a68.35 68.35 0 0 1 39.19-31a44 44 0 1 1 40.54 0a68.35 68.35 0 0 1 39.19 31ZM128 180a36 36 0 1 0-36-36a36 36 0 0 0 36 36Zm-64-64a28 28 0 1 1 27.12-35a4 4 0 0 0 7.75-2a36 36 0 1 0-53.57 39.75a63.55 63.55 0 0 0-32.5 22.85a4 4 0 0 0 6.4 4.8A55.55 55.55 0 0 1 64 124a4 4 0 0 0 0-8Z"/></svg>
+            <div class="relative col-span-full lg:col-span-1 flex aspect-square items-center justify-center">
+                <div class="absolute inset-0 flex justify-center rounded-full pt-2 bg-primary rotate-[135deg] z-[-2]">
+                    <div class="rounded-tl-full rounded-tr-full bg-white w-[calc(100%-1rem)] h-1/2 relative"></div>
+                </div>
+                <div
+                    class="max-lg:hidden absolute top-1/2 left-1/2 flex h-1/4 w-1/2 translate-x-1/2 -translate-y-1/2 items-center justify-center bg-white z-[-1]"
+                    style="clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);">
+                    <div class="w-[calc(100%-2rem)] h-[calc(100%-1rem)] bg-primary flex items-center justify-center"
+                         style="clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);">
+                        <div class="w-[calc(100%-2rem)] h-[calc(100%-1rem)] bg-white"
+                             style="clip-path: polygon(0% 0%, 77% 0%, 100% 50%, 77% 100%, 0% 100%);">
+                        </div>
                     </div>
                 </div>
-                <div class="text-primary flex flex-col">
-                    <span class="text-xl font-medium">{{ __('Service Philosophy') }}</span>
-                    <span class="text-sm">{{ __("Beginning with user's demand and ending with user's satisfaction.") }}</span>
+
+                <div
+                    class="absolute top-0 left-0 z-10 flex h-1/4 w-1/4 items-center justify-center rounded-full bg-primary">
+                    <div
+                        class="text-primary bg-secondary w-[calc(100%-10px)] h-[calc(100%-10px)] rounded-full flex items-center justify-center text-center text-4xl font-bold">
+                        2
+                    </div>
+                </div>
+
+                <div
+                    class="w-[calc(100%-3rem)] h-[calc(100%-3rem)] rounded-full bg-secondary shadow-2xl flex flex-col justify-center items-center text-center text-primary p-4">
+                    <h2 class="font-bold xl:text-3xl">{{ __('Professional') }}</h2>
+                    <p class="text-xs mt-4 xl:text-base">
+                        {{ __('Highly specialized consultants. Personalize service according to your requirements') }}
+                    </p>
                 </div>
             </div>
 
-            <div class="flex gap-4 items-center">
-                <div class="w-20 h-20 shrink-0 rounded-full shadow-xl bg-secondary flex items-center justify-center">
-                    <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-secondary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 256"><path fill="currentColor" d="M107.19 159a56 56 0 1 0-46.38 0a91.83 91.83 0 0 0-53.93 38.81a4 4 0 1 0 6.7 4.37a84 84 0 0 1 140.84 0a4 4 0 1 0 6.7-4.37A91.83 91.83 0 0 0 107.19 159ZM36 108a48 48 0 1 1 48 48a48.05 48.05 0 0 1-48-48Zm212 95.35a4 4 0 0 1-5.53-1.17A83.81 83.81 0 0 0 172 164a4 4 0 0 1 0-8a48 48 0 1 0-17.82-92.58a4 4 0 1 1-3-7.43a56 56 0 0 1 44 103a91.83 91.83 0 0 1 53.93 38.86a4 4 0 0 1-1.11 5.5Z"/></svg>
+            <div class="relative col-span-full lg:col-span-1 flex aspect-square items-center justify-center">
+                <div class="absolute inset-0 flex justify-center rounded-full pt-2 bg-primary rotate-[135deg] z-[-2]">
+                    <div class="rounded-tl-full rounded-tr-full bg-white w-[calc(100%-1rem)] h-1/2 relative"></div>
+                </div>
+                <div
+                    class="max-lg:hidden absolute top-1/2 left-1/2 flex h-1/4 w-1/2 translate-x-1/2 -translate-y-1/2 items-center justify-center bg-white z-[-1]"
+                    style="clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);">
+                    <div class="w-[calc(100%-2rem)] h-[calc(100%-1rem)] bg-primary flex items-center justify-center"
+                         style="clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);">
+                        <div class="w-[calc(100%-2rem)] h-[calc(100%-1rem)] bg-white"
+                             style="clip-path: polygon(0% 0%, 77% 0%, 100% 50%, 77% 100%, 0% 100%);">
+                        </div>
                     </div>
                 </div>
-                <div class="text-primary flex flex-col">
-                    <span class="text-xl font-medium">{{ __('Manage Philosophy') }}</span>
-                    <span class="text-sm">{{ __('Details determine success or failure, responsibility builds a career.') }}</span>
+
+                <div
+                    class="absolute top-0 left-0 z-10 flex h-1/4 w-1/4 items-center justify-center rounded-full bg-primary">
+                    <div
+                        class="text-primary bg-secondary w-[calc(100%-10px)] h-[calc(100%-10px)] rounded-full flex items-center justify-center text-center text-4xl font-bold">
+                        3
+                    </div>
+                </div>
+
+                <div
+                    class="w-[calc(100%-3rem)] h-[calc(100%-3rem)] rounded-full bg-secondary shadow-2xl flex flex-col justify-center items-center text-center text-primary p-4">
+                    <h2 class="font-bold xl:text-3xl">{{ __('Professional') }}</h2>
+                    <p class="text-xs mt-4 xl:text-base">
+                        {{ __('Highly specialized consultants. Personalize service according to your requirements') }}
+                    </p>
                 </div>
             </div>
 
-            <div class="flex gap-4 items-center">
-                <div class="w-20 h-20 shrink-0 rounded-full shadow-xl bg-secondary flex items-center justify-center">
-                    <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-secondary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 3.5v11a2 2 0 0 0 2 2h11"/><path d="m6.5 12.5l3-3l2 2l5-5"/><path d="M16.5 9.5v-3h-3"/></g></svg>
-                    </div>
+            <div class="relative col-span-full lg:col-span-1 flex aspect-square items-center justify-center">
+                <div class="absolute inset-0 flex justify-center rounded-full pt-2 bg-primary rotate-[135deg] z-[-2]">
+                    <div class="rounded-tl-full rounded-tr-full bg-white w-[calc(100%-1rem)] h-1/2 relative"></div>
                 </div>
-                <div class="text-primary flex flex-col">
-                    <span class="text-xl font-medium">{{ __('Working Philosophy') }}</span>
-                    <span class="text-sm">{{ __('We rely on the company for the survival, the company relies on me for development.') }}</span>
-                </div>
-            </div>
 
-            <div class="flex gap-4 items-center">
-                <div class="w-20 h-20 shrink-0 rounded-full shadow-xl bg-secondary flex items-center justify-center">
-                    <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-secondary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 256"><path fill="currentColor" d="M128 84a44 44 0 1 0 44 44a44.05 44.05 0 0 0-44-44Zm0 80a36 36 0 1 1 36-36a36 36 0 0 1-36 36Zm83.93-32.49q.13-3.51 0-7l15.83-19.79a4 4 0 0 0 .75-3.53A103.64 103.64 0 0 0 218 75.9a4 4 0 0 0-3-2l-25.19-2.8a88.885 88.885 0 0 0-4.95-4.95L182.07 41a4 4 0 0 0-2-3a104 104 0 0 0-25.25-10.5a4 4 0 0 0-3.53.74l-19.78 15.83q-3.51-.14-7 0L104.7 28.24a4 4 0 0 0-3.53-.75A103.64 103.64 0 0 0 75.9 38a4 4 0 0 0-2 3l-2.8 25.19a88.885 88.885 0 0 0-4.95 4.95L41 73.93a4 4 0 0 0-3 2a104 104 0 0 0-10.5 25.25a4 4 0 0 0 .74 3.53l15.83 19.78q-.14 3.51 0 7L28.24 151.3a4 4 0 0 0-.75 3.53A103.64 103.64 0 0 0 38 180.1a4 4 0 0 0 3 2l25.19 2.8c1.58 1.71 3.24 3.37 4.95 4.95l2.8 25.2a4 4 0 0 0 2 3a104 104 0 0 0 25.28 10.46a4 4 0 0 0 3.53-.74l19.78-15.83q3.51.13 7 0l19.79 15.83a4 4 0 0 0 2.5.88a4 4 0 0 0 1-.13A103.64 103.64 0 0 0 180.1 218a4 4 0 0 0 2-3l2.8-25.19c1.71-1.58 3.37-3.24 4.95-4.95l25.2-2.8a4 4 0 0 0 3-2a104 104 0 0 0 10.46-25.28a4 4 0 0 0-.74-3.53Zm.17 42.83l-24.67 2.74a4 4 0 0 0-2.55 1.32a76.2 76.2 0 0 1-6.48 6.48a4 4 0 0 0-1.32 2.55l-2.74 24.66a95.45 95.45 0 0 1-19.64 8.15l-19.38-15.51a4 4 0 0 0-2.5-.87h-.24a73.67 73.67 0 0 1-9.16 0a4 4 0 0 0-2.74.87l-19.37 15.5a95.33 95.33 0 0 1-19.65-8.13l-2.74-24.67a4 4 0 0 0-1.32-2.55a76.2 76.2 0 0 1-6.48-6.48a4 4 0 0 0-2.55-1.32l-24.66-2.74a95.45 95.45 0 0 1-8.15-19.64l15.51-19.38a4 4 0 0 0 .87-2.74a77.76 77.76 0 0 1 0-9.16a4 4 0 0 0-.87-2.74l-15.5-19.37a95.33 95.33 0 0 1 8.13-19.65l24.67-2.74a4 4 0 0 0 2.55-1.32a76.2 76.2 0 0 1 6.48-6.48a4 4 0 0 0 1.32-2.55l2.74-24.66a95.45 95.45 0 0 1 19.64-8.15l19.38 15.51a4 4 0 0 0 2.74.87a73.67 73.67 0 0 1 9.16 0a4 4 0 0 0 2.74-.87l19.37-15.5a95.33 95.33 0 0 1 19.65 8.13l2.74 24.67a4 4 0 0 0 1.32 2.55a76.2 76.2 0 0 1 6.48 6.48a4 4 0 0 0 2.55 1.32l24.66 2.74a95.45 95.45 0 0 1 8.15 19.64l-15.51 19.38a4 4 0 0 0-.87 2.74a77.76 77.76 0 0 1 0 9.16a4 4 0 0 0 .87 2.74l15.5 19.37a95.33 95.33 0 0 1-8.13 19.65Z"/></svg>
+                <div
+                    class="absolute top-0 left-0 z-10 flex h-1/4 w-1/4 items-center justify-center rounded-full bg-primary">
+                    <div
+                        class="text-primary bg-secondary w-[calc(100%-10px)] h-[calc(100%-10px)] rounded-full flex items-center justify-center text-center text-4xl font-bold">
+                        4
                     </div>
                 </div>
-                <div class="text-primary flex flex-col">
-                    <span class="text-xl font-medium">{{ __('Marketing Philosophy') }}</span>
-                    <span class="text-sm">{{ __('Creating value for users and increasing profit for Enterprise.') }}</span>
+
+                <div
+                    class="w-[calc(100%-3rem)] h-[calc(100%-3rem)] rounded-full bg-secondary shadow-2xl flex flex-col justify-center items-center text-center text-primary p-4">
+                    <h2 class="font-bold xl:text-3xl">{{ __('Professional') }}</h2>
+                    <p class="text-xs mt-4 xl:text-base">
+                        {{ __('Highly specialized consultants. Personalize service according to your requirements') }}
+                    </p>
                 </div>
             </div>
         </div>
 
-        <div class="mx-auto w-full lg:w-3/4 py-16 text-primary">
+        <div class="container mx-auto w-full py-16 text-primary">
             <div class="flex max-w-lg items-center gap-4">
                 <div class="grow h-0.5 bg-primary min-w-[1rem]"></div>
                 <div class="text-3xl font-bold">{{ __('Efficient working conditions') }}</div>
                 <div class="grow h-0.5 bg-primary min-w-[1rem]"></div>
             </div>
-            <div class="mx-auto w-full lg:w-3/5 pt-16 text-justify text-primary">
-                Our company has its own customs clearance agency and is equipped with an EDI system that directly connects
-                to the customs network. We have our own warehouse and strictly follow customer requirements for unloading
-                and packing, with dedicated personnel responsible for monitoring the loading process and taking photos. We
-                have established good relationships with the port area and have signed contracts for cooperation with major
+            <div class="mx-auto w-full container pt-16 text-justify text-primary">
+                Our company has its own customs clearance agency and is equipped with an EDI system that directly
+                connects
+                to the customs network. We have our own warehouse and strictly follow customer requirements for
+                unloading
+                and packing, with dedicated personnel responsible for monitoring the loading process and taking photos.
+                We
+                have established good relationships with the port area and have signed contracts for cooperation with
+                major
                 internation- al airlines, possessing strong partnership relations.
             </div>
 
@@ -106,21 +165,18 @@
                 <div class="text-3xl font-bold">{{ __('Perfect service plan') }}</div>
                 <div class="grow h-0.5 bg-primary min-w-[1rem]"></div>
             </div>
-            <div class="mt-16 flex items-center">
-                <div class="flex w-1/2 items-center justify-center pr-8 text-justify max-lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="136" height="136" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                              d="M19.938 8H21a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-1.062A8.001 8.001 0 0 1 12 23v-2a6 6 0 0 0 6-6V9A6 6 0 0 0 6 9v7H3a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1.062a8.001 8.001 0 0 1 15.876 0ZM3 10v4h1v-4H3Zm17 0v4h1v-4h-1ZM7.76 15.785l1.06-1.696A5.972 5.972 0 0 0 12 15a5.972 5.972 0 0 0 3.18-.911l1.06 1.696A7.963 7.963 0 0 1 12 17a7.962 7.962 0 0 1-4.24-1.215Z"/>
-                    </svg>
+            <div class="mt-16 flex items-center container mx-auto">
+                <div class="flex max-lg:hidden w-1/2 items-center justify-center pr-8 text-justify">
+                    <img class="w-64 h-64" src="{{ asset('images/icons/Icon/Web icon-06.png') }}" alt="">
                 </div>
-                <div class="w-full lg:w-1/2 lg:pl-8">
-                    Through unified scheduling and coordination, timely cargo inquiries, and tracking, customers can easily
-                    enjoy the advantages of networked services. A well-established transportation network can effectively
-                    avoid the following situations:
+                <div class="w-full container lg:pl-8 text-justify">
+                    Through unified scheduling and coordination, timely cargo inquiries, and tracking, customers can
+                    easily enjoy the advantages of networked services. A well-established transportation network can
+                    effectively avoid the following situations:
                     <br><br>
                     - Higher charging standards of designated freight forwarders.
                     <br>
-                    - Lack of systematic services, resulting in  poor user experience.
+                    - Lack of systematic services, resulting in poor user experience.
                     <br><br>
                     This can effectively reduce unnecessary troubles for domestic customers and improve customer
                     satisfaction.

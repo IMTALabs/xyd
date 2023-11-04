@@ -5,7 +5,7 @@
 
     <div class="max-lg:px-4">
         <div class="py-16 text-primary">
-            <ul class="w-full lg:w-3/4 mx-auto flex items-center">
+            <ul class="w-full container mx-auto flex items-center">
                 <a href="{{ route('home') }}">{{ __("Home") }}</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                     <path fill="currentColor"
@@ -20,19 +20,19 @@
             </ul>
         </div>
 
-        <h1 class="text-3xl mx-auto w-full lg:w-3/4 text-primary font-medium">Incoterms</h1>
+        <h1 class="text-3xl mx-auto w-full container text-primary font-medium">Incoterms</h1>
 
-        <div class="w-full lg:w-3/4 mx-auto text-primary mt-12 pb-16">
+        <div class="w-full container mx-auto text-primary mt-12 pb-4">
             <h2 class="text-3xl font-semibold">ICC's Incoterms® rules for international trade</h2>
-            <p class="w-full lg:w-3/4 mx-auto text-justify mt-8 text-xl">The Incoterms® rules, set by the International Chamber of Commerce
+            <p class="w-full container mx-auto text-justify mt-8 text-xl">The Incoterms® rules, set by the International Chamber of Commerce
                 (ICC), define the essential terms of trade for the sale of goods under worldwide contracts. Incoterms® 2020
                 consists of 11 rules divided into two groups: 'Rules for any mode or modes of transport' and 'Rules for sea
                 and inland waterway transport.</p>
         </div>
 
-        <div class="w-full lg:w-3/4 mx-auto text-primary mt-12 pb-16">
+        <div class="w-full container mx-auto text-primary mt-4 pb-4">
             <h2 class="text-3xl font-semibold">Rules for any mode or modes of transport:</h2>
-            <p class="w-full lg:w-3/4 mx-auto text-justify mt-8 text-xl">
+            <p class="w-full container mx-auto text-justify mt-8 text-xl">
                 EXW - Ex Works<br>
                 FCA - Free Carrier<br>
                 CPT - Carriage Paid to<br>
@@ -43,9 +43,9 @@
             </p>
         </div>
 
-        <div class="w-full lg:w-3/4 mx-auto text-primary mt-12 pb-16">
+        <div class="w-full container mx-auto text-primary mt-4 pb-16">
             <h2 class="text-3xl font-semibold">Rules for sea and inland waterway transport:</h2>
-            <p class="w-full lg:w-3/4 mx-auto text-justify mt-8 text-xl">
+            <p class="w-full container mx-auto text-justify mt-8 text-xl">
                 FAS - Free Alongside Ship<br>
                 FOB - Free On Board<br>
                 CFR - Cost and Freight<br>

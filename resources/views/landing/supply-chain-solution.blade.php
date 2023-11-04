@@ -5,7 +5,7 @@
 
     <div class="max-lg:px-4">
         <div class="py-16 text-primary">
-            <ul class="w-full lg:w-3/4 mx-auto flex items-center whitespace-nowrap overflow-auto [&_svg]:shrink-0">
+            <ul class="w-full container mx-auto flex items-center whitespace-nowrap overflow-auto [&_svg]:shrink-0">
                 <a href="{{ route('home') }}">{{ __("Home") }}</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                     <path fill="currentColor"
@@ -20,16 +20,16 @@
             </ul>
         </div>
 
-        <h1 class="text-3xl mx-auto w-full lg:w-3/4 text-primary font-medium">{{ __('Supply chain solution') }}</h1>
+        <h1 class="text-3xl mx-auto w-full container text-primary font-medium">{{ __('Supply chain solution') }}</h1>
 
-        <div class="mx-auto w-full lg:w-3/5 text-justify text-primary py-16">
+        <div class="mx-auto w-full container text-justify text-primary py-16">
             Our main business is undertaking diversified international freight transportation services, including
             sea, land, air, and rail. We focuse on meeting customer needs and pursuing perfect service. We rely on
             a fast transportation network and a comprehensive management system to establish in the freight
             industry and provide all-round "pickup-transport-delivery" one-to-one service.
         </div>
 
-        <div class="w-full lg:w-3/4 mx-auto pb-16 text-primary grid lg:grid-cols-2 gap-16">
+        <div class="w-full container mx-auto pb-16 text-primary grid lg:grid-cols-2 gap-16">
             <div class="relative col-span-1">
                 <div class="flex items-center gap-4">
                     <div class="h-0.5 grow bg-primary"></div>
@@ -71,82 +71,46 @@
             </div>
         </div>
 
-        <div class="w-full lg:w-3/4 mx-auto pb-16 text-primary">
+        <div class="w-full container mx-auto pb-16 text-primary">
             <h1 class="text-3xl text-primary font-medium">We are exceptionally experienced</h1>
             <div class="grid lg:grid-cols-2 gap-16 mt-16">
                 <div class="flex flex-col items-center gap-4 col-span-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 14 14">
-                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="6.5" height="6.5" x="5.5" y="3" rx="1"/>
-                            <path
-                                d="M4 12h7.61a1 1 0 0 1 .7.29l1.19 1.21M.5.5h1a1 1 0 0 1 1 1V10M4 11.75A2.11 2.11 0 0 1 4 12a1.74 1.74 0 1 1 0-.25ZM8.5 7h1"/>
-                        </g>
-                    </svg>
+                    <img class="w-20 h-20" src="{{ asset('images/icons/Icon/Web icon-21.png') }}" alt="">
                     <h3 class="text-3xl font-semibold text-center line-clamp-2 h-[4.5rem]">South Korea and Hong Kong Freight Forwarding</h3>
                     <p class="text-center">We signed cooperation agreements with major international airlines, honored as the international
                         airfreight forwarding for Hong Kong EK, EY, TK, ET, South Korea KE, OZ, CI, CX, and other renowned
                         airlines.</p>
                 </div>
                 <div class="flex flex-col items-center gap-4 col-span-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 14 14">
-                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="6.5" height="6.5" x="5.5" y="3" rx="1"/>
-                            <path
-                                d="M4 12h7.61a1 1 0 0 1 .7.29l1.19 1.21M.5.5h1a1 1 0 0 1 1 1V10M4 11.75A2.11 2.11 0 0 1 4 12a1.74 1.74 0 1 1 0-.25ZM8.5 7h1"/>
-                        </g>
-                    </svg>
+                    <img class="w-20 h-20" src="{{ asset('images/icons/Icon/Web icon-21.png') }}" alt="">
                     <h3 class="text-3xl font-semibold text-center line-clamp-2 h-[4.5rem]">Europe and American International Air Freight Services</h3>
                     <p class="text-center">We signed cooperation agreements with major international airlines, honored as the international
                         airfreight forwarding for Hong Kong EK, EY, TK, ET, South Korea KE, OZ, CI, CX, and other renowned
                         airlines.</p>
                 </div>
                 <div class="flex flex-col items-center gap-4 col-span-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 14 14">
-                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="6.5" height="6.5" x="5.5" y="3" rx="1"/>
-                            <path
-                                d="M4 12h7.61a1 1 0 0 1 .7.29l1.19 1.21M.5.5h1a1 1 0 0 1 1 1V10M4 11.75A2.11 2.11 0 0 1 4 12a1.74 1.74 0 1 1 0-.25ZM8.5 7h1"/>
-                        </g>
-                    </svg>
+                    <img class="w-20 h-20" src="{{ asset('images/icons/Icon/Web icon-21.png') }}" alt="">
                     <h3 class="text-3xl font-semibold text-center line-clamp-2 h-[4.5rem]">International Sea Freight Services for Europe, America, England and Mexico</h3>
                     <p class="text-center">We signed cooperation agreements with major international airlines, honored as the international
                         airfreight forwarding for Hong Kong EK, EY, TK, ET, South Korea KE, OZ, CI, CX, and other renowned
                         airlines.</p>
                 </div>
                 <div class="flex flex-col items-center gap-4 col-span-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 14 14">
-                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="6.5" height="6.5" x="5.5" y="3" rx="1"/>
-                            <path
-                                d="M4 12h7.61a1 1 0 0 1 .7.29l1.19 1.21M.5.5h1a1 1 0 0 1 1 1V10M4 11.75A2.11 2.11 0 0 1 4 12a1.74 1.74 0 1 1 0-.25ZM8.5 7h1"/>
-                        </g>
-                    </svg>
+                    <img class="w-20 h-20" src="{{ asset('images/icons/Icon/Web icon-21.png') }}" alt="">
                     <h3 class="text-3xl font-semibold text-center line-clamp-2 h-[4.5rem]">Special channel of Air Freight</h3>
                     <p class="text-center">We signed cooperation agreements with major international airlines, honored as the international
                         airfreight forwarding for Hong Kong EK, EY, TK, ET, South Korea KE, OZ, CI, CX, and other renowned
                         airlines.</p>
                 </div>
                 <div class="flex flex-col items-center gap-4 col-span-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 14 14">
-                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="6.5" height="6.5" x="5.5" y="3" rx="1"/>
-                            <path
-                                d="M4 12h7.61a1 1 0 0 1 .7.29l1.19 1.21M.5.5h1a1 1 0 0 1 1 1V10M4 11.75A2.11 2.11 0 0 1 4 12a1.74 1.74 0 1 1 0-.25ZM8.5 7h1"/>
-                        </g>
-                    </svg>
+                    <img class="w-20 h-20" src="{{ asset('images/icons/Icon/Web icon-21.png') }}" alt="">
                     <h3 class="text-3xl font-semibold text-center line-clamp-2 h-[4.5rem]">Yantian / Hong Kong DG</h3>
                     <p class="text-center">We signed cooperation agreements with major international airlines, honored as the international
                         airfreight forwarding for Hong Kong EK, EY, TK, ET, South Korea KE, OZ, CI, CX, and other renowned
                         airlines.</p>
                 </div>
                 <div class="flex flex-col items-center gap-4 col-span-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 14 14">
-                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="6.5" height="6.5" x="5.5" y="3" rx="1"/>
-                            <path
-                                d="M4 12h7.61a1 1 0 0 1 .7.29l1.19 1.21M.5.5h1a1 1 0 0 1 1 1V10M4 11.75A2.11 2.11 0 0 1 4 12a1.74 1.74 0 1 1 0-.25ZM8.5 7h1"/>
-                        </g>
-                    </svg>
+                    <img class="w-20 h-20" src="{{ asset('images/icons/Icon/Web icon-21.png') }}" alt="">
                     <h3 class="text-3xl font-semibold text-center line-clamp-2 h-[4.5rem]">American Overseas Warehouse</h3>
                     <p class="text-center">We signed cooperation agreements with major international airlines, honored as the international
                         airfreight forwarding for Hong Kong EK, EY, TK, ET, South Korea KE, OZ, CI, CX, and other renowned

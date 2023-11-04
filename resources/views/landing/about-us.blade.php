@@ -5,7 +5,7 @@
         <img src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-05.png') }}" class="object-cover w-full" alt="">
 
         <div class="py-16 text-primary px-4 lg:px-0">
-            <ul class="w-full lg:w-3/4 mx-auto flex items-center">
+            <ul class="w-full container mx-auto flex items-center">
                 <a href="{{ route('home') }}">{{ __("Home") }}</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                     <path fill="currentColor"
@@ -14,12 +14,12 @@
                 <a href="#">{{ __('About Xiangyuda Express') }}</a>
             </ul>
 
-            <div class="w-full lg:w-3/5 mx-auto mt-8 flex flex-col gap-y-8 lg:flex-row pb-16">
-                <img src="https://placehold.co/600x400" alt="" class="w-full lg:w-1/2">
-                <div class="w-full lg:w-1/2 lg:pl-8">
-                    <h1 class="text-3xl">{{ __('About us') }}</h1>
+            <div class="w-full container mx-auto mt-8 flex flex-col gap-y-8 lg:flex-row pb-16">
+                <img src="https://placehold.co/600x400" alt="" class="w-full container">
+                <div class="w-full container lg:pl-8">
+                    <h1 class="text-3xl font-bold">{{ __('About us') }}</h1>
                     <h2 class="text-xl mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                    <p class="mt-2 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad,
+                    <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad,
                         aspernatur cumque
                         deleniti dicta doloribus eaque, est excepturi hic ipsam ipsum, itaque modi numquam odio
                         perspiciatis
@@ -29,8 +29,8 @@
 
             <div>
                 <img src="https://placehold.co/1600x400" alt="" class="w-full">
-                <div class="w-full lg:w-3/4 bg-secondary mx-auto -translate-y-24 lg:px-32 lg:py-16 p-4">
-                    <h2 class="text-3xl font-medium text-center">Vision</h2>
+                <div class="w-full container bg-secondary mx-auto -translate-y-24 lg:px-32 lg:py-16 p-4">
+                    <h2 class="text-3xl font-bold text-center">Vision</h2>
                     <p class="text-center mt-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, aut
                         autem! Alias amet,
                         architecto, dolore, harum omnis perferendis quisquam saepe sequi unde voluptate voluptatem
@@ -38,10 +38,10 @@
                 </div>
             </div>
 
-            <div class="w-full lg:w-3/5 mx-auto flex flex-col lg:flex-row pb-16">
-                <img src="https://placehold.co/600x400" alt="" class="w-full lg:w-1/2">
-                <div class="w-full lg:w-1/2 lg:pl-8 mt-8 lg:mt-0">
-                    <h1 class="text-3xl">Mission</h1>
+            <div class="w-full container mx-auto flex flex-col lg:flex-row pb-16">
+                <img src="https://placehold.co/600x400" alt="" class="w-full container">
+                <div class="w-full container lg:pl-8 mt-8 lg:mt-0">
+                    <h1 class="text-3xl font-bold">{{ __('Mission') }}</h1>
                     <h2 class="text-xl mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
                     <p class="mt-2 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad,
                         aspernatur cumque
@@ -52,82 +52,81 @@
             </div>
 
             <div class="bg-secondary p-4 lg:px-32 lg:py-16">
-                <h2 class="text-3xl font-medium text-center">Core value</h2>
-                <p class="text-center mt-8 w-full lg:w-3/5 mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.
-                    Accusamus, aut autem!
-                    Alias amet,
-                    architecto, dolore, harum omnis perferendis quisquam saepe sequi unde voluptate voluptatem
-                    voluptates! Enim illum omnis quasi repudiandae.</p>
+                <h2 class="text-3xl font-bold text-center">{{ __('Core value') }}</h2>
+                <p class="text-center mt-8 w-full container mx-auto">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur, deleniti, dolorem
+                    dolorum ea eaque fuga illo magni officiis quasi qui, quidem ut? Aut corporis eaque minus, similique
+                    suscipit voluptatem.
+                </p>
 
                 <div
-                    class="flex mx-auto mt-16 w-full lg:w-3/5 border-y-2 border-solid border-black divide-x-2 divide-black font-semibold">
+                    class="flex mx-auto mt-16 w-full container border-y-2 border-solid border-black divide-x-2 divide-black font-semibold">
                     <div class="w-1/3 text-center py-4">Precisely</div>
                     <div class="w-1/3 text-center py-4">Optimal</div>
                     <div class="w-1/3 text-center py-4">Belief</div>
                 </div>
 
-                <div class="w-full lg:w-3/4 flex flex-wrap justify-between mx-auto mt-16 gap-y-4">
-                    <div class="flex items-center gap-2 max-lg:w-1/2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
-                            <path fill="currentColor"
-                                  d="M3 21q-.425 0-.713-.288T2 20q0-.425.288-.713T3 19h18q.425 0 .713.288T22 20q0 .425-.288.713T21 21H3Zm1.5-3q-.625 0-1.063-.438T3 16.5v-4q0-.625.438-1.063T4.5 11q.625 0 1.063.438T6 12.5v4q0 .625-.438 1.063T4.5 18Zm5 0q-.625 0-1.063-.438T8 16.5v-9q0-.625.438-1.063T9.5 6q.625 0 1.063.438T11 7.5v9q0 .625-.438 1.063T9.5 18Zm5 0q-.625 0-1.063-.438T13 16.5v-6q0-.625.438-1.063T14.5 9q.625 0 1.063.438T16 10.5v6q0 .625-.438 1.063T14.5 18Zm5 0q-.625 0-1.063-.438T18 16.5v-12q0-.625.438-1.063T19.5 3q.625 0 1.063.438T21 4.5v12q0 .625-.438 1.063T19.5 18Z"/>
-                        </svg>
-                        <div>
-                            <div class="font-bold text-xl">14+ Years</div>
-                            <div class="text-sm">Experiences</div>
+                <div class="w-full container max-w-4xl flex flex-wrap justify-between mx-auto mt-16 gap-y-4">
+                        <div class="flex items-center gap-2 max-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                      d="M3 21q-.425 0-.713-.288T2 20q0-.425.288-.713T3 19h18q.425 0 .713.288T22 20q0 .425-.288.713T21 21H3Zm1.5-3q-.625 0-1.063-.438T3 16.5v-4q0-.625.438-1.063T4.5 11q.625 0 1.063.438T6 12.5v4q0 .625-.438 1.063T4.5 18Zm5 0q-.625 0-1.063-.438T8 16.5v-9q0-.625.438-1.063T9.5 6q.625 0 1.063.438T11 7.5v9q0 .625-.438 1.063T9.5 18Zm5 0q-.625 0-1.063-.438T13 16.5v-6q0-.625.438-1.063T14.5 9q.625 0 1.063.438T16 10.5v6q0 .625-.438 1.063T14.5 18Zm5 0q-.625 0-1.063-.438T18 16.5v-12q0-.625.438-1.063T19.5 3q.625 0 1.063.438T21 4.5v12q0 .625-.438 1.063T19.5 18Z"/>
+                            </svg>
+                            <div>
+                                <div class="font-bold text-xl">14+ Years</div>
+                                <div class="">Experiences</div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="flex items-center gap-2 max-lg:w-1/2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
-                            <g fill="currentColor">
-                                <path
-                                    d="M8.387 5.08a9.53 9.53 0 0 0-.5-.745A6.968 6.968 0 0 1 12 3c1.32 0 2.555.365 3.608 1a3.881 3.881 0 0 1-.48 1.305c-.048.077-.248.273-.612.544c-.162.12-.341.231-.556.36l-.074.043c-.188.112-.402.24-.609.382c-.488.334-.996.786-1.338 1.517a2.113 2.113 0 0 0-.12 1.456c.035.135.054.27.055.39c0 .037-.015.096-.097.165a.524.524 0 0 1-.327.118c-1.077-.012-1.927-.904-2.05-2.327c-.094-1.082-.536-2.084-1.013-2.874Zm8.265 9.429c.264-.003.512-.02.745-.05a7.006 7.006 0 0 1-3.418 2.257c-.046-.381-.016-.84.209-1.263c.192-.362.678-.633 1.334-.794a5.454 5.454 0 0 1 1.109-.15h.021Z"/>
-                                <path
-                                    d="M5 10c0-1.72.62-3.294 1.648-4.512c.102.143.203.297.301.46c.402.664.713 1.416.777 2.15c.17 1.97 1.481 3.837 3.705 3.862c.961.01 2.126-.712 2.123-1.968c0-.287-.046-.567-.112-.815a.436.436 0 0 1 .019-.315c.17-.364.422-.607.766-.842c.16-.11.326-.21.518-.324l.077-.046c.216-.129.461-.278.698-.454c.345-.257.79-.618 1.027-.99c.187-.294.36-.671.494-1.063A6.977 6.977 0 0 1 19 10c0 .532-.06 1.05-.172 1.55a1.891 1.891 0 0 1-.303.582c-.237.307-.712.685-1.89.697h-.037l-.096.003a7.134 7.134 0 0 0-1.382.195c-.759.186-1.871.61-2.417 1.639c-.43.811-.48 1.645-.382 2.327A7.003 7.003 0 0 1 5 10Z"/>
-                                <path fill-rule="evenodd"
-                                      d="M18.003 1.5a.75.75 0 0 1 1.06-.059a11.037 11.037 0 0 1 3.687 8.246c0 5.751-4.389 10.478-10 11.013v.55H14a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1 0-1.5h1.25v-.509a11.037 11.037 0 0 1-7.809-3.678a.75.75 0 1 1 1.118-1a9.537 9.537 0 0 0 7.128 3.187a9.563 9.563 0 0 0 9.563-9.563a9.537 9.537 0 0 0-3.188-7.128a.75.75 0 0 1-.059-1.06Z"
-                                      clip-rule="evenodd"/>
-                            </g>
-                        </svg>
-                        <div>
-                            <div class="font-bold text-xl">4+</div>
-                            <div class="text-sm">Branches global</div>
+                        <div class="flex items-center gap-2 max-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                <g fill="currentColor">
+                                    <path
+                                        d="M8.387 5.08a9.53 9.53 0 0 0-.5-.745A6.968 6.968 0 0 1 12 3c1.32 0 2.555.365 3.608 1a3.881 3.881 0 0 1-.48 1.305c-.048.077-.248.273-.612.544c-.162.12-.341.231-.556.36l-.074.043c-.188.112-.402.24-.609.382c-.488.334-.996.786-1.338 1.517a2.113 2.113 0 0 0-.12 1.456c.035.135.054.27.055.39c0 .037-.015.096-.097.165a.524.524 0 0 1-.327.118c-1.077-.012-1.927-.904-2.05-2.327c-.094-1.082-.536-2.084-1.013-2.874Zm8.265 9.429c.264-.003.512-.02.745-.05a7.006 7.006 0 0 1-3.418 2.257c-.046-.381-.016-.84.209-1.263c.192-.362.678-.633 1.334-.794a5.454 5.454 0 0 1 1.109-.15h.021Z"/>
+                                    <path
+                                        d="M5 10c0-1.72.62-3.294 1.648-4.512c.102.143.203.297.301.46c.402.664.713 1.416.777 2.15c.17 1.97 1.481 3.837 3.705 3.862c.961.01 2.126-.712 2.123-1.968c0-.287-.046-.567-.112-.815a.436.436 0 0 1 .019-.315c.17-.364.422-.607.766-.842c.16-.11.326-.21.518-.324l.077-.046c.216-.129.461-.278.698-.454c.345-.257.79-.618 1.027-.99c.187-.294.36-.671.494-1.063A6.977 6.977 0 0 1 19 10c0 .532-.06 1.05-.172 1.55a1.891 1.891 0 0 1-.303.582c-.237.307-.712.685-1.89.697h-.037l-.096.003a7.134 7.134 0 0 0-1.382.195c-.759.186-1.871.61-2.417 1.639c-.43.811-.48 1.645-.382 2.327A7.003 7.003 0 0 1 5 10Z"/>
+                                    <path fill-rule="evenodd"
+                                          d="M18.003 1.5a.75.75 0 0 1 1.06-.059a11.037 11.037 0 0 1 3.687 8.246c0 5.751-4.389 10.478-10 11.013v.55H14a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1 0-1.5h1.25v-.509a11.037 11.037 0 0 1-7.809-3.678a.75.75 0 1 1 1.118-1a9.537 9.537 0 0 0 7.128 3.187a9.563 9.563 0 0 0 9.563-9.563a9.537 9.537 0 0 0-3.188-7.128a.75.75 0 0 1-.059-1.06Z"
+                                          clip-rule="evenodd"/>
+                                </g>
+                            </svg>
+                            <div>
+                                <div class="font-bold text-xl">4+</div>
+                                <div class="">Branches global</div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="flex items-center gap-2 max-lg:w-1/2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
-                            <path fill="currentColor"
-                                  d="M11.8 20.025q-.825 0-1.413-.6T9.8 18q0-.825.588-1.413T11.8 16l.6-.575q.2-.2.463-.313T13.4 15q.575 0 .988.425t.412 1v.425q0 .5.325.825t.825.325q.375 0 .675-.225t.425-.575l.3-.825q.225-.6.725-.988t1.15-.387q.275-.7.438-1.45t.162-1.55q0-2.225-1.112-4.063T15.8 5.05V6q0 .825-.588 1.413T13.8 8h-1v2q0 .425-.288.713T11.8 11h-1v1.7q0 .55-.375.925T9.5 14q-.35 0-.638-.15t-.462-.425L6.8 11h-1v1q0 .775-.525 1.325t-1.25.65q.65 2.6 2.813 4.325t4.962 1.725Zm2-6.025q-.425 0-.713-.287T12.8 13q0-.425.288-.713T13.8 12h1q.425 0 .713.288T15.8 13q0 .425-.288.713T14.8 14h-1Zm2.325-3q-.5 0-.788-.387T15.2 9.75l.375-1.1q.1-.3.35-.475t.55-.175q.5 0 .788.388t.137.862l-.375 1.1q-.1.3-.35.475t-.55.175ZM11.8 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T1.8 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T11.8 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T21.8 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T11.8 22Z"/>
-                        </svg>
-                        <div>
-                            <div class="font-bold text-xl">20+</div>
-                            <div class="text-sm">Countries</div>
+                        <div class="flex items-center gap-2 max-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                      d="M11.8 20.025q-.825 0-1.413-.6T9.8 18q0-.825.588-1.413T11.8 16l.6-.575q.2-.2.463-.313T13.4 15q.575 0 .988.425t.412 1v.425q0 .5.325.825t.825.325q.375 0 .675-.225t.425-.575l.3-.825q.225-.6.725-.988t1.15-.387q.275-.7.438-1.45t.162-1.55q0-2.225-1.112-4.063T15.8 5.05V6q0 .825-.588 1.413T13.8 8h-1v2q0 .425-.288.713T11.8 11h-1v1.7q0 .55-.375.925T9.5 14q-.35 0-.638-.15t-.462-.425L6.8 11h-1v1q0 .775-.525 1.325t-1.25.65q.65 2.6 2.813 4.325t4.962 1.725Zm2-6.025q-.425 0-.713-.287T12.8 13q0-.425.288-.713T13.8 12h1q.425 0 .713.288T15.8 13q0 .425-.288.713T14.8 14h-1Zm2.325-3q-.5 0-.788-.387T15.2 9.75l.375-1.1q.1-.3.35-.475t.55-.175q.5 0 .788.388t.137.862l-.375 1.1q-.1.3-.35.475t-.55.175ZM11.8 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T1.8 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T11.8 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T21.8 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T11.8 22Z"/>
+                            </svg>
+                            <div>
+                                <div class="font-bold text-xl">20+</div>
+                                <div class="">Countries</div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="flex items-center gap-2 max-lg:w-1/2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 256 256">
-                            <path fill="currentColor"
-                                  d="M123.64 218.91A12 12 0 0 1 112 228a12.28 12.28 0 0 1-2.92-.36l-32-8a11.79 11.79 0 0 1-3.74-1.64l-24-16a12 12 0 0 1 13.32-20l22.27 14.85l30 7.5a12 12 0 0 1 8.71 14.56ZM255 122.75a19.88 19.88 0 0 1-10 11.56l-22.87 11.44l-53.58 54.73a12 12 0 0 1-11.4 3.16l-64-16a12.16 12.16 0 0 1-4.17-1.95L35 146.28l-23.94-12a20 20 0 0 1-9-26.83L27 57.79a20 20 0 0 1 26.83-8.94l20.59 10.31l50.21-14.68a12.07 12.07 0 0 1 6.74 0l50.21 14.68l20.63-10.32A20 20 0 0 1 229 57.79l24.85 49.69a19.86 19.86 0 0 1 1.15 15.27ZM200.3 134l-25-50h-26.44l-38.2 37.05c15.76 7.26 31.16.19 40.82-9.55a12 12 0 0 1 16-.91l31.26 25ZM25.37 114.63l10.53 5.27l21.27-42.53l-10.54-5.27ZM182 153l-21.7-17.43c-20.49 15.29-45.85 16.79-67 3.25a20 20 0 0 1-3.4-31l.12-.12l39.8-38.7l-1.82-.5l-46.34 13.55l-25.12 50.24l44.65 32.64l55.13 13.78Zm48.59-38.36L209.37 72.1l-10.54 5.27l21.27 42.53Z"/>
-                        </svg>
-                        <div>
-                            <div class="font-bold text-xl">50+</div>
-                            <div class="text-sm">Co-operations</div>
+                        <div class="flex items-center gap-2 max-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 256 256">
+                                <path fill="currentColor"
+                                      d="M123.64 218.91A12 12 0 0 1 112 228a12.28 12.28 0 0 1-2.92-.36l-32-8a11.79 11.79 0 0 1-3.74-1.64l-24-16a12 12 0 0 1 13.32-20l22.27 14.85l30 7.5a12 12 0 0 1 8.71 14.56ZM255 122.75a19.88 19.88 0 0 1-10 11.56l-22.87 11.44l-53.58 54.73a12 12 0 0 1-11.4 3.16l-64-16a12.16 12.16 0 0 1-4.17-1.95L35 146.28l-23.94-12a20 20 0 0 1-9-26.83L27 57.79a20 20 0 0 1 26.83-8.94l20.59 10.31l50.21-14.68a12.07 12.07 0 0 1 6.74 0l50.21 14.68l20.63-10.32A20 20 0 0 1 229 57.79l24.85 49.69a19.86 19.86 0 0 1 1.15 15.27ZM200.3 134l-25-50h-26.44l-38.2 37.05c15.76 7.26 31.16.19 40.82-9.55a12 12 0 0 1 16-.91l31.26 25ZM25.37 114.63l10.53 5.27l21.27-42.53l-10.54-5.27ZM182 153l-21.7-17.43c-20.49 15.29-45.85 16.79-67 3.25a20 20 0 0 1-3.4-31l.12-.12l39.8-38.7l-1.82-.5l-46.34 13.55l-25.12 50.24l44.65 32.64l55.13 13.78Zm48.59-38.36L209.37 72.1l-10.54 5.27l21.27 42.53Z"/>
+                            </svg>
+                            <div>
+                                <div class="font-bold text-xl">50+</div>
+                                <div class="">Co-operations</div>
+                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
 
             <div class=" py-16">
-                <h2 class="text-3xl font-medium text-center">Why you should choose our service</h2>
-                <p class="text-center mt-8 w-full lg:w-3/5 mx-auto">The reason why you should choose us to be your
+                <h2 class="text-3xl font-bold text-center">{{ __('Why you should choose our service') }}</h2>
+                <p class="text-center mt-8 w-full container mx-auto">The reason why you should choose us to be your
                     transportation
                     partner</p>
 
-                <div class="w-full lg:w-3/4 grid grid-cols-2 mx-auto mt-16 gap-8">
+                <div class="w-full container max-w-4xl grid grid-cols-2 mx-auto mt-16 gap-8">
                     <div class="col-span-1 flex max-lg:gap-4 max-lg:flex-col items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
                             <path fill="currentColor"

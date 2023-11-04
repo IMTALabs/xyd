@@ -4,7 +4,7 @@
     <img src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-15.png') }}" class="w-full" alt="">
 
     <div class="py-16 text-primary bg-secondary px-4">
-        <ul class="w-full lg:w-3/4 mx-auto flex items-center whitespace-nowrap overflow-auto [&_svg]:shrink-0">
+        <ul class="w-full container mx-auto flex items-center whitespace-nowrap overflow-auto [&_svg]:shrink-0">
             <a href="{{ route('home') }}">{{ __("Home") }}</a>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                 <path fill="currentColor"
@@ -17,47 +17,77 @@
             </svg>
             <a href="#">{{ __('Air Freight') }}</a>
         </ul>
-        <h1 class="text-3xl mx-auto w-full lg:w-3/4 text-primary font-medium mt-16">{{ __('Advantages of Air transport') }}</h1>
+        <h1 class="text-3xl mx-auto w-full container text-primary font-medium mt-16">{{ __('Advantages of Air transport') }}</h1>
 
-        <div class="w-full lg:w-3/4 mx-auto mt-16 grid lg:grid-cols-3 gap-16">
-            <div class="border-primary border flex flex-col items-end rounded">
+        <div class="w-full container mx-auto mt-16 grid lg:grid-cols-3 gap-16">
+            <div class="flex flex-col items-end rounded border-2 border-primary">
                 <div
-                    class="text-center font-bold border-l-2 border-b-2 border-primary px-4 py-2">{{ __('President\'s Message') }}</div>
+                    class="relative rounded-bl-3xl border-b-2 border-l-2 py-2 pr-4 pl-14 text-center font-bold border-primary">
+                    <div class="w-12 h-2 bg-primary absolute bottom-full -left-0.5"
+                         style="clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);"></div>
+                    <div class="w-10 h-9 rounded-b-3xl bg-primary absolute top-0 left-0.5"></div>
+                    {{ __('President\'s Message') }}
+                </div>
                 <p class="p-8 text-center">
                     {{ __('Road-rail intermodal freight. Delivery from door to door, including all duties and other fees.') }}
                 </p>
             </div>
-            <div class="border-primary border flex flex-col items-end rounded">
+            <div class="flex flex-col items-end rounded border-2 border-primary">
                 <div
-                    class="text-center font-bold border-l-2 border-b-2 border-primary px-4 py-2">{{ __('President\'s Message') }}</div>
+                    class="relative rounded-bl-3xl border-b-2 border-l-2 py-2 pr-4 pl-14 text-center font-bold border-primary">
+                    <div class="w-12 h-2 bg-primary absolute bottom-full -left-0.5"
+                         style="clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);"></div>
+                    <div class="w-10 h-9 rounded-b-3xl bg-primary absolute top-0 left-0.5"></div>
+                    {{ __('President\'s Message') }}
+                </div>
                 <p class="p-8 text-center">
                     {{ __('Road-rail intermodal freight. Delivery from door to door, including all duties and other fees.') }}
                 </p>
             </div>
-            <div class="border-primary border flex flex-col items-end rounded">
+            <div class="flex flex-col items-end rounded border-2 border-primary">
                 <div
-                    class="text-center font-bold border-l-2 border-b-2 border-primary px-4 py-2">{{ __('President\'s Message') }}</div>
+                    class="relative rounded-bl-3xl border-b-2 border-l-2 py-2 pr-4 pl-14 text-center font-bold border-primary">
+                    <div class="w-12 h-2 bg-primary absolute bottom-full -left-0.5"
+                         style="clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);"></div>
+                    <div class="w-10 h-9 rounded-b-3xl bg-primary absolute top-0 left-0.5"></div>
+                    {{ __('President\'s Message') }}
+                </div>
                 <p class="p-8 text-center">
                     {{ __('Road-rail intermodal freight. Delivery from door to door, including all duties and other fees.') }}
                 </p>
             </div>
-            <div class="border-primary border flex flex-col items-end rounded">
+            <div class="flex flex-col items-end rounded border-2 border-primary">
                 <div
-                    class="text-center font-bold border-l-2 border-b-2 border-primary px-4 py-2">{{ __('President\'s Message') }}</div>
+                    class="relative rounded-bl-3xl border-b-2 border-l-2 py-2 pr-4 pl-14 text-center font-bold border-primary">
+                    <div class="w-12 h-2 bg-primary absolute bottom-full -left-0.5"
+                         style="clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);"></div>
+                    <div class="w-10 h-9 rounded-b-3xl bg-primary absolute top-0 left-0.5"></div>
+                    {{ __('President\'s Message') }}
+                </div>
                 <p class="p-8 text-center">
                     {{ __('Road-rail intermodal freight. Delivery from door to door, including all duties and other fees.') }}
                 </p>
             </div>
-            <div class="border-primary border flex flex-col items-end rounded">
+            <div class="flex flex-col items-end rounded border-2 border-primary">
                 <div
-                    class="text-center font-bold border-l-2 border-b-2 border-primary px-4 py-2">{{ __('President\'s Message') }}</div>
+                    class="relative rounded-bl-3xl border-b-2 border-l-2 py-2 pr-4 pl-14 text-center font-bold border-primary">
+                    <div class="w-12 h-2 bg-primary absolute bottom-full -left-0.5"
+                         style="clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);"></div>
+                    <div class="w-10 h-9 rounded-b-3xl bg-primary absolute top-0 left-0.5"></div>
+                    {{ __('President\'s Message') }}
+                </div>
                 <p class="p-8 text-center">
                     {{ __('Road-rail intermodal freight. Delivery from door to door, including all duties and other fees.') }}
                 </p>
             </div>
-            <div class="border-primary border flex flex-col items-end rounded">
+            <div class="flex flex-col items-end rounded border-2 border-primary">
                 <div
-                    class="text-center font-bold border-l-2 border-b-2 border-primary px-4 py-2">{{ __('President\'s Message') }}</div>
+                    class="relative rounded-bl-3xl border-b-2 border-l-2 py-2 pr-4 pl-14 text-center font-bold border-primary">
+                    <div class="w-12 h-2 bg-primary absolute bottom-full -left-0.5"
+                         style="clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);"></div>
+                    <div class="w-10 h-9 rounded-b-3xl bg-primary absolute top-0 left-0.5"></div>
+                    {{ __('President\'s Message') }}
+                </div>
                 <p class="p-8 text-center">
                     {{ __('Road-rail intermodal freight. Delivery from door to door, including all duties and other fees.') }}
                 </p>
@@ -67,50 +97,76 @@
 
     <div class="max-lg:px-4">
         <div class="py-16 text-primary">
-            <h1 class="text-3xl mx-auto w-full lg:w-3/4 text-primary font-medium">
+            <h1 class="text-3xl mx-auto w-full container text-primary font-medium">
                 {{ __('We carry these main activities in Air Freight') }}
             </h1>
 
-            <div class="w-full lg:w-3/4 mx-auto my-16 space-y-8">
-                <div class="w-full bg-primary text-secondary flex max-md:flex-col gap-4 items-center">
-                    <div class="text-4xl font-bold px-8 w-1/4 text-center max-md:hidden">1.</div>
+            <div class="w-full container mx-auto my-16 space-y-8">
+                <div class="w-full bg-primary text-secondary flex max-md:flex-col gap-4 items-center lg:h-24 relative z-40">
+                    <div class="text-4xl font-bold px-8 w-1/4 text-center max-md:hidden">
+                        <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 17l9 5l9-5v-3l-9 5l-9-5v-3l9 5l9-5V8l-9 5l-9-5l9-5l5.418 3.01"/></svg>
+                    </div>
+                    <div class="flex relative top-[22px] drop-shadow-2xl max-lg:hidden">
+                        <div class="w-20 h-24 bg-[#4e290c] skew-y-[30deg]"></div>
+                        <div class="w-20 h-24 bg-[#6a3c18] -skew-y-[30deg] flex items-center justify-center text-secondary text-4xl font-bold">1</div>
+                        <div class="bg-[#9a5c1f] absolute -top-[4.5rem] left-0 h-full w-full" style="clip-path: polygon(50% 6%, 100% 52%, 50% 100%, 0% 52%);"></div>
+                    </div>
+                    <div
+                        class="text-xlw-full md:w-1/4 max-md:pt-8 max-md:px-4 text-right">{{ __('America air freight') }}</div>
                     <div class="w-0.5 h-10 bg-secondary max-md:hidden"></div>
-                    <div class="font-bold w-full md:w-1/4 max-md:pt-8 max-md:px-4 text-center">{{ __('America air Freight') }}</div>
-                    <div class="w-0.5 h-10 bg-secondary max-md:hidden"></div>
-                    <div class="text-sm w-full md:w-1/2 p-4 flex items-center">
+                    <div class="text-sm w-full md:w-1/2 border-8 border-primary line-clamp-3">
                         {{ __('We have signed cooperation agreements with major international airlines to build a dedicated air freight service from LAX to ORD.') }}
                         {{ __('We also accept customized routes for large customers, with door-to-door') }}
                     </div>
                 </div>
 
-                <div class="w-full bg-primary text-secondary flex max-md:flex-col gap-4 items-center">
-                    <div class="text-4xl font-bold px-8 w-1/4 text-center max-md:hidden">2.</div>
+                <div class="w-full bg-primary text-secondary flex max-md:flex-col gap-4 items-center lg:h-24 relative z-30">
+                    <div class="text-4xl font-bold px-8 w-1/4 text-center max-md:hidden">
+                        <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h9.382a1 1 0 0 1 .894.553L14 5h6a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-6.382a1 1 0 0 1-.894-.553L12 16H5v6H3V3Z"/></svg>
+                    </div>
+                    <div class="flex relative top-[22px] drop-shadow-2xl max-lg:hidden">
+                        <div class="w-20 h-24 bg-[#4e290c] skew-y-[30deg]"></div>
+                        <div class="w-20 h-24 bg-[#6a3c18] -skew-y-[30deg] flex items-center justify-center text-secondary text-4xl font-bold">2</div>
+                        <div class="bg-[#9a5c1f] absolute -top-[4.5rem] left-0 h-full w-full" style="clip-path: polygon(50% 6%, 100% 52%, 50% 100%, 0% 52%);"></div>
+                    </div>
+                    <div
+                        class="text-xlw-full md:w-1/4 max-md:pt-8 max-md:px-4 text-right">{{ __('Korea and Hong Kong Package board agent') }}</div>
                     <div class="w-0.5 h-10 bg-secondary max-md:hidden"></div>
-                    <div class="font-bold w-full md:w-1/4 max-md:pt-8 max-md:px-4 text-center">{{ __('Korea and Hong Kong Package board agent') }}</div>
-                    <div class="w-0.5 h-10 bg-secondary max-md:hidden"></div>
-                    <div class="text-sm w-full md:w-1/2 p-4 flex items-center">
-                        {{ __('We also accept customized routes for large customers, with door-to-door') }}
-                        {{ __('We have signed cooperation agreements with major international airlines and are proud to be the charter agent for international air freight for EK, EY, TK, ET, KE, OZ, CI, and CX in Hong Kong and Korea.') }}
+                    <div class="text-sm w-full md:w-1/2 border-8 border-primary line-clamp-3">
+                        {{ __('We also accept customized routes for large customers, with door-to-door We have signed cooperation agreements with major international airlines and are proud to be the charter agent for international air freight for EK, EY, TK, ET, KE, OZ, CI, and CX in Hong Kong and Korea.') }}
                     </div>
                 </div>
 
-                <div class="w-full bg-primary text-secondary flex max-md:flex-col gap-4 items-center">
-                    <div class="text-4xl font-bold px-8 w-1/4 text-center max-md:hidden">3.</div>
+                <div class="w-full bg-primary text-secondary flex max-md:flex-col gap-4 items-center lg:h-24 relative z-20">
+                    <div class="text-4xl font-bold px-8 w-1/4 text-center max-md:hidden">
+                        <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path fill="currentColor" d="M11.5 1L2 6v2h19V6m-5 4v7h3v-7M2 22h19v-3H2m8-9v7h3v-7m-9 0v7h3v-7H4Z"/></svg>
+                    </div>
+                    <div class="flex relative top-[22px] drop-shadow-2xl max-lg:hidden">
+                        <div class="w-20 h-24 bg-[#4e290c] skew-y-[30deg]"></div>
+                        <div class="w-20 h-24 bg-[#6a3c18] -skew-y-[30deg] flex items-center justify-center text-secondary text-4xl font-bold">3</div>
+                        <div class="bg-[#9a5c1f] absolute -top-[4.5rem] left-0 h-full w-full" style="clip-path: polygon(50% 6%, 100% 52%, 50% 100%, 0% 52%);"></div>
+                    </div>
+                    <div
+                        class="text-xlw-full md:w-1/4 max-md:pt-8 max-md:px-4 text-right">{{ __('European and UK service') }}</div>
                     <div class="w-0.5 h-10 bg-secondary max-md:hidden"></div>
-                    <div class="font-bold w-full md:w-1/4 max-md:pt-8 max-md:px-4 text-center">{{ __('European and UK service') }}</div>
-                    <div class="w-0.5 h-10 bg-secondary max-md:hidden"></div>
-                    <div class="text-sm w-full md:w-1/2 p-4 flex items-center">
-                        {{ __('Customers can choose between two types of transactions: customs clearance and taxes included, or VAT tax.') }}
-                        {{ __('We offer various transportation options such as air freight and sea-rail') }}
+                    <div class="text-sm w-full md:w-1/2 border-8 border-primary line-clamp-3">
+                        {{ __('Customers can choose between two types of transactions: customs clearance and taxes included, or VAT tax. We offer various transportation options such as air freight and sea-rail.') }}
                     </div>
                 </div>
 
-                <div class="w-full bg-primary text-secondary flex max-md:flex-col gap-4 items-center">
-                    <div class="text-4xl font-bold px-8 w-1/4 text-center max-md:hidden">4.</div>
+                <div class="w-full bg-primary text-secondary flex max-md:flex-col gap-4 items-center lg:h-24 relative z-10">
+                    <div class="text-4xl font-bold px-8 w-1/4 text-center max-md:hidden">
+                        <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21V9l8-6l8 6v12h-6v-7h-4v7H4Z"/></svg>
+                    </div>
+                    <div class="flex relative top-[22px] drop-shadow-2xl max-lg:hidden">
+                        <div class="w-20 h-24 bg-[#4e290c] skew-y-[30deg]"></div>
+                        <div class="w-20 h-24 bg-[#6a3c18] -skew-y-[30deg] flex items-center justify-center text-secondary text-4xl font-bold">4</div>
+                        <div class="bg-[#9a5c1f] absolute -top-[4.5rem] left-0 h-full w-full" style="clip-path: polygon(50% 6%, 100% 52%, 50% 100%, 0% 52%);"></div>
+                    </div>
+                    <div
+                        class="text-xlw-full md:w-1/4 max-md:pt-8 max-md:px-4 text-right">{{ __('Vietnam-America air freight') }}</div>
                     <div class="w-0.5 h-10 bg-secondary max-md:hidden"></div>
-                    <div class="font-bold w-full md:w-1/4 max-md:pt-8 max-md:px-4 text-center">{{ __('Vietnam-America air freight') }}</div>
-                    <div class="w-0.5 h-10 bg-secondary max-md:hidden"></div>
-                    <div class="text-sm w-full md:w-1/2 p-4 flex items-center">
+                    <div class="text-sm w-full md:w-1/2 border-8 border-primary line-clamp-3">
                         {{ __('Air and ocean freight from Vietnam to America, covering DDP, the first leg, clearance, pick-up and delivery.') }}
                     </div>
                 </div>
@@ -118,8 +174,8 @@
         </div>
 
         <div class="py-16 bg-secondary text-primary px-4">
-            <h1 class="text-3xl mx-auto w-full lg:w-3/4 text-primary font-medium">{{ __('Service Guarantee') }}</h1>
-            <div class="w-full lg:w-3/5 mx-auto mt-16 grid lg:grid-cols-2 gap-x-16 gap-y-8">
+            <h1 class="text-3xl mx-auto w-full container text-primary font-medium">{{ __('Service Guarantee') }}</h1>
+            <div class="w-full container max-w-2xl mx-auto mt-16 grid lg:grid-cols-2 gap-x-16 gap-y-8">
                 <div class="flex items-center gap-8">
                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
                         <g fill="currentColor">
@@ -171,8 +227,8 @@
         </div>
 
         <div class="py-16 text-primary">
-            <h1 class="text-3xl mx-auto w-full lg:w-3/4 text-primary font-medium">{{ __('Maybe you will be interested') }}</h1>
-            <div class="w-full lg:w-3/5 mx-auto mt-16 flex max-lg:flex-col items-center gap-8">
+            <h1 class="text-3xl mx-auto w-full container text-primary font-medium">{{ __('Maybe you will be interested') }}</h1>
+            <div class="w-full container mx-auto mt-16 flex max-lg:flex-col items-center gap-8">
                 <div class="grow">
                     <img src="https://placehold.co/240x320" class="w-full object-cover" alt="">
                     <div class="bg-secondary p-4 relative">

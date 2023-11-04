@@ -5,7 +5,7 @@
 
     <div class="max-lg:px-4">
         <div class="py-16 text-primary">
-            <ul class="w-full lg:w-3/4 mx-auto flex items-center whitespace-nowrap overflow-auto [&_svg]:shrink-0">
+            <ul class="w-full container mx-auto flex items-center whitespace-nowrap overflow-auto [&_svg]:shrink-0">
                 <a href="{{ route('home') }}">{{ __("Home") }}</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                     <path fill="currentColor"
@@ -20,9 +20,9 @@
             </ul>
         </div>
 
-        <h1 class="text-3xl mx-auto w-full lg:w-3/4 text-primary font-medium">{{ __('Company News') }}</h1>
+        <h1 class="text-3xl mx-auto w-full container text-primary font-medium">{{ __('Company News') }}</h1>
 
-        <div class="w-full lg:w-3/5 mx-auto pb-16 mt-16 space-y-8">
+        <div class="w-full container mx-auto pb-16 mt-16 space-y-8">
             @foreach($posts as $post)
                 <div class="border-b border-primary flex max-lg:flex-col gap-8 pb-8">
                     <img src="{{ Storage::url($post->image) }}" class="w-full lg:w-1/2 object-cover" alt="">

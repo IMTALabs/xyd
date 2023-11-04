@@ -5,7 +5,7 @@
 
     <div class="max-lg:px-4">
         <div class="py-16 text-primary">
-            <ul class="w-full lg:w-3/4 mx-auto flex items-center">
+            <ul class="w-full container mx-auto flex items-center">
                 <a href="{{ route('home') }}">{{ __("Home") }}</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                     <path fill="currentColor"
@@ -17,7 +17,7 @@
 
         <h1 class="hidden">Careers</h1>
 
-        <div class="w-full lg:w-3/4 mx-auto flex max-lg:flex-col pb-16">
+        <div class="w-full container mx-auto flex max-lg:flex-col pb-16">
             <div class="w-full lg:w-2/3 lg:pr-4 space-y-8">
                 <div>
                     <img src="https://placehold.co/640x180" class="w-full" alt="">

@@ -3,8 +3,8 @@
 @section('content')
     <img src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-05.png') }}" class="w-full" alt="">
 
-    <div class="py-16 text-primary max-lg:px-4">
-        <ul class="mx-auto flex w-full lg:w-3/4 items-center whitespace-nowrap overflow-auto">
+    <div class="py-16 text-primary max-lg:px-4 container mx-auto">
+        <ul class="flex items-center whitespace-nowrap overflow-auto">
             <a href="{{ route('home') }}">{{ __("Home") }}</a>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="shrink-0">
                 <path fill="currentColor"
@@ -14,11 +14,11 @@
         </ul>
     </div>
 
-    <div class="mx-auto w-full lg:w-3/4 pb-16 text-primary max-lg:px-4">
+    <div class="mx-auto container pb-16 text-primary max-lg:px-4">
         <h2 class="text-3xl">{{ __('Current Business Status') }}</h2>
 
         <div class="mx-auto mt-16 flex max-lg:flex-col">
-            <div class="w-full lg:w-1/2 text-justify">
+            <div class="w-full lg:w-1/3 text-justify lg:pr-16 text-lg leading-8">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aut deleniti dolore impedit
                 incidunt ipsam laborum minima molestias obcaecati odio odit placeat, quis velit vero? Delectus ex modi
                 possimus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor ex expedita facilis
@@ -26,49 +26,122 @@
                 Consectetur numquam quis quod.
             </div>
 
-            <div class="w-full lg:w-1/2 lg:pl-16 flex flex-col gap-4 max-lg:mt-4">
-                <div>
-                    <div
-                        class="whitespace-nowrap rounded-r-full px-8 py-1 text-center text-3xl font-bold shadow-xl bg-primary text-secondary">
-                        600 million +
-                    </div>
-                    <div class="flex">
-                        <div class="inline-block w-4 overflow-hidden">
-                            <div class="h-16 origin-top-left -rotate-45 transform bg-orange-950"></div>
+            <div class="w-full lg:w-2/3 flex flex-col gap-4 max-lg:mt-8 relative">
+                <div
+                    class="w-1 h-full bg-secondary absolute top-0 bottom-0 left-1/2 -translate-x-1/2 z-[-1] max-md:hidden"></div>
+
+                <div class="flex gap-4 w-full md:w-1/2">
+                    <div class="grow">
+                        <div
+                            class="whitespace-nowrap rounded-r-full px-8 py-1 text-center text-3xl font-bold shadow-xl bg-primary text-secondary">
+                            600 million +
                         </div>
-                        <div class="bg-secondary w-[calc(100%-3rem)] shadow-2xl flex items-center justify-center rounded-b-2xl">
-                            Company annual revenue
+                        <div class="flex">
+                            <div class="inline-block w-4 overflow-hidden">
+                                <div class="h-16 origin-top-left -rotate-45 transform bg-orange-950"></div>
+                            </div>
+                            <div
+                                class="bg-secondary w-[calc(100%-3rem)] shadow-2xl flex items-center justify-center rounded-b-2xl px-2 text-center">
+                                Company annual revenue
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="max-md:hidden w-8 h-8 bg-primary rounded-full flex items-center justify-center mt-2 shrink-0 translate-x-4">
+                        <div class="w-6 h-6 bg-white rounded-full"></div>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 w-full md:w-1/2 ml-auto">
+                    <div
+                        class="max-md:hidden w-8 h-8 bg-primary rounded-full flex items-center justify-center mt-2 shrink-0 -translate-x-4">
+                        <div class="w-6 h-6 bg-white rounded-full"></div>
+                    </div>
+
+                    <div class="grow">
+                        <div
+                            class="whitespace-nowrap rounded-l-full px-8 py-1 text-center text-3xl font-bold shadow-xl bg-primary text-secondary">
+                            600 million +
+                        </div>
+                        <div class="flex justify-end">
+                            <div
+                                class="bg-secondary w-[calc(100%-3rem)] shadow-2xl flex items-center justify-center rounded-b-2xl px-2 text-center">
+                                Company annual revenue
+                            </div>
+                            <div class="inline-block w-4 overflow-hidden">
+                                <div class="h-16 origin-top-right rotate-45 transform bg-orange-950"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div>
-                    <div
-                        class="whitespace-nowrap rounded-r-full px-8 py-1 text-center text-3xl font-bold shadow-xl bg-primary text-secondary">
-                        600 million +
-                    </div>
-                    <div class="flex">
-                        <div class="inline-block w-4 overflow-hidden">
-                            <div class="h-16 origin-top-left -rotate-45 transform bg-orange-950"></div>
+                <div class="flex gap-4 w-full md:w-1/2">
+                    <div class="grow">
+                        <div
+                            class="whitespace-nowrap rounded-r-full px-8 py-1 text-center text-3xl font-bold shadow-xl bg-primary text-secondary">
+                            600 million +
                         </div>
-                        <div class="bg-secondary w-[calc(100%-3rem)] shadow-2xl flex items-center justify-center rounded-b-2xl">
-                            Company annual revenue
+                        <div class="flex">
+                            <div class="inline-block w-4 overflow-hidden">
+                                <div class="h-16 origin-top-left -rotate-45 transform bg-orange-950"></div>
+                            </div>
+                            <div
+                                class="bg-secondary w-[calc(100%-3rem)] shadow-2xl flex items-center justify-center rounded-b-2xl px-2 text-center">
+                                Company annual revenue
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="max-md:hidden w-8 h-8 bg-primary rounded-full flex items-center justify-center mt-2 shrink-0 translate-x-4">
+                        <div class="w-6 h-6 bg-white rounded-full"></div>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 w-full md:w-1/2 ml-auto">
+                    <div
+                        class="max-md:hidden w-8 h-8 bg-primary rounded-full flex items-center justify-center mt-2 shrink-0 -translate-x-4">
+                        <div class="w-6 h-6 bg-white rounded-full"></div>
+                    </div>
+
+                    <div class="grow">
+                        <div
+                            class="whitespace-nowrap rounded-l-full px-8 py-1 text-center text-3xl font-bold shadow-xl bg-primary text-secondary">
+                            600 million +
+                        </div>
+                        <div class="flex justify-end">
+                            <div
+                                class="bg-secondary w-[calc(100%-3rem)] shadow-2xl flex items-center justify-center rounded-b-2xl px-2 text-center">
+                                Company annual revenue
+                            </div>
+                            <div class="inline-block w-4 overflow-hidden">
+                                <div class="h-16 origin-top-right rotate-45 transform bg-orange-950"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div>
-                    <div
-                        class="whitespace-nowrap rounded-r-full px-8 py-1 text-center text-3xl font-bold shadow-xl bg-primary text-secondary">
-                        600 million +
+                <div class="flex gap-4 w-full md:w-1/2">
+                    <div class="grow">
+                        <div
+                            class="whitespace-nowrap rounded-r-full px-8 py-1 text-center text-3xl font-bold shadow-xl bg-primary text-secondary">
+                            600 million +
+                        </div>
+                        <div class="flex">
+                            <div class="inline-block w-4 overflow-hidden">
+                                <div class="h-16 origin-top-left -rotate-45 transform bg-orange-950"></div>
+                            </div>
+                            <div
+                                class="bg-secondary w-[calc(100%-3rem)] shadow-2xl flex items-center justify-center rounded-b-2xl px-2 text-center">
+                                Company annual revenue
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex">
-                        <div class="inline-block w-4 overflow-hidden">
-                            <div class="h-16 origin-top-left -rotate-45 transform bg-orange-950"></div>
-                        </div>
-                        <div class="bg-secondary w-[calc(100%-3rem)] shadow-2xl flex items-center justify-center rounded-b-2xl">
-                            Company annual revenue
-                        </div>
+
+                    <div
+                        class="max-md:hidden w-8 h-8 bg-primary rounded-full flex items-center justify-center mt-2 shrink-0 translate-x-4">
+                        <div class="w-6 h-6 bg-white rounded-full"></div>
                     </div>
                 </div>
             </div>
@@ -76,24 +149,49 @@
     </div>
 
     <div class="pt-16 bg-secondary px-4">
-        <div class="mx-auto w-full lg:w-3/4 pb-16 text-primary">
+        <div class="mx-auto container pb-16 text-primary">
             <h2 class="text-3xl">{{ __('Long-term Vision') }}</h2>
 
-            <div class="mx-auto mt-16 w-full lg:w-3/5">
-                <h3 class="text-center text-3xl">Lorem ipsum</h3>
-                <h4 class="mt-4 text-center text-xl">Lorem ipsum Lorem ipsum</h4>
-                <p class="mt-8 text-justify text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
-                    excepturi harum inventore iusto nam
-                    nostrum quae quisquam reiciendis sapiente, sed sit soluta veniam voluptate. Beatae commodi eius
-                    explicabo magnam nam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda
-                    esse facere ipsum laborum, nesciunt non placeat tempora. Nostrum perferendis ratione tenetur. Culpa
-                    ex hic iusto minus quo rem veniam?</p>
-                <p class="mt-4 text-justify text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
-                    excepturi harum inventore iusto nam
-                    nostrum quae quisquam reiciendis sapiente, sed sit soluta veniam voluptate. Beatae commodi eius
-                    explicabo magnam nam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda
-                    esse facere ipsum laborum, nesciunt non placeat tempora. Nostrum perferendis ratione tenetur. Culpa
-                    ex hic iusto minus quo rem veniam?</p>
+            <div class="mx-auto mt-16 w-full">
+                <h3 class="text-center text-3xl">{{ __('What kind of business do we need to become') }}</h3>
+                <h4 class="mt-4 text-center text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                <div class="grid grid-cols-3 gap-8 mt-16">
+                    <div class="col-span-full lg:col-span-1 border border-primary p-4 pt-8 relative">
+                        <div class="px-4 py-1 bg-primary absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 text-secondary">
+                            Lorem ipsum dolor
+                        </div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores autem consequuntur
+                        deleniti eos expedita explicabo illo illum impedit magnam numquam odit officia reiciendis,
+                        saepe, sed sint unde ut vero!
+                    </div>
+
+                    <div class="col-span-full lg:col-span-1 border border-primary p-4 pt-8 relative">
+                        <div class="px-4 py-1 bg-primary absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 text-secondary">
+                            Lorem ipsum dolor
+                        </div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores autem consequuntur
+                        deleniti eos expedita explicabo illo illum impedit magnam numquam odit officia reiciendis,
+                        saepe, sed sint unde ut vero!
+                    </div>
+
+                    <div class="col-span-full lg:col-span-1 border border-primary p-4 pt-8 relative">
+                        <div class="px-4 py-1 bg-primary absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 text-secondary">
+                            Lorem ipsum dolor
+                        </div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores autem consequuntur
+                        deleniti eos expedita explicabo illo illum impedit magnam numquam odit officia reiciendis,
+                        saepe, sed sint unde ut vero!
+                    </div>
+
+                    <div class="col-span-full border border-primary p-4 pt-8 relative">
+                        <div class="px-4 py-1 bg-primary absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 text-secondary">
+                            Lorem ipsum dolor
+                        </div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores autem consequuntur
+                        deleniti eos expedita explicabo illo illum impedit magnam numquam odit officia reiciendis,
+                        saepe, sed sint unde ut vero!
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -4,7 +4,7 @@
     <img src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-06.png') }}" class="w-full" alt="">
 
     <div class="py-16 text-primary">
-        <ul class="w-full lg:w-3/4 mx-auto flex items-center max-lg:px-4">
+        <ul class="w-full container mx-auto flex items-center max-lg:px-4">
             <a href="{{ route('home') }}">{{ __("Home") }}</a>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                 <path fill="currentColor"
@@ -14,8 +14,8 @@
         </ul>
     </div>
 
-    <h1 class="text-3xl mx-auto w-full lg:w-3/4 text-primary font-medium max-lg:px-4 truncate">Bring the best quality ...</h1>
-    <div class="mx-auto w-full lg:w-3/5 text-justify text-primary pb-16 mt-12 max-lg:px-4">
+    <h1 class="text-3xl mx-auto w-full container text-primary font-medium max-lg:px-4 truncate">Bring the best quality ...</h1>
+    <div class="mx-auto w-full container text-justify text-primary pb-16 mt-12 max-lg:px-4">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deserunt doloribus facilis modi ratione
         sapiente voluptate. Eaque, eos porro? Amet dolor dolore explicabo quibusdam quos reiciendis vel voluptates?
         Doloremque, provident? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at blanditiis cum ex
@@ -23,8 +23,8 @@
         reiciendis rem voluptas!
     </div>
 
-    <h2 class="text-3xl mx-auto w-full lg:w-3/4 text-primary max-lg:px-4">We have prove of our success</h2>
-    <div class="flex max-lg:flex-col-reverse w-full lg:w-3/4 mx-auto max-lg:px-4">
+    <h2 class="text-3xl mx-auto w-full container text-primary max-lg:px-4">We have prove of our success</h2>
+    <div class="flex max-lg:flex-col-reverse w-full container mx-auto max-lg:px-4">
         <div class="mb-4 border-l-2 py-8 border-primary text-primary w-full lg:w-2/3 mt-4 shrink-0">
             <div class="flex items-center gap-4 text-xl font-medium">
                 <div class="w-5 h-5 bg-primary rounded-full -translate-x-2.5 shrink-0"></div>

@@ -5,7 +5,7 @@
 
     <div class="max-lg:px-4">
         <div class="py-16 text-primary">
-            <ul class="w-full lg:w-3/4 mx-auto flex items-center">
+            <ul class="w-full container mx-auto flex items-center">
                 <a href="{{ route('home') }}">{{ __("Home") }}</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                     <path fill="currentColor"
@@ -20,9 +20,9 @@
             </ul>
         </div>
 
-        <h1 class="text-3xl mx-auto w-full lg:w-3/4 text-primary font-medium">{{ __('Frequently Asked Question') }}</h1>
+        <h1 class="text-3xl mx-auto w-full container text-primary font-medium">{{ __('Frequently Asked Question') }}</h1>
 
-        <div class="mt-8 w-full lg:w-3/4 mx-auto pb-16 space-y-8">
+        <div class="mt-8 w-full container mx-auto pb-16 space-y-8">
             <div x-data="{
                 collapse: true,
                 toggle() {

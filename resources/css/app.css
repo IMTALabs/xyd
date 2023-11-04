@@ -1,9 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('/fonts/Bahnschrift/BAHNSCHRIFT.TTF')
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+.world-map::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url('/images/pngwing.com.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    transform: translate(-50%, -50%);
 }
