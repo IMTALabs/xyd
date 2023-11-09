@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body data-instant-allow-query-string>
-    <header class="relative flex items-center justify-between p-2 bg-primary lg:px-8" x-data="{
+    <header
+        class="fixed top-0 right-0 left-0 w-full z-[1000] shadow-xl flex items-center justify-between p-2 bg-primary lg:px-8"
+        x-data="{
         current: null,
         mobileMenu: false,
         showLang: false,
@@ -81,7 +83,7 @@
                     <div
                         class="absolute top-5 left-0 flex shadow-xl text-primary w-[120%] border-t-[1rem] border-primary peer"
                         x-transition
-                        x-show="current === 'about'">
+                        style="display: none;" x-show="current === 'about'">
                         <div
                             class="bg-[#f6f0b4] font-semibold text-xl flex items-center px-8">{{ __('About us') }}</div>
                         <div class="grid grow grid-cols-2 gap-y-4 bg-white px-8 py-4 text-sm">
@@ -100,7 +102,8 @@
                             <div class="col-span-1"><a href="{{ route('careers') }}">{{ __('Careers') }}</a></div>
                         </div>
                     </div>
-                    <a class="flex items-center font-semibold text-white hover:text-black peer-hover:text-black" href="#">{{ __('About us') }}
+                    <a class="flex items-center font-semibold text-white hover:text-black peer-hover:text-black"
+                       href="#">{{ __('About us') }}
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                              class="transition-all" :class="{'!rotate-x-180': current === 'about'}">
                             <path fill="currentColor" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6l1.41-1.42Z"/>
@@ -110,7 +113,7 @@
                 <li @mouseenter="toggle('services')" @mouseleave="toggle('services')">
                     <div
                         class="absolute top-5 left-0 flex shadow-xl text-primary w-[120%] border-t-[1rem] border-primary peer"
-                        x-transition x-show="current === 'services'">
+                        x-transition style="display: none;" x-show="current === 'services'">
                         <div
                             class="bg-[#f6f0b4] font-semibold text-xl flex items-center px-8">{{ __('Our service') }}</div>
                         <div class="grid grow grid-cols-2 gap-y-4 bg-white px-8 py-4 text-sm">
@@ -118,19 +121,20 @@
                                     href="{{ route('main-business-summary') }}">{{ __('Main Business Summary') }}</a>
                             </div>
                             <div class="col-span-1"><a
-                                    href="{{ route('consulting-and-quotation') }}">{{ __('Consulting and quotation') }}</a>
+                                    href="{{ route('consulting-and-quotation') }}">{{ __('Consulting And Quotation') }}</a>
                             </div>
                             <div class="col-span-1"><a
                                     href="{{ route('supply-chain-solution') }}">{{ __('Supply Chain Solution') }}</a>
                             </div>
                             <div class="col-span-1"><a
-                                    href="{{ route('service-usage-process') }}">{{ __('Service usage process') }}</a>
+                                    href="{{ route('service-usage-process') }}">{{ __('Service Usage Process') }}</a>
                             </div>
                             <div class="col-span-1"><a
                                     href="{{ route('a-to-z') }}">{{ __('A to Z Transportation Service') }}</a></div>
                         </div>
                     </div>
-                    <a class="flex items-center font-semibold text-white hover:text-black peer-hover:text-black" href="#">{{ __('Our service') }}
+                    <a class="flex items-center font-semibold text-white hover:text-black peer-hover:text-black"
+                       href="#">{{ __('Our service') }}
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                              class="transition-all" :class="{'!rotate-x-180': current === 'services'}">
                             <path fill="currentColor" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6l1.41-1.42Z"/>
@@ -141,7 +145,7 @@
                     <div
                         class="absolute top-5 left-0 flex shadow-xl text-primary w-[120%] border-t-[1rem] border-primary peer"
                         x-transition
-                        x-show="current === 'channels'">
+                        style="display: none;" x-show="current === 'channels'">
                         <div
                             class="bg-[#f6f0b4] font-semibold text-xl flex items-center px-8">{{ __('Main channels') }}</div>
                         <div class="grid grow grid-cols-2 gap-y-4 bg-white px-8 py-4 text-sm">
@@ -156,7 +160,8 @@
                             </div>
                         </div>
                     </div>
-                    <a class="flex items-center font-semibold text-white hover:text-black peer-hover:text-black" href="#">{{ __('Main channels') }}
+                    <a class="flex items-center font-semibold text-white hover:text-black peer-hover:text-black"
+                       href="#">{{ __('Main channels') }}
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                              class="transition-all" :class="{'!rotate-x-180': current === 'channels'}">
                             <path fill="currentColor" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6l1.41-1.42Z"/>
@@ -167,7 +172,7 @@
                     <div
                         class="absolute top-5 left-0 flex shadow-xl text-primary w-[120%] border-t-[1rem] border-primary peer"
                         x-transition
-                        x-show="current === 'help'">
+                        style="display: none;" x-show="current === 'help'">
                         <div
                             class="bg-[#f6f0b4] font-semibold text-xl flex items-center px-8">{{ __('Help center') }}</div>
                         <div class="grid grow grid-cols-2 gap-y-4 bg-white px-8 py-4 text-sm">
@@ -177,7 +182,8 @@
                             <div class="col-span-1"><a href="{{ route('faq') }}">{{ __('FAQ') }}</a></div>
                         </div>
                     </div>
-                    <a class="flex items-center font-semibold text-white hover:text-black peer-hover:text-black" href="#">{{ __('Help center') }}
+                    <a class="flex items-center font-semibold text-white hover:text-black peer-hover:text-black"
+                       href="#">{{ __('Help center') }}
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                              class="transition-all" :class="{'!rotate-x-180': current === 'help'}">
                             <path fill="currentColor" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6l1.41-1.42Z"/>
@@ -188,7 +194,7 @@
                     <div
                         class="absolute top-5 left-0 flex shadow-xl text-primary w-[120%] border-t-[1rem] border-primary peer"
                         x-transition
-                        x-show="current === 'news'">
+                        style="display: none;" x-show="current === 'news'">
                         <div
                             class="bg-[#f6f0b4] font-semibold text-xl flex items-center px-8">{{ __('Insight & News') }}</div>
                         <div class="grid grow grid-cols-2 gap-y-4 bg-white px-8 py-4 text-sm">
@@ -197,7 +203,8 @@
                             <div class="col-span-1"><a href="{{ route('resources') }}">{{ __('Resources') }}</a></div>
                         </div>
                     </div>
-                    <a class="flex items-center font-semibold text-white hover:text-black peer-hover:text-black" href="#">{{ __('Insight & News') }}
+                    <a class="flex items-center font-semibold text-white hover:text-black peer-hover:text-black"
+                       href="#">{{ __('Insight & News') }}
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                              class="transition-all" :class="{'!rotate-x-180': current === 'news'}">
                             <path fill="currentColor" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6l1.41-1.42Z"/>
@@ -221,7 +228,7 @@
                             English
                     @endswitch
                 </span>
-                <ul x-show="showLang"
+                <ul x-show="showLang" style="display: none;"
                     class="absolute top-full max-lg:right-0 lg:left-1/2 w-max lg:-translate-x-1/2 p-4 shadow bg-secondary text-primary space-y-2">
                     <li><a href="{{ route('change-language', ['language' => 'en']) }}">English</a></li>
                     <li><a href="{{ route('change-language', ['language' => 'vi']) }}">Tiếng Việt</a></li>
@@ -281,7 +288,7 @@
         <div class="col-span-full px-2 text-secondary lg:col-span-1">
             <h3 class="text-2xl font-semibold">{{ __('Connect with us') }}</h3>
             <div class="mt-3 flex gap-4">
-                <a class="h-8 w-8" href="https://www.facebook.com" target="_blank">
+                <a class="h-8 w-8" href="https://m.facebook.com/XYD.express.VN/?locale=hi_IN" target="_blank">
                     <img class="w-full rounded-md" width="32" height="32"
                          src="https://cdn.iconscout.com/icon/free/png-512/free-facebook-262-721949.png?f=webp&w=256"
                          alt="facebook"/>
@@ -291,7 +298,9 @@
                          src="https://cdn.iconscout.com/icon/free/png-512/free-tiktok-8289869-7136524.png?f=webp&w=256"
                          alt="tiktok"/>
                 </a>
-                <a class="h-8 w-8" href="https://www.linkedin.com" target="_blank">
+                <a class="h-8 w-8"
+                   href="https://www.linkedin.com/company/xyd-international-logistic-company?trk=public_post_feed-actor-name"
+                   target="_blank">
                     <img class="w-full rounded-md" width="32" height="32"
                          src="https://cdn.iconscout.com/icon/premium/png-512-thumb/linkedin-2752135-2284952.png?f=webp&w=256"
                          alt="linkedin"/>
@@ -310,5 +319,10 @@
 
     <script src="//instant.page/5.2.0" type="module"
             integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+    <script>
+        const currentUrl = window.location.href;
+        const aTagContainCurrentUrl = document.querySelector(`header ul a[href="${ currentUrl }"]`);
+        aTagContainCurrentUrl?.parentElement?.parentElement?.parentElement?.nextElementSibling?.classList.add('text-black');
+    </script>
 </body>
 </html>

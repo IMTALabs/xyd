@@ -12,17 +12,17 @@ body {
 }
 
 .world-map::before {
-    content: ' ';
+    content: " ";
     display: block;
     position: absolute;
     left: 50%;
     top: 50%;
     width: 100%;
     height: 100%;
-    opacity: 0.1;
+    opacity: 0.2;
     background-image: url('/images/pngwing.com.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 80%;
     transform: translate(-50%, -50%);
 }

@@ -23,12 +23,12 @@
         <h1 class="text-3xl mx-auto w-full container text-primary font-medium">{{ __('Warehouse & Value Added Service') }}</h1>
 
         <div class="flex max-lg:flex-col items-center w-full container mx-auto text-primary py-16">
-            <div class="w-full container lg:pr-16 relative aspect-video bg-contain"
+            <div class="w-full lg:w-1/3 container lg:pr-16 relative aspect-video bg-contain"
                  style="background-image: url('{{ asset('images/covers/Ảnh trang chủ web (trang con)-16.png') }}')">
                 <div style="background-image: url('{{ asset('images/covers/Ảnh trang chủ web (trang con)-16.png') }}')"
                      class="border-[1rem] border-white w-2/5 aspect-video absolute -right-8 -bottom-8 max-lg:hidden bg-contain"></div>
             </div>
-            <div class="w-full container lg:pl-16 max-lg:mt-8">
+            <div class="w-full lg:w-2/3 container lg:pl-16 max-lg:mt-8">
                 <h2 class="text-3xl font-bold">{{ __('Domestic warehouse') }}</h2>
                 <p class="text-justify mt-8 text-xl">{{ __('Modern systems help businesses save time warehousing and preserving goods and promote rapid business growth.') }}</p>
                 <p class="mt-4 text-xl">
@@ -41,7 +41,7 @@
         </div>
 
         <div class="flex max-lg:flex-col items-center w-full container mx-auto text-primary py-16">
-            <div class="w-full container lg:pr-16">
+            <div class="w-full lg:w-2/3 container lg:pr-16">
                 <h2 class="text-3xl font-bold">{{ __('Overseas warehous') }}e</h2>
                 <p class="mt-8 text-xl">
                     <b>{{ __('Warehouse area') }}</b>: 30,000 {{ __('square feet') }}.<br>
@@ -50,7 +50,7 @@
                     40 {{ __('bills of lading/day') }}.
                 </p>
             </div>
-            <div class="w-full container lg:pl-16 grid gap-4 grid-cols-2 grid-rows-2 aspect-video mt-8">
+            <div class="w-full lg:w-1/3 container lg:pl-16 grid gap-4 grid-cols-2 grid-rows-2 aspect-video mt-8">
                 <div style="background-image: url('{{ asset('images/covers/Ảnh trang chủ web (trang con)-16.png') }}')"
                      class="col-span-1 bg-cover"></div>
                 <div style="background-image: url('{{ asset('images/covers/Ảnh trang chủ web (trang con)-16.png') }}')"

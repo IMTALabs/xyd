@@ -28,19 +28,19 @@
             <div class="w-full lg:max-w-2xl mx-auto pb-16 mt-16 grid grid-cols-2 gap-16 text-primary">
                 <div class="col-span-1 flex flex-col items-center max cursor-pointer" @click="tab = 1">
                     <img src="{{ asset('images/icons/Icon/Web icon-07.png') }}" class="w-20 h-20" alt="">
-                    <h2 class="mt-8 text-xl text-center lg:text-3xl font-bold">{{ __('Security Compliance') }}</h2>
+                    <h2 class="mt-8 text-3xl text-center lg:text-3xl font-bold">{{ __('Security Compliance') }}</h2>
                 </div>
                 <div class="col-span-1 flex flex-col items-center max cursor-pointer" @click="tab = 2">
                     <img src="{{ asset('images/icons/Icon/Web icon-08.png') }}" class="w-20 h-20" alt="">
-                    <h2 class="mt-8 text-xl text-center lg:text-3xl font-bold">{{ __('Account Services') }}</h2>
+                    <h2 class="mt-8 text-3xl text-center lg:text-3xl font-bold">{{ __('Account Services') }}</h2>
                 </div>
                 <div class="col-span-1 flex flex-col items-center max cursor-pointer" @click="tab = 3">
                     <img src="{{ asset('images/icons/Icon/Web icon-10.png') }}" class="w-20 h-20" alt="">
-                    <h2 class="mt-8 text-xl text-center lg:text-3xl font-bold">{{ __('Beginner\'s Guide') }}</h2>
+                    <h2 class="mt-8 text-3xl text-center lg:text-3xl font-bold">{{ __('Beginner\'s Guide') }}</h2>
                 </div>
                 <div class="col-span-1 flex flex-col items-center max cursor-pointer" @click="tab = 4">
                     <img src="{{ asset('images/icons/Icon/Web icon-09.png') }}" class="w-20 h-20" alt="">
-                    <h2 class="mt-8 text-xl text-center lg:text-3xl font-bold">{{ __('Platform Collection') }}</h2>
+                    <h2 class="mt-8 text-3xl text-center lg:text-3xl font-bold">{{ __('Platform Collection') }}</h2>
                 </div>
             </div>
             <div class="

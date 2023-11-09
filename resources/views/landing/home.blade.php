@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="flex items-end justify-center bg-cover bg-center aspect-[10/4] bg-secondary"
-         style="background-image: url('{{ asset('images/covers/home page.png') }}')">
+         style="background-image: url('https://res.cloudinary.com/dyxp9ndma/image/upload/f_auto,q_auto/uoyxzczanz4617ouqaix')">
         <div class="container mb-1 w-full py-2 text-center font-bold uppercase bg-primary text-secondary">
             {{ __('Here is quick access to') }}
         </div>
@@ -48,7 +48,7 @@
             <p class="mt-6 text-lg">
                 {{ __('Our objective is to constantly develop our services in order to deliver effective logistical solutions while providing the most value to our customers. Our distinct value rests in the following services:') }}
             </p>
-            <div class="mt-16 flex flex-col justify-center gap-16 lg:flex-row">
+            <div class="mt-16 flex flex-col justify-center gap-16 lg:flex-row" x-show="tab === null">
                 <div class="flex flex-col items-center gap-4 font-bold" @mouseenter="tab = 1">
                     <img src="{{ asset('images/icons/Icon/Web icon-04.png') }}" class="h-24 w-24" alt="icon">
                     {{ __('Supply Chain Solutions') }}
@@ -66,34 +66,58 @@
             </div>
 
             <div x-show="tab !== null" style="display: none" class="pt-8" @mouseleave="tab = null">
-                <div class="mx-auto max-w-2xl" x-show="tab === 1">
-                    1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolor est expedita incidunt ipsam magnam
-                    nihil odio officia optio placeat, provident qui soluta? Adipisci, dignissimos inventore magni minima
-                    provident sed.
-                    <a href="{{ route('supply-chain-solution') }}"
-                       class="mt-4 block w-fit px-4 py-2 bg-primary text-secondary">
-                        {{ __('Read more') }}
-                    </a>
+                <div class="mx-auto max-w-2xl min-h-[10rem]" x-show="tab === 1">
+                    <div class="flex max-lg:flex-col items-center gap-4">
+                        <div class="flex flex-col items-center gap-4 font-bold shrink-0">
+                            <img src="{{ asset('images/icons/Icon/Web icon-04.png') }}" class="h-24 w-24" alt="icon">
+                            {{ __('Supply Chain Solutions') }}
+                        </div>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur atque autem
+                            cumque dolorem eius eligendi exercitationem, iusto magnam molestiae natus officia pariatur
+                            possimus quidem reiciendis repudiandae totam ullam voluptates.
+                            <a href="{{ route('supply-chain-solution') }}"
+                               class="mt-1 ml-auto block w-fit px-4 py-2 bg-primary text-secondary">
+                                {{ __('Read more') }}
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="mx-auto max-w-2xl" x-show="tab === 2">
-                    2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolor est expedita incidunt ipsam magnam
-                    nihil odio officia optio placeat, provident qui soluta? Adipisci, dignissimos inventore magni minima
-                    provident sed.
-                    <a href="{{ route('a-to-z') }}"
-                       class="mt-4 block w-fit px-4 py-2 bg-primary text-secondary">
-                        {{ __('Read more') }}
-                    </a>
+                <div class="mx-auto max-w-2xl min-h-[10rem]" x-show="tab === 2">
+                    <div class="flex max-lg:flex-col items-center gap-4">
+                        <div class="flex flex-col items-center gap-4 font-bold shrink-0">
+                            <img src="{{ asset('images/icons/Icon/Web icon-05.png') }}" class="h-24 w-24" alt="icon">
+                            {{ __('A to Z Transportation Service') }}
+                        </div>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto assumenda
+                            corporis dolores exercitationem quaerat rerum voluptas voluptatem? Architecto aspernatur
+                            cupiditate iste iure molestiae, molestias perferendis quibusdam similique unde veniam.
+                            <a href="{{ route('a-to-z') }}"
+                               class="mt-1 ml-auto block w-fit px-4 py-2 bg-primary text-secondary">
+                                {{ __('Read more') }}
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="mx-auto max-w-2xl" x-show="tab === 3">
-                    3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolor est expedita incidunt ipsam magnam
-                    nihil odio officia optio placeat, provident qui soluta? Adipisci, dignissimos inventore magni minima
-                    provident sed.
-                    <a href="{{ route('consulting-and-quotation') }}"
-                       class="mt-4 block w-fit px-4 py-2 bg-primary text-secondary">
-                        {{ __('Read more') }}
-                    </a>
+                <div class="mx-auto max-w-2xl min-h-[10rem]" x-show="tab === 3">
+                    <div class="flex max-lg:flex-col items-center gap-4">
+                        <div class="flex flex-col items-center gap-4 font-bold shrink-0">
+                            <img src="{{ asset('images/icons/Icon/Web icon-06.png') }}" class="h-24 w-24" alt="icon">
+                            {{ __('Consulting and Quotation') }}
+                        </div>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore dolores eaque
+                            eveniet fugit harum illum in, maxime nam neque nulla officia possimus praesentium
+                            repellendus reprehenderit soluta tempore totam vel?
+                            <a href="{{ route('consulting-and-quotation') }}"
+                               class="mt-1 ml-auto block w-fit px-4 py-2 bg-primary text-secondary">
+                                {{ __('Read more') }}
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -102,7 +126,7 @@
     <div class="pt-28 bg-primary">
         <div class="mt-8 h-0.5 bg-secondary"></div>
         <div class="container mx-auto w-full -translate-y-5 px-4 text-secondary bg-primary">
-            <h2 class="w-fit text-3xl font-semibold">Our main channels</h2>
+            <h2 class="w-fit text-3xl font-semibold">{{ __('Our main channels') }}</h2>
             <div class="mt-16 flex flex-col justify-center gap-20 pb-16 lg:flex-row">
                 <div class="flex flex-col items-center">
                     <img class="h-40 w-40" src="{{ asset('images/icons/Icon-light/web icon (beige)-01.png') }}" alt="">
@@ -136,10 +160,64 @@
                 <div
                     class="h-40 text-primary border-l-2 border-primary pl-4 before:content-[''] before:w-2 before:h-2 before:bg-primary before:rounded-full before:block before:-translate-x-[21px] after:content-[''] after:w-2 after:h-2 after:bg-primary after:rounded-full after:block after:-translate-x-[21px]">
                     <span class="text-3xl font-bold">Step 1</span>
+                    <p class="mt-4 text-justify line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ab </p>
+                </div>
+                <div
+                    class="w-fit px-4 py-1 text-3xl font-bold text-secondary bg-primary relative after:content-[''] after:absolute after:left-full after:top-0 after:border-solid after:border-[22.5px] after:border-r-0 after:border-l-primary after:border-y-transparent">
+                    2009
+                </div>
+                <div class="h-40"></div>
+            </div>
+
+            <div class="flex flex-col gap-8">
+                <div class="h-40"></div>
+                <div
+                    class="w-fit px-4 py-1 text-3xl font-bold text-secondary bg-primary relative after:content-[''] after:absolute after:left-full after:top-0 after:border-solid after:border-[22.5px] after:border-r-0 after:border-l-primary after:border-y-transparent">
+                    2009
+                </div>
+                <div
+                    class="h-40 text-primary border-l-2 border-primary pl-4 before:content-[''] before:w-2 before:h-2 before:bg-primary before:rounded-full before:block before:-translate-x-[21px] after:content-[''] after:w-2 after:h-2 after:bg-primary after:rounded-full after:block after:-translate-x-[21px]">
+                    <span class="text-3xl font-bold">Step 1</span>
+                    <p class="mt-4 text-justify line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusamus delectus</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-8">
+                <div
+                    class="h-40 text-primary border-l-2 border-primary pl-4 before:content-[''] before:w-2 before:h-2 before:bg-primary before:rounded-full before:block before:-translate-x-[21px] after:content-[''] after:w-2 after:h-2 after:bg-primary after:rounded-full after:block after:-translate-x-[21px]">
+                    <span class="text-3xl font-bold">Step 1</span>
                     <p class="mt-4 text-justify line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ad, at
-                        deserunt dignissimos eaque facilis
-                        illo inventore ipsum libero magnam mollitia</p>
+                        elit. </p>
+                </div>
+                <div
+                    class="w-fit px-4 py-1 text-3xl font-bold text-secondary bg-primary relative after:content-[''] after:absolute after:left-full after:top-0 after:border-solid after:border-[22.5px] after:border-r-0 after:border-l-primary after:border-y-transparent">
+                    2009
+                </div>
+                <div class="h-40"></div>
+            </div>
+
+            <div class="flex flex-col gap-8">
+                <div class="h-40"></div>
+                <div
+                    class="w-fit px-4 py-1 text-3xl font-bold text-secondary bg-primary relative after:content-[''] after:absolute after:left-full after:top-0 after:border-solid after:border-[22.5px] after:border-r-0 after:border-l-primary after:border-y-transparent">
+                    2009
+                </div>
+                <div
+                    class="h-40 text-primary border-l-2 border-primary pl-4 before:content-[''] before:w-2 before:h-2 before:bg-primary before:rounded-full before:block before:-translate-x-[21px] after:content-[''] after:w-2 after:h-2 after:bg-primary after:rounded-full after:block after:-translate-x-[21px]">
+                    <span class="text-3xl font-bold">Step 1</span>
+                    <p class="mt-4 text-justify line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Earum inventore </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-8">
+                <div
+                    class="h-40 text-primary border-l-2 border-primary pl-4 before:content-[''] before:w-2 before:h-2 before:bg-primary before:rounded-full before:block before:-translate-x-[21px] after:content-[''] after:w-2 after:h-2 after:bg-primary after:rounded-full after:block after:-translate-x-[21px]">
+                    <span class="text-3xl font-bold">Step 1</span>
+                    <p class="mt-4 text-justify line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit</p>
                 </div>
                 <div
                     class="w-fit px-4 py-1 text-3xl font-bold text-secondary bg-primary relative after:content-[''] after:absolute after:left-full after:top-0 after:border-solid after:border-[22.5px] after:border-r-0 after:border-l-primary after:border-y-transparent">
@@ -158,9 +236,7 @@
                     class="h-40 text-primary border-l-2 border-primary pl-4 before:content-[''] before:w-2 before:h-2 before:bg-primary before:rounded-full before:block before:-translate-x-[21px] after:content-[''] after:w-2 after:h-2 after:bg-primary after:rounded-full after:block after:-translate-x-[21px]">
                     <span class="text-3xl font-bold">Step 1</span>
                     <p class="mt-4 text-justify line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ad, at
-                        deserunt dignissimos eaque facilis
-                        illo inventore ipsum libero magnam mollitia</p>
+                        elit. </p>
                 </div>
             </div>
 
@@ -168,10 +244,8 @@
                 <div
                     class="h-40 text-primary border-l-2 border-primary pl-4 before:content-[''] before:w-2 before:h-2 before:bg-primary before:rounded-full before:block before:-translate-x-[21px] after:content-[''] after:w-2 after:h-2 after:bg-primary after:rounded-full after:block after:-translate-x-[21px]">
                     <span class="text-3xl font-bold">Step 1</span>
-                    <p class="mt-4 text-justify line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ad, at
-                        deserunt dignissimos eaque facilis
-                        illo inventore ipsum libero magnam mollitia</p>
+                    <p class="mt-4 text-justify line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Distinctio dolorum</p>
                 </div>
                 <div
                     class="w-fit px-4 py-1 text-3xl font-bold text-secondary bg-primary relative after:content-[''] after:absolute after:left-full after:top-0 after:border-solid after:border-[22.5px] after:border-r-0 after:border-l-primary after:border-y-transparent">
@@ -189,74 +263,8 @@
                 <div
                     class="h-40 text-primary border-l-2 border-primary pl-4 before:content-[''] before:w-2 before:h-2 before:bg-primary before:rounded-full before:block before:-translate-x-[21px] after:content-[''] after:w-2 after:h-2 after:bg-primary after:rounded-full after:block after:-translate-x-[21px]">
                     <span class="text-3xl font-bold">Step 1</span>
-                    <p class="mt-4 text-justify line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ad, at
-                        deserunt dignissimos eaque facilis
-                        illo inventore ipsum libero magnam mollitia</p>
-                </div>
-            </div>
-
-            <div class="flex flex-col gap-8">
-                <div
-                    class="h-40 text-primary border-l-2 border-primary pl-4 before:content-[''] before:w-2 before:h-2 before:bg-primary before:rounded-full before:block before:-translate-x-[21px] after:content-[''] after:w-2 after:h-2 after:bg-primary after:rounded-full after:block after:-translate-x-[21px]">
-                    <span class="text-3xl font-bold">Step 1</span>
-                    <p class="mt-4 text-justify line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ad, at
-                        deserunt dignissimos eaque facilis
-                        illo inventore ipsum libero magnam mollitia</p>
-                </div>
-                <div
-                    class="w-fit px-4 py-1 text-3xl font-bold text-secondary bg-primary relative after:content-[''] after:absolute after:left-full after:top-0 after:border-solid after:border-[22.5px] after:border-r-0 after:border-l-primary after:border-y-transparent">
-                    2009
-                </div>
-                <div class="h-40"></div>
-            </div>
-
-            <div class="flex flex-col gap-8">
-                <div class="h-40"></div>
-                <div
-                    class="w-fit px-4 py-1 text-3xl font-bold text-secondary bg-primary relative after:content-[''] after:absolute after:left-full after:top-0 after:border-solid after:border-[22.5px] after:border-r-0 after:border-l-primary after:border-y-transparent">
-                    2009
-                </div>
-                <div
-                    class="h-40 text-primary border-l-2 border-primary pl-4 before:content-[''] before:w-2 before:h-2 before:bg-primary before:rounded-full before:block before:-translate-x-[21px] after:content-[''] after:w-2 after:h-2 after:bg-primary after:rounded-full after:block after:-translate-x-[21px]">
-                    <span class="text-3xl font-bold">Step 1</span>
-                    <p class="mt-4 text-justify line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ad, at
-                        deserunt dignissimos eaque facilis
-                        illo inventore ipsum libero magnam mollitia</p>
-                </div>
-            </div>
-
-            <div class="flex flex-col gap-8">
-                <div
-                    class="h-40 text-primary border-l-2 border-primary pl-4 before:content-[''] before:w-2 before:h-2 before:bg-primary before:rounded-full before:block before:-translate-x-[21px] after:content-[''] after:w-2 after:h-2 after:bg-primary after:rounded-full after:block after:-translate-x-[21px]">
-                    <span class="text-3xl font-bold">Step 1</span>
-                    <p class="mt-4 text-justify line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ad, at
-                        deserunt dignissimos eaque facilis
-                        illo inventore ipsum libero magnam mollitia</p>
-                </div>
-                <div
-                    class="w-fit px-4 py-1 text-3xl font-bold text-secondary bg-primary relative after:content-[''] after:absolute after:left-full after:top-0 after:border-solid after:border-[22.5px] after:border-r-0 after:border-l-primary after:border-y-transparent">
-                    2009
-                </div>
-                <div class="h-40"></div>
-            </div>
-
-            <div class="flex flex-col gap-8">
-                <div class="h-40"></div>
-                <div
-                    class="w-fit px-4 py-1 text-3xl font-bold text-secondary bg-primary relative after:content-[''] after:absolute after:left-full after:top-0 after:border-solid after:border-[22.5px] after:border-r-0 after:border-l-primary after:border-y-transparent">
-                    2009
-                </div>
-                <div
-                    class="h-40 text-primary border-l-2 border-primary pl-4 before:content-[''] before:w-2 before:h-2 before:bg-primary before:rounded-full before:block before:-translate-x-[21px] after:content-[''] after:w-2 after:h-2 after:bg-primary after:rounded-full after:block after:-translate-x-[21px]">
-                    <span class="text-3xl font-bold">Step 1</span>
-                    <p class="mt-4 text-justify line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ad, at
-                        deserunt dignissimos eaque facilis
-                        illo inventore ipsum libero magnam mollitia</p>
+                    <p class="mt-4 text-justify line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Blanditiis </p>
                 </div>
             </div>
         </div>
@@ -305,17 +313,21 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="mx-auto mt-8 block w-fit px-8 py-2 bg-secondary text-primary">View all news</a>
+        <a href="{{ route('company-news') }}" class="mx-auto mt-8 block w-fit px-8 py-2 bg-secondary text-primary">
+            {{ __('View all news') }}
+        </a>
     </div>
 
     <div class="pt-28 bg-secondary">
-        <h2 class="mx-auto mb-10 w-fit text-xl font-bold text-primary lg:text-7xl">IF YOU NEED HELP</h2>
+        <h2 class="mx-auto mb-10 w-fit text-xl font-bold text-primary lg:text-7xl">
+            {{ __('IF YOU NEED HELP') }}
+        </h2>
         <div class="mt-8 h-0.5 bg-primary"></div>
         <div class="container mx-auto w-full -translate-y-4 px-4 text-primary bg-secondary">
             <h3 class="w-fit text-center text-5xl font-semibold uppercase">
                 {{ __('Please leave your information so we can assist you') }}
             </h3>
-            <p class="mt-6 text-center">Required fields *</p>
+            <p class="mt-6 text-center">{{ __('Required fields') }} *</p>
             <form action="" class="mt-4 grid grid-cols-2 gap-4 lg:grid-rows-6">
                 <input type="text"
                        class="col-span-1 px-2 py-1 placeholder:text-xs placeholder:text-primary row-span-1 bg-[#f5eccb]"
