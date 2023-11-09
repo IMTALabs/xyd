@@ -322,7 +322,7 @@
     <script>
         const currentUrl = window.location.href;
         const aTagContainCurrentUrl = document.querySelector(`header ul a[href="${ currentUrl }"]`);
-        aTagContainCurrentUrl?.parentElement?.parentElement?.parentElement?.nextElementSibling?.classList.add('text-black');
+        aTagContainCurrentUrl?.parentElement?.parentElement?.parentElement?.nextElementSibling?.classList.add('!text-black');
     </script>
 </body>
 </html>
