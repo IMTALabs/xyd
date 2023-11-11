@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <img src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-08.png') }}" class="w-full" alt="">
+    <img  data-src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-08.png') }}" class="w-full" alt="">
 
     <div class="max-lg:px-4">
         <div class="py-16 text-primary">
@@ -23,18 +23,7 @@
         <h1 class="container mx-auto w-full text-3xl font-medium text-primary">{{ __('Main Business Summary') }}</h1>
 
         <div class="container mx-auto w-full py-16 text-justify text-primary text-xl">
-            Our main business is undertaking diversified international freight transportation services, including
-            sea, land, air, and rail. We focuse on meeting customer needs and pursuing perfect service. We rely on
-            a fast transportation network and a comprehensive management system to establish in the freight
-            industry and provide all-round "pickup-transport-delivery" one-to-one service.
-            Our main business is undertaking diversified international freight transportation services, including
-            sea, land, air, and rail. We focuse on meeting customer needs and pursuing perfect service. We rely on
-            a fast transportation network and a comprehensive management system to establish in the freight
-            industry and provide all-round "pickup-transport-delivery" one-to-one service.
-            Our main business is undertaking diversified international freight transportation services, including
-            sea, land, air, and rail. We focuse on meeting customer needs and pursuing perfect service. We rely on
-            a fast transportation network and a comprehensive management system to establish in the freight
-            industry and provide all-round "pickup-transport-delivery" one-to-one service.
+            {{ __('Our main business is undertaking diversified international freight transportation services, including sea, land, air, and rail. We focus on meeting customer needs and pursuing perfect service. We rely on a fast transportation network and a comprehensive management system to establish in the freight industry and provide all-round "pickup-transport-delivery" one-to-one service.') }}
         </div>
 
         <div class="container mx-auto mb-16 grid w-full grid-cols-4 max-lg:grid-cols-1 gap-8">
@@ -62,23 +51,23 @@
             <p class="mt-4 text-center text-xl">{{ __('Stable timeliness and high-quality service are ahead of peers.') }}</p>
             <div class="container mx-auto mt-12 flex w-full max-lg:flex-col justify-center gap-16">
                 <div class="flex w-full flex-col items-center gap-2 text-center text-2xl lg:w-1/5">
-                    <img class="h-24 w-24" src="{{ asset('images/icons/Icon/Web icon-20.png') }}" alt="">
+                    <img class="h-24 w-24"  data-src="{{ asset('images/icons/Icon/Web icon-20.png') }}" alt="">
                     {{ __('Trailers') }}
                 </div>
                 <div class="flex w-full flex-col items-center gap-2 text-center text-2xl lg:w-1/5">
-                    <img class="h-24 w-24" src="{{ asset('images/icons/Icon/Web icon-23.png') }}" alt="">
+                    <img class="h-24 w-24"  data-src="{{ asset('images/icons/Icon/Web icon-23.png') }}" alt="">
                     {{ __('Storage') }}
                 </div>
                 <div class="flex w-full flex-col items-center gap-2 text-center text-2xl lg:w-1/5">
-                    <img class="h-24 w-24" src="{{ asset('images/icons/Icon/Web icon-27.png') }}" alt="">
+                    <img class="h-24 w-24"  data-src="{{ asset('images/icons/Icon/Web icon-27.png') }}" alt="">
                     {{ __('Door-to-door Delivery') }}
                 </div>
                 <div class="flex w-full flex-col items-center gap-2 text-center text-2xl lg:w-1/5">
-                    <img class="h-24 w-24" src="{{ asset('images/icons/Icon/Web icon-28.png') }}" alt="">
+                    <img class="h-24 w-24"  data-src="{{ asset('images/icons/Icon/Web icon-28.png') }}" alt="">
                     {{ __('Agent Customs Declaration And Inspection') }}
                 </div>
                 <div class="flex w-full flex-col items-center gap-2 text-center text-2xl lg:w-1/5">
-                    <img class="h-24 w-24" src="{{ asset('images/icons/Icon/Web icon-26.png') }}" alt="">
+                    <img class="h-24 w-24"  data-src="{{ asset('images/icons/Icon/Web icon-26.png') }}" alt="">
                     {{ __('Agent Cargo Transportation Insurance') }}
                 </div>
             </div>
@@ -91,19 +80,19 @@
             <p class="mt-4 text-center text-xl">{{ __('Attracted a growing user base both domestically and globally.') }}</p>
             <div class="container mx-auto mt-12 flex w-full max-lg:flex-col flex-wrap justify-center gap-x-8 gap-y-16">
                 <div class="flex w-full items-center justify-center gap-8 text-center text-2xl lg:w-1/3">
-                    <img class="h-24 w-24" src="{{ asset('images/icons/Icon/Web icon-02.png') }}" alt="">
+                    <img class="h-24 w-24"  data-src="{{ asset('images/icons/Icon/Web icon-02.png') }}" alt="">
                     {{ __('Air Freight') }}
                 </div>
                 <div class="flex w-full items-center justify-center gap-8 text-center text-2xl lg:w-1/3">
-                    <img class="h-24 w-24" src="{{ asset('images/icons/Icon/Web icon-03.png') }}" alt="">
+                    <img class="h-24 w-24"  data-src="{{ asset('images/icons/Icon/Web icon-03.png') }}" alt="">
                     {{ __('Sea Freight') }}
                 </div>
                 <div class="flex w-full items-center justify-center gap-8 text-center text-2xl lg:w-1/3">
-                    <img class="h-24 w-24" src="{{ asset('images/icons/Icon/Web icon-01.png') }}" alt="">
+                    <img class="h-24 w-24"  data-src="{{ asset('images/icons/Icon/Web icon-01.png') }}" alt="">
                     {{ __('Land Freight') }}
                 </div>
                 <div class="flex w-full items-center justify-center gap-8 text-center text-2xl lg:w-1/3">
-                    <img class="h-24 w-24" src="{{ asset('images/icons/Icon/Web icon-19.png') }}" alt="">
+                    <img class="h-24 w-24"  data-src="{{ asset('images/icons/Icon/Web icon-19.png') }}" alt="">
                     {{ __('Warehouse') }}
                 </div>
             </div>

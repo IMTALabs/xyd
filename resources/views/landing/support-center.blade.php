@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <img src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-19.png') }}" class="w-full" alt="">
+    <img  data-src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-19.png') }}" class="w-full" alt="">
 
     <div class="max-lg:px-4">
         <div class="py-16 text-primary">
@@ -27,19 +27,19 @@
         }">
             <div class="w-full lg:max-w-2xl mx-auto pb-16 mt-16 grid grid-cols-2 gap-16 text-primary">
                 <div class="col-span-1 flex flex-col items-center max cursor-pointer" @click="tab = 1">
-                    <img src="{{ asset('images/icons/Icon/Web icon-07.png') }}" class="w-20 h-20" alt="">
+                    <img  data-src="{{ asset('images/icons/Icon/Web icon-07.png') }}" class="w-20 h-20" alt="">
                     <h2 class="mt-8 text-3xl text-center lg:text-3xl font-bold">{{ __('Security Compliance') }}</h2>
                 </div>
                 <div class="col-span-1 flex flex-col items-center max cursor-pointer" @click="tab = 2">
-                    <img src="{{ asset('images/icons/Icon/Web icon-08.png') }}" class="w-20 h-20" alt="">
+                    <img  data-src="{{ asset('images/icons/Icon/Web icon-08.png') }}" class="w-20 h-20" alt="">
                     <h2 class="mt-8 text-3xl text-center lg:text-3xl font-bold">{{ __('Account Services') }}</h2>
                 </div>
                 <div class="col-span-1 flex flex-col items-center max cursor-pointer" @click="tab = 3">
-                    <img src="{{ asset('images/icons/Icon/Web icon-10.png') }}" class="w-20 h-20" alt="">
-                    <h2 class="mt-8 text-3xl text-center lg:text-3xl font-bold">{{ __('Beginner\'s Guide') }}</h2>
+                    <img  data-src="{{ asset('images/icons/Icon/Web icon-10.png') }}" class="w-20 h-20" alt="">
+                    <h2 class="mt-8 text-3xl text-center lg:text-3xl font-bold">{{ __("Beginner's Guide") }}</h2>
                 </div>
                 <div class="col-span-1 flex flex-col items-center max cursor-pointer" @click="tab = 4">
-                    <img src="{{ asset('images/icons/Icon/Web icon-09.png') }}" class="w-20 h-20" alt="">
+                    <img  data-src="{{ asset('images/icons/Icon/Web icon-09.png') }}" class="w-20 h-20" alt="">
                     <h2 class="mt-8 text-3xl text-center lg:text-3xl font-bold">{{ __('Platform Collection') }}</h2>
                 </div>
             </div>
@@ -51,16 +51,16 @@
             </div>
             <div class="bg-secondary w-full min-h-[10rem]" x-show="tab !== ''">
                 <div class="container mt-8 mx-auto text-primary" x-show="tab === 1">
-                    <h1>Security Compliance</h1>
+                    <h1>{{ __('This section will be updated soon') }}</h1>
                 </div>
                 <div class="container mt-8 mx-auto text-primary" x-show="tab === 2">
-                    <h1>Account Services</h1>
+                    <h1>{{ __('This section will be updated soon') }}</h1>
                 </div>
                 <div class="container mt-8 mx-auto text-primary" x-show="tab === 3">
-                    <h1>Beginner's Guide</h1>
+                    <h1>{{ __('This section will be updated soon') }}</h1>
                 </div>
                 <div class="container mt-8 mx-auto text-primary" x-show="tab === 4">
-                    <h1>Platform Collection</h1>
+                    <h1>{{ __('This section will be updated soon') }}</h1>
                 </div>
             </div>
         </div>

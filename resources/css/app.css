@@ -11,6 +11,10 @@ body {
     font-family: 'Bahnschrift', sans-serif;
 }
 
+svg {
+    @apply shrink-0;
+}
+
 .world-map::before {
     content: " ";
     display: block;

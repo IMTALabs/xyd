@@ -70,7 +70,7 @@ return [
     |
     */
 
-    'project_id' => env('POEDITOR_PROJECT_ID'),
+    'project_id' => env('1Lir9PRNTS'),
 
     'key'                 => '86f4ce5f409f4abebe6c5013ae2af7c8',
     'source_locale'       => 'en',

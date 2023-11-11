@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <img src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-03.png') }}" class="w-full" alt="">
+    <img  data-src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-03.png') }}" class="w-full" alt="">
 
     <div class="max-lg:px-4">
         <div class="py-16 text-primary">
@@ -18,13 +18,7 @@
         <h1 class="container mx-auto text-3xl font-medium text-primary">{{ __('Business Enterprise') }}</h1>
 
         <div class="container mx-auto py-16 text-justify text-primary">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deserunt doloribus facilis modi ratione
-            sapiente voluptate. Eaque, eos porro? Amet dolor dolore explicabo quibusdam quos reiciendis vel voluptates?
-            Doloremque, provident? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at blanditiis cum
-            ex
-            expedita facilis, harum illo in incidunt iure, laboriosam laborum molestias, necessitatibus nobis quo
-            ratione
-            reiciendis rem voluptas!
+            {{ __("We always work to prioritize client benefit and satisfaction in our business approach. The enthusiastic team at YDX Express works hard to provide partners with the greatest international freight forwarding service possible. We aim to provide the best solutions possible that are dependable, affordable, and specially tailored to meet the various requirements of each specific audience. ") }}
         </div>
 
         <div class="container mx-auto mb-16 overflow-hidden max-lg:hidden">

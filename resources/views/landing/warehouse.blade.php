@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <img src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-16.png') }}" class="w-full" alt="">
+    <img  data-src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-16.png') }}" class="w-full" alt="">
 
     <div class="max-lg:px-4">
         <div class="py-16 text-primary">
@@ -24,8 +24,8 @@
 
         <div class="flex max-lg:flex-col items-center w-full container mx-auto text-primary py-16">
             <div class="w-full lg:w-1/3 container lg:pr-16 relative aspect-video bg-contain"
-                 style="background-image: url('{{ asset('images/covers/Ảnh trang chủ web (trang con)-16.png') }}')">
-                <div style="background-image: url('{{ asset('images/covers/Ảnh trang chủ web (trang con)-16.png') }}')"
+                 style="background-image: url('https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaA2zUyglJ6nu1awJr0dxSgHgNKId-LpnBiv6ZwGzLBrlsnhcvuEgQAJHBH09ZKvzClSNA9mxYZbCt4qCBbVn97vzsPF-Q=w1830-h975')">
+                <div style="background-image: url('https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaCcxO33kkVt_6OC_taSC_FbFX6b4EQmNdXS-RND9WygXp2YhvXyVGhFox1eVqRvL-rsV4H5HEl0Bo9PpdotWUD6mus9=w1830-h975')"
                      class="border-[1rem] border-white w-2/5 aspect-video absolute -right-8 -bottom-8 max-lg:hidden bg-contain"></div>
             </div>
             <div class="w-full lg:w-2/3 container lg:pl-16 max-lg:mt-8">
@@ -33,8 +33,8 @@
                 <p class="text-justify mt-8 text-xl">{{ __('Modern systems help businesses save time warehousing and preserving goods and promote rapid business growth.') }}</p>
                 <p class="mt-4 text-xl">
                     - <b>{{ __('Warehouse area') }}</b>: 5000m2<br>
-                    - <b>{{ __('Processing abilit') }}</b>y: 30 {{ __('containers/week') }},
-                    20 {{ __('bills of Lading/day') }}.<br>
+                    - <b>{{ __('Processing ability') }}</b>: 30 {{ __('containers/week') }},
+                    20 {{ __('bills of lading/day') }}.<br>
                     - <b>{{ __('Prime location') }}</b>.
                 </p>
             </div>
@@ -51,11 +51,11 @@
                 </p>
             </div>
             <div class="w-full lg:w-1/3 container lg:pl-16 grid gap-4 grid-cols-2 grid-rows-2 aspect-video mt-8">
-                <div style="background-image: url('{{ asset('images/covers/Ảnh trang chủ web (trang con)-16.png') }}')"
+                <div style="background-image: url('https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaDzhAzCJmynsS1tCnTPuEIjEXFcesxEHxhsm1BX_NiuEbVdU0xg40BXClnWwrkzo_ZU_VJ16FMK4nQyEI-TtW0cistClQ=w1830-h975')"
                      class="col-span-1 bg-cover"></div>
-                <div style="background-image: url('{{ asset('images/covers/Ảnh trang chủ web (trang con)-16.png') }}')"
+                <div style="background-image: url('https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAhtldpaOA_Qs7gTK4tmWJ04xbjpWTgUwhHwzd9mWc9rb4F5rwYesV32d0k_WvcMVw5P-Ibs_Ddc6KdmoESIRDgDrPggQ=w1830-h975')"
                      class="col-span-1 bg-cover row-span-2"></div>
-                <div style="background-image: url('{{ asset('images/covers/Ảnh trang chủ web (trang con)-16.png') }}')"
+                <div style="background-image: url('https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaB6xLfXWRaxizg-fQLKPFZlpL1k0FEIo7vfvYszgqQct7ZXPP13SGP76Rbk28VbxJ-qbUJRSXhD1yOK2ixNc3JmutYeNg=w1830-h975')"
                      class="col-span-1 bg-cover"></div>
             </div>
         </div>
@@ -63,17 +63,17 @@
         <div class="w-full container mx-auto py-16 text-primary">
             <h2 class="text-3xl ">{{ __('Value-Added Services') }}</h2>
 
-            <div class="w-full container mx-auto mt-16 grid lg:grid-cols-3 gap-16">
+            <div class="w-full container mx-auto mt-16 grid lg:grid-cols-2 gap-16">
                 <div class="flex flex-col items-end rounded border-2 border-primary">
                     <div
                         class="relative rounded-bl-3xl border-b-2 border-l-2 py-2 pr-4 pl-14 text-center font-bold border-primary">
                         <div class="w-12 h-2 bg-primary absolute bottom-full -left-0.5"
                              style="clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);"></div>
                         <div class="w-10 h-9 rounded-b-3xl bg-primary absolute top-0 left-0.5"></div>
-                        {{ __('President\'s Message') }}
+                        {{ __('Registering a company in America') }}
                     </div>
                     <p class="p-8 text-center">
-                        {{ __('Road-rail intermodal freight. Delivery from door to door, including all duties and other fees.') }}
+                        {{ __('Having an international brand enhances corporate image, facilitates international trade, and improves business performance.') }}
                     </p>
                 </div>
                 <div class="flex flex-col items-end rounded border-2 border-primary">
@@ -82,10 +82,10 @@
                         <div class="w-12 h-2 bg-primary absolute bottom-full -left-0.5"
                              style="clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);"></div>
                         <div class="w-10 h-9 rounded-b-3xl bg-primary absolute top-0 left-0.5"></div>
-                        {{ __('President\'s Message') }}
+                        {{ __('Express customs clearance assistance') }}
                     </div>
                     <p class="p-8 text-center">
-                        {{ __('Road-rail intermodal freight. Delivery from door to door, including all duties and other fees.') }}
+                        {{ __('Years of mature operational experience, comprehensive customs clearance services both domestically and internationally, stable timeliness, always leading ahead of peers.') }}
                     </p>
                 </div>
                 <div class="flex flex-col items-end rounded border-2 border-primary">
@@ -94,10 +94,10 @@
                         <div class="w-12 h-2 bg-primary absolute bottom-full -left-0.5"
                              style="clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);"></div>
                         <div class="w-10 h-9 rounded-b-3xl bg-primary absolute top-0 left-0.5"></div>
-                        {{ __('President\'s Message') }}
+                        {{ __('Optimize all utilities') }}
                     </div>
                     <p class="p-8 text-center">
-                        {{ __('Road-rail intermodal freight. Delivery from door to door, including all duties and other fees.') }}
+                        {{ __('Having multiple airline agency rights, a professional team operation, and a comprehensive air freight network service. Making full use of flight resources, fleet resources, port resources, and customs clearance resources, with an efficient intermodal network.') }}
                     </p>
                 </div>
                 <div class="flex flex-col items-end rounded border-2 border-primary">
@@ -106,34 +106,10 @@
                         <div class="w-12 h-2 bg-primary absolute bottom-full -left-0.5"
                              style="clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);"></div>
                         <div class="w-10 h-9 rounded-b-3xl bg-primary absolute top-0 left-0.5"></div>
-                        {{ __('President\'s Message') }}
+                        {{ __('Overseas warehouse') }}
                     </div>
                     <p class="p-8 text-center">
-                        {{ __('Road-rail intermodal freight. Delivery from door to door, including all duties and other fees.') }}
-                    </p>
-                </div>
-                <div class="flex flex-col items-end rounded border-2 border-primary">
-                    <div
-                        class="relative rounded-bl-3xl border-b-2 border-l-2 py-2 pr-4 pl-14 text-center font-bold border-primary">
-                        <div class="w-12 h-2 bg-primary absolute bottom-full -left-0.5"
-                             style="clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);"></div>
-                        <div class="w-10 h-9 rounded-b-3xl bg-primary absolute top-0 left-0.5"></div>
-                        {{ __('President\'s Message') }}
-                    </div>
-                    <p class="p-8 text-center">
-                        {{ __('Road-rail intermodal freight. Delivery from door to door, including all duties and other fees.') }}
-                    </p>
-                </div>
-                <div class="flex flex-col items-end rounded border-2 border-primary">
-                    <div
-                        class="relative rounded-bl-3xl border-b-2 border-l-2 py-2 pr-4 pl-14 text-center font-bold border-primary">
-                        <div class="w-12 h-2 bg-primary absolute bottom-full -left-0.5"
-                             style="clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);"></div>
-                        <div class="w-10 h-9 rounded-b-3xl bg-primary absolute top-0 left-0.5"></div>
-                        {{ __('President\'s Message') }}
-                    </div>
-                    <p class="p-8 text-center">
-                        {{ __('Road-rail intermodal freight. Delivery from door to door, including all duties and other fees.') }}
+                        {{ __('International air transport (flying from Hong Kong, with over a decade of experience in handling Class 9 dangerous goods).') }}
                     </p>
                 </div>
             </div>

@@ -9,7 +9,7 @@
 
     {!! SEO::generate() !!}
 
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="{{ asset('js/alpine.js') }}"></script>
 
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
@@ -47,7 +47,7 @@
         <div x-show="mobileMenu" style="display: none"
              class="fixed z-50 lg:hidden w-screen h-[calc(100vh-3rem)] bg-secondary top-12 left-0 p-4 flex flex-col overflow-auto gap-3 text-primary">
             <a class="text-sm" href="{{ route('home') }}">{{ __('Home') }}</a>
-            <span class="mt-2 block text-sm font-bold">{{ __('About us') }}</span>
+            <span class="mt-2 block text-sm font-bold">{{ __('About Us') }}</span>
             <a class="text-sm" href="{{ route('about-us') }}">{{ __('About XYD Express') }}</a>
             <a class="text-sm" href="{{ route('management-team') }}">{{ __('Management Team') }}</a>
             <a class="text-sm" href="{{ route('long-term-vision') }}">{{ __('Long-term Vision') }}</a>
@@ -74,7 +74,7 @@
         </div>
 
         <a href="{{ route('home') }}">
-            <img src="{{ asset('images/logo.png') }}" class="w-24" alt="Logo">
+            <img data-src="{{ asset('images/logo.png') }}" class="w-24" alt="Logo">
         </a>
 
         <div class="relative hidden lg:block">
@@ -85,7 +85,7 @@
                         x-transition
                         style="display: none;" x-show="current === 'about'">
                         <div
-                            class="bg-[#f6f0b4] font-semibold text-xl flex items-center px-8">{{ __('About us') }}</div>
+                            class="bg-[#f6f0b4] font-semibold text-xl flex items-center px-8">{{ __('About Us') }}</div>
                         <div class="grid grow grid-cols-2 gap-y-4 bg-white px-8 py-4 text-sm">
                             <div class="col-span-1"><a href="{{ route('about-us') }}">{{ __('About XYD Express') }}</a>
                             </div>
@@ -115,7 +115,7 @@
                         class="absolute top-5 left-0 flex shadow-xl text-primary w-[120%] border-t-[1rem] border-primary peer"
                         x-transition style="display: none;" x-show="current === 'services'">
                         <div
-                            class="bg-[#f6f0b4] font-semibold text-xl flex items-center px-8">{{ __('Our service') }}</div>
+                            class="bg-[#f6f0b4] font-semibold text-xl flex items-center px-8">{{ __('Our Service') }}</div>
                         <div class="grid grow grid-cols-2 gap-y-4 bg-white px-8 py-4 text-sm">
                             <div class="col-span-1"><a
                                     href="{{ route('main-business-summary') }}">{{ __('Main Business Summary') }}</a>
@@ -147,7 +147,7 @@
                         x-transition
                         style="display: none;" x-show="current === 'channels'">
                         <div
-                            class="bg-[#f6f0b4] font-semibold text-xl flex items-center px-8">{{ __('Main channels') }}</div>
+                            class="bg-[#f6f0b4] font-semibold text-xl flex items-center px-8">{{ __('Main Channels') }}</div>
                         <div class="grid grow grid-cols-2 gap-y-4 bg-white px-8 py-4 text-sm">
                             <div class="col-span-1"><a href="{{ route('land-freight') }}">{{ __('Land Freight') }}</a>
                             </div>
@@ -174,7 +174,7 @@
                         x-transition
                         style="display: none;" x-show="current === 'help'">
                         <div
-                            class="bg-[#f6f0b4] font-semibold text-xl flex items-center px-8">{{ __('Help center') }}</div>
+                            class="bg-[#f6f0b4] font-semibold text-xl flex items-center px-8">{{ __('Help Center') }}</div>
                         <div class="grid grow grid-cols-2 gap-y-4 bg-white px-8 py-4 text-sm">
                             <div class="col-span-1"><a
                                     href="{{ route('support-center') }}">{{ __('Support center') }}</a>
@@ -242,7 +242,7 @@
                     <path fill="currentColor"
                           d="M19.95 21q-3.125 0-6.175-1.363t-5.55-3.862q-2.5-2.5-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.338t.712-.062l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3Z"/>
                 </svg>
-                400-836-9156
+                0969-520-682
             </div>
         </div>
     </header>
@@ -256,7 +256,7 @@
             <div class="relative w-full container lg:max-w-2xl">
                 <input type="text"
                        class="w-full px-4 py-2 pr-8 placeholder:font-medium placeholder:text-primary bg-secondary text-primary"
-                       placeholder="{{ __('Enter search keyword') }}">
+                       placeholder="{{ __('Enter your email address') }}">
                 <svg class="absolute top-1/2 right-2 -translate-y-1/2 text-primary" xmlns="http://www.w3.org/2000/svg"
                      width="20"
                      height="20" viewBox="0 0 24 24">
@@ -269,18 +269,18 @@
 
     <footer class="grid grid-cols-4 gap-8 pt-8 bg-primary">
         <div class="col-span-full border-r border-solid px-2 border-orange-950 lg:col-span-1">
-            <img src="{{ asset('images/logo-footer.png') }}" class="mx-auto w-80" alt="">
+            <img data-src="{{ asset('images/logo-footer.png') }}" class="mx-auto w-80" alt="">
         </div>
         <div class="col-span-full px-2 text-sm text-secondary lg:col-span-1">
             <h3 class="text-2xl font-semibold">{{ __('Contacts') }}</h3>
             <p class="mt-3">xydexpress@gmail.com</p>
-            <p class="mt-2">400-836-9156</p>
+            <p class="mt-2">0969-520-682</p>
             <p class="mt-2">
-                1005, Block B, Building 6, Zhonggang Plaza, Convention Bay, Baoan District, Shenzhen Guangdong, China
+                {{ __('1005, Block B, Building 6, Zhonggang Plaza, Convention Bay, Baoan District, Shenzhen Guangdong, China') }}
             </p>
         </div>
         <div class="col-span-full px-2 text-sm text-secondary lg:col-span-1">
-            <h3 class="text-2xl font-semibold">Customer service</h3>
+            <h3 class="text-2xl font-semibold">{{ __('Customer Service') }}</h3>
             <a class="mt-3 block" href="{{ route('faq') }}">{{ __('Frequently asked questions') }}</a>
             <a class="mt-2 block" href="#">{{ __('Terms & Policy') }}</a>
             <a class="mt-2 block" href="#">{{ __('Customer Feedback') }}</a>
@@ -290,39 +290,43 @@
             <div class="mt-3 flex gap-4">
                 <a class="h-8 w-8" href="https://m.facebook.com/XYD.express.VN/?locale=hi_IN" target="_blank">
                     <img class="w-full rounded-md" width="32" height="32"
-                         src="https://cdn.iconscout.com/icon/free/png-512/free-facebook-262-721949.png?f=webp&w=256"
+                         data-src="https://cdn.iconscout.com/icon/free/png-512/free-facebook-262-721949.png?f=webp&w=256"
                          alt="facebook"/>
                 </a>
                 <a class="h-8 w-8" href="https://www.tiktok.com" target="_blank">
                     <img class="w-full rounded-md" width="32" height="32"
-                         src="https://cdn.iconscout.com/icon/free/png-512/free-tiktok-8289869-7136524.png?f=webp&w=256"
+                         data-src="https://cdn.iconscout.com/icon/free/png-512/free-tiktok-8289869-7136524.png?f=webp&w=256"
                          alt="tiktok"/>
                 </a>
                 <a class="h-8 w-8"
                    href="https://www.linkedin.com/company/xyd-international-logistic-company?trk=public_post_feed-actor-name"
                    target="_blank">
                     <img class="w-full rounded-md" width="32" height="32"
-                         src="https://cdn.iconscout.com/icon/premium/png-512-thumb/linkedin-2752135-2284952.png?f=webp&w=256"
+
+                         data-src="https://cdn.iconscout.com/icon/premium/png-512-thumb/linkedin-2752135-2284952.png?f=webp&w=256"
                          alt="linkedin"/>
                 </a>
                 <a class="h-8 w-8" href="https://www.wechat.com" target="_blank">
                     <img class="w-full rounded-md" width="32" height="32"
-                         src="https://cdn.iconscout.com/icon/free/png-256/free-wechat-1868969-1583133.png?f=webp&w=256"
+                         data-src="https://cdn.iconscout.com/icon/free/png-256/free-wechat-1868969-1583133.png?f=webp&w=256"
                          alt="wechat"/>
                 </a>
             </div>
         </div>
         <div class="bg-[#4f2912] text-center lg:px-32 text-secondary py-3 col-span-full text-xs px-4">
-            Copyright© 2023 XYD Global Express Service. All rights reserved. ICP2021000263
+            {{ __('Copyright© 2023 XYD Global Express Service. All rights reserved. ICP2021000263') }}
         </div>
     </footer>
 
-    <script src="//instant.page/5.2.0" type="module"
-            integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+    <script src="{{ asset('js/instant.js') }}" type="module"></script>
+    <script src="{{ asset('js/lazyload.js') }}"></script>
     <script>
+        const lazyLoadInstance = new LazyLoad({
+            elements_selector: "img"
+        });
         const currentUrl = window.location.href;
         const aTagContainCurrentUrl = document.querySelector(`header ul a[href="${ currentUrl }"]`);
-        aTagContainCurrentUrl?.parentElement?.parentElement?.parentElement?.nextElementSibling?.classList.add('!text-black');
+        aTagContainCurrentUrl?.parentElement?.parentElement?.parentElement?.nextElementSibling?.classList.add("!text-black");
     </script>
 </body>
 </html>

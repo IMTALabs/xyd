@@ -2,7 +2,7 @@
 
 @section('content')
     <main>
-        <img src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-05.png') }}" class="object-cover w-full" alt="">
+        <img  data-src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-05.png') }}" class="object-cover w-full" alt="">
 
         <div class="py-16 text-primary px-4 lg:px-0">
             <ul class="w-full container mx-auto flex items-center">
@@ -15,40 +15,37 @@
             </ul>
 
             <div class="w-full container mx-auto mt-8 flex flex-col gap-y-8 lg:flex-row pb-16">
-                <img src="https://placehold.co/600x200" alt="" class="w-full container">
+                <img data-src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaBpt0GysVz3LmtToC3DacmMhVmhmRpnlqKYn61Tp1U94dZu6iJceswmc49U06d-nliNrJn2WAI7dZsUz3Snrs4VXpRfgQ=w1830-h975" alt="" class="w-full container aspect-square object-cover">
                 <div class="w-full container lg:pl-8">
                     <h1 class="text-5xl font-bold">{{ __('About us') }}</h1>
-                    <h2 class="text-3xl mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                    <p class="mt-2 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad,
-                        aspernatur cumque
-                        deleniti dicta doloribus eaque, est excepturi hic ipsam ipsum, itaque modi numquam odio
-                        perspiciatis
-                        soluta tempora! Tempora.</p>
+                    <p class="mt-2">
+                        {{ __('Shenzhen Xiangyuda International Freight Forwarding Co., Ltd. was established in June 2009 and located in Convention and Exhibition Bay, Shenzhen. XYD Express specializes in air and sea freight forwarding services to the United States, the United Kingdom, Mexico, and Europe, and overseas warehouses in the West and Midwest of the United States.') }}
+                    </p>
+                    <p class="mt-2">
+                        {{ __('Our business offers a one-stop shop for services such as consulting, pricing, opening customer accounts, customs declaration and clearance, cargo operations, full-process tracking, and dedicated delivery from door to door, inclusive of all duties and other expenses. Our business offers consumers top-notch logistics services with the objective of "delivering worldwide, as trusted by customers."') }}
+                    </p>
+                    <p class="mt-2">
+                        {{ __('As of the end of 2022, Our company cooperated with over 200 businesses, that were committed to developing a pure battery, electronic cigarette, and FBA customer base for export.') }}
+                    </p>
                 </div>
             </div>
 
             <div>
-                <img src="https://placehold.co/1600x400" alt="" class="w-full">
+                <img  data-src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaCW1hGZO06XreQGvMvSkkA1M1lm4dwy803yjJSqW8fBr3Uiwofc1I6pNJg-74ucWPJKK95QLWDedbs5snEQQZzhezrbxQ=w1830-h975" alt="" class="w-full">
                 <div class="w-full container bg-secondary mx-auto -translate-y-24 lg:px-32 lg:py-16 p-4">
-                    <h2 class="text-5xl font-bold text-center">Vision</h2>
-                    <p class="text-center mt-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, aut
-                        autem! Alias amet,
-                        architecto, dolore, harum omnis perferendis quisquam saepe sequi unde voluptate voluptatem
-                        voluptates! Enim illum omnis quasi repudiandae.</p>
+                    <h2 class="text-5xl font-bold text-center">{{ __('Vision') }}</h2>
+                    <p class="text-center mt-8">
+                        {{ __('Beyond logistics, our purpose is to contribute to helping our customers, vendors, and our employees succeed.') }}
+                    </p>
                 </div>
             </div>
 
             <div class="w-full container mx-auto flex flex-col lg:flex-row pb-16">
-                <img src="https://placehold.co/600x200" alt="" class="w-full container">
+                <img  data-src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAGtdc7MGj00ksIwjkNK3ie4f4jfpxflPnEaO8cQC2LnUJZsSt7-l_5Tgzi_TwV0n4hV8Me229bk7rE6AwTt9DDTNC3=w1830-h581" alt="" class="w-full lg:max-w-[50%] container">
                 <div class="w-full container lg:pl-8 mt-8 lg:mt-0">
                     <h1 class="text-5xl font-bold">{{ __('Mission') }}</h1>
-                    <h2 class="text-3xl mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                    <p class="mt-2 text-lg text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aut cupiditate dicta
-                        doloribus earum eius incidunt minus nobis numquam optio possimus, qui quos ratione repellat
-                        saepe sunt unde voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-                        commodi consectetur esse est fugit maiores nam necessitatibus quibusdam quos, ratione recusandae
-                        sapiente similique? Commodi cupiditate dignissimos, exercitationem illo sequi sint!
+                    <p class="mt-2 text-xl">
+                        {{ __("We always bring our customer's needs first, and since then, we always work hard to bring value to customers. Our principle is to live up to your trust and deliver it all worldwide.") }}
                     </p>
                 </div>
             </div>
@@ -56,16 +53,14 @@
             <div class="bg-secondary p-4 lg:px-32 lg:py-16">
                 <h2 class="text-5xl font-bold text-center">{{ __('Core value') }}</h2>
                 <p class="text-center mt-8 w-full container mx-auto">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur, deleniti, dolorem
-                    dolorum ea eaque fuga illo magni officiis quasi qui, quidem ut? Aut corporis eaque minus, similique
-                    suscipit voluptatem.
+                    {{ __('We invest in our employees in order to provide the best value to our customers, resulting in a win-win partnership.') }}
                 </p>
 
                 <div
                     class="flex mx-auto mt-16 w-full container border-y-2 border-solid border-black divide-x-2 divide-black font-semibold">
-                    <div class="w-1/3 text-center py-4">Precisely</div>
-                    <div class="w-1/3 text-center py-4">Optimal</div>
-                    <div class="w-1/3 text-center py-4">Belief</div>
+                    <div class="w-1/3 text-center py-4">{{ __('Precisely') }}</div>
+                    <div class="w-1/3 text-center py-4">{{ __('Optimal') }}</div>
+                    <div class="w-1/3 text-center py-4">{{ __('Belief') }}</div>
                 </div>
 
                 <div class="w-full container max-w-4xl flex flex-wrap justify-between mx-auto mt-16 gap-y-4">
@@ -75,8 +70,8 @@
                                   d="M3 21q-.425 0-.713-.288T2 20q0-.425.288-.713T3 19h18q.425 0 .713.288T22 20q0 .425-.288.713T21 21H3Zm1.5-3q-.625 0-1.063-.438T3 16.5v-4q0-.625.438-1.063T4.5 11q.625 0 1.063.438T6 12.5v4q0 .625-.438 1.063T4.5 18Zm5 0q-.625 0-1.063-.438T8 16.5v-9q0-.625.438-1.063T9.5 6q.625 0 1.063.438T11 7.5v9q0 .625-.438 1.063T9.5 18Zm5 0q-.625 0-1.063-.438T13 16.5v-6q0-.625.438-1.063T14.5 9q.625 0 1.063.438T16 10.5v6q0 .625-.438 1.063T14.5 18Zm5 0q-.625 0-1.063-.438T18 16.5v-12q0-.625.438-1.063T19.5 3q.625 0 1.063.438T21 4.5v12q0 .625-.438 1.063T19.5 18Z"/>
                         </svg>
                         <div>
-                            <div class="font-bold text-xl">14+ Years</div>
-                            <div class="">Experiences</div>
+                            <div class="font-bold text-xl">{{ __('14+ Years') }}</div>
+                            <div class="">{{ __('Experiences') }}</div>
                         </div>
                     </div>
 
@@ -94,7 +89,7 @@
                         </svg>
                         <div>
                             <div class="font-bold text-xl">4+</div>
-                            <div class="">Branches global</div>
+                            <div class="">{{ __('Branches global') }}</div>
                         </div>
                     </div>
 
@@ -105,7 +100,7 @@
                         </svg>
                         <div>
                             <div class="font-bold text-xl">20+</div>
-                            <div class="">Countries</div>
+                            <div class="">{{ __('Countries') }}</div>
                         </div>
                     </div>
 
@@ -116,7 +111,7 @@
                         </svg>
                         <div>
                             <div class="font-bold text-xl">50+</div>
-                            <div class="">Co-operations</div>
+                            <div class="">{{ __('Co-operations') }}</div>
                         </div>
                     </div>
                 </div>
@@ -124,11 +119,11 @@
 
             <div class=" py-16">
                 <h2 class="text-3xl font-bold text-center">{{ __('Why you should choose our service') }}</h2>
-                <p class="text-center mt-8 w-full container mx-auto">The reason why you should choose us to be your
-                    transportation
-                    partner</p>
+                <p class="text-center mt-8 w-full container mx-auto">
+                    {{ __('The reason why you should choose us to be your transportation partner') }}
+                </p>
 
-                <div class="w-full container max-w-4xl grid grid-cols-2 mx-auto mt-16 gap-8">
+                <div class="w-full container max-w-xl grid grid-cols-2 mx-auto mt-16 gap-8">
                     <div class="col-span-1 flex max-lg:gap-4 max-lg:flex-col items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
                             <path fill="currentColor"
@@ -136,8 +131,6 @@
                         </svg>
                         <div class="ml-4">
                             <h3 class="text-xl">Responsibility</h3>
-                            <p class="text-sm mt-1">The reason why you should choose us to be your transportation
-                                partner</p>
                         </div>
                     </div>
 
@@ -148,8 +141,6 @@
                         </svg>
                         <div class="ml-4">
                             <h3 class="text-xl">Quick feedback</h3>
-                            <p class="text-sm mt-1">The reason why you should choose us to be your transportation
-                                partner</p>
                         </div>
                     </div>
 
@@ -160,8 +151,6 @@
                         </svg>
                         <div class="ml-4">
                             <h3 class="text-xl">Professional</h3>
-                            <p class="text-sm mt-1">The reason why you should choose us to be your transportation
-                                partner</p>
                         </div>
                     </div>
 
@@ -172,8 +161,6 @@
                         </svg>
                         <div class="ml-4">
                             <h3 class="text-xl">Safe solution</h3>
-                            <p class="text-sm mt-1">The reason why you should choose us to be your transportation
-                                partner</p>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <img src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-11.png') }}" class="w-full" alt="">
+    <img  data-src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-11.png') }}" class="w-full" alt="">
 
     <div class="max-lg:px-4">
         <div class="py-16 text-primary">
@@ -80,9 +80,9 @@
 
                 <div
                     class="w-[calc(100%-3rem)] h-[calc(100%-3rem)] rounded-full bg-secondary shadow-2xl flex flex-col justify-center items-center text-center text-primary p-4">
-                    <h2 class="font-bold xl:text-3xl">{{ __('Professional') }}</h2>
+                    <h2 class="font-bold xl:text-3xl">{{ __('Flexible Settlement') }}</h2>
                     <p class="text-xs mt-4 xl:text-base">
-                        {{ __('Highly specialized consultants. Personalize service according to your requirements') }}
+                        {{ __('We provide advanced service so you can have flexible payment time.') }}
                     </p>
                 </div>
             </div>
@@ -112,9 +112,9 @@
 
                 <div
                     class="w-[calc(100%-3rem)] h-[calc(100%-3rem)] rounded-full bg-secondary shadow-2xl flex flex-col justify-center items-center text-center text-primary p-4">
-                    <h2 class="font-bold xl:text-3xl">{{ __('Professional') }}</h2>
+                    <h2 class="font-bold xl:text-3xl">{{ __('Enthusiasm') }}</h2>
                     <p class="text-xs mt-4 xl:text-base">
-                        {{ __('Highly specialized consultants. Personalize service according to your requirements') }}
+                        {{ __('Enthusiastic consulting staff, 24/7 customer support') }}
                     </p>
                 </div>
             </div>
@@ -134,9 +134,9 @@
 
                 <div
                     class="w-[calc(100%-3rem)] h-[calc(100%-3rem)] rounded-full bg-secondary shadow-2xl flex flex-col justify-center items-center text-center text-primary p-4">
-                    <h2 class="font-bold xl:text-3xl">{{ __('Professional') }}</h2>
+                    <h2 class="font-bold xl:text-3xl">{{ __('With great care') }}</h2>
                     <p class="text-xs mt-4 xl:text-base">
-                        {{ __('Highly specialized consultants. Personalize service according to your requirements') }}
+                        {{ __('We handle cargo with love and care') }}
                     </p>
                 </div>
             </div>
@@ -149,15 +149,7 @@
                 <div class="grow h-0.5 bg-primary min-w-[1rem]"></div>
             </div>
             <div class="mx-auto w-full container pt-16 text-justify text-primary">
-                Our company has its own customs clearance agency and is equipped with an EDI system that directly
-                connects
-                to the customs network. We have our own warehouse and strictly follow customer requirements for
-                unloading
-                and packing, with dedicated personnel responsible for monitoring the loading process and taking photos.
-                We
-                have established good relationships with the port area and have signed contracts for cooperation with
-                major
-                internation- al airlines, possessing strong partnership relations.
+                {{ __('Our company has its own customs clearance agency and is equipped with an EDI system that directly connects to the customs network. We have our own warehouse and strictly follow customer requirements for unloading and packing, with dedicated personnel responsible for monitoring the loading process and taking photos. We have established good relationships with the port area and have signed contracts for cooperation with major international airlines, possessing strong partnership relations.') }}
             </div>
 
             <div class="mt-16 flex max-w-lg items-center gap-4">
@@ -167,19 +159,19 @@
             </div>
             <div class="mt-16 flex items-center container mx-auto">
                 <div class="flex max-lg:hidden w-1/2 items-center justify-center pr-8 text-justify">
-                    <img class="w-64 h-64" src="{{ asset('images/icons/Icon/Web icon-06.png') }}" alt="">
+                    <img class="w-64 h-64"  data-src="{{ asset('images/icons/Icon/Web icon-06.png') }}" alt="">
                 </div>
                 <div class="w-full container lg:pl-8 text-justify">
-                    Through unified scheduling and coordination, timely cargo inquiries, and tracking, customers can
+                    {{ __('Through unified scheduling and coordination, timely cargo inquiries, and tracking, customers can
                     easily enjoy the advantages of networked services. A well-established transportation network can
-                    effectively avoid the following situations:
+                    effectively avoid the following situations:') }}
                     <br><br>
-                    - Higher charging standards of designated freight forwarders.
+                    - {{ __('Higher charging standards of designated freight forwarders.') }}
                     <br>
-                    - Lack of systematic services, resulting in poor user experience.
+                    - {{ __('Lack of systematic services, resulting in poor user experience.') }}
                     <br><br>
-                    This can effectively reduce unnecessary troubles for domestic customers and improve customer
-                    satisfaction.
+                    {{ __('This can effectively reduce unnecessary troubles for domestic customers and improve customer
+                    satisfaction.') }}
                 </div>
             </div>
         </div>

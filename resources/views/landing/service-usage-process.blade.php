@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <img src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-12.png') }}" class="w-full" alt="">
+    <img  data-src="{{ asset('images/covers/Ảnh trang chủ web (trang con)-12.png') }}" class="w-full" alt="">
 
     <div class="max-lg:px-4">
         <div class="py-16 text-primary">
@@ -22,6 +22,6 @@
 
         <h1 class="text-3xl mx-auto w-full container text-primary font-medium pb-8">{{ __('Service Usage Process') }}</h1>
 
-        <img src="{{ asset('images/services-usage.png') }}" alt="">
+        <img  data-src="{{ asset('images/services-usage-' . app()->getLocale() .'.png') }}" alt="">
     </div>
 @endsection
