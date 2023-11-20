@@ -81,7 +81,7 @@ class LandingController extends Controller
 
     public function companyNews()
     {
-        $posts = Post::orderBy('created_at', 'desc')->paginate(5);
+        $posts = Post::orderBy('created_at', 'desc')->get();
 
         SEOTools::setTitle(__('Company news'));
         return view('landing.company-news', compact('posts'));
