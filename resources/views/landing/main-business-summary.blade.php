@@ -27,7 +27,7 @@
         </div>
 
         <div class="container mx-auto mb-16 grid w-full grid-cols-4 max-lg:grid-cols-1 gap-8">
-            <div class="col-span-1 p-4 pl-16 text-xl bg-primary text-secondary" style="clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0 49%, 0% 0%);">
+            <div class="col-span-1 p-4 pl-8 text-xl bg-primary text-secondary" style="clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0 49%, 0% 0%);">
                 {{ __('Quick Feedback') }}
             </div>
 
@@ -50,23 +50,23 @@
             </h3>
             <p class="mt-4 text-center text-xl">{{ __('Stable timeliness and high-quality service are ahead of peers.') }}</p>
             <div class="container mx-auto mt-12 flex w-full max-lg:flex-col justify-center gap-16">
-                <div class="flex w-full flex-col items-center gap-2 text-center text-2xl lg:w-1/5">
+                <div class="flex w-full flex-col items-center gap-2 text-center text-lg lg:w-1/5">
                     <img class="h-24 w-24"  data-src="{{ asset('images/icons/Icon/Web icon-20.png') }}" alt="">
                     {{ __('Trailers') }}
                 </div>
-                <div class="flex w-full flex-col items-center gap-2 text-center text-2xl lg:w-1/5">
+                <div class="flex w-full flex-col items-center gap-2 text-center text-lg lg:w-1/5">
                     <img class="h-24 w-24"  data-src="{{ asset('images/icons/Icon/Web icon-23.png') }}" alt="">
                     {{ __('Storage') }}
                 </div>
-                <div class="flex w-full flex-col items-center gap-2 text-center text-2xl lg:w-1/5">
+                <div class="flex w-full flex-col items-center gap-2 text-center text-lg lg:w-1/5">
                     <img class="h-24 w-24"  data-src="{{ asset('images/icons/Icon/Web icon-27.png') }}" alt="">
                     {{ __('Door-to-door Delivery') }}
                 </div>
-                <div class="flex w-full flex-col items-center gap-2 text-center text-2xl lg:w-1/5">
+                <div class="flex w-full flex-col items-center gap-2 text-center text-lg lg:w-1/5">
                     <img class="h-24 w-24"  data-src="{{ asset('images/icons/Icon/Web icon-28.png') }}" alt="">
                     {{ __('Agent Customs Declaration And Inspection') }}
                 </div>
-                <div class="flex w-full flex-col items-center gap-2 text-center text-2xl lg:w-1/5">
+                <div class="flex w-full flex-col items-center gap-2 text-center text-lg lg:w-1/5">
                     <img class="h-24 w-24"  data-src="{{ asset('images/icons/Icon/Web icon-26.png') }}" alt="">
                     {{ __('Agent Cargo Transportation Insurance') }}
                 </div>

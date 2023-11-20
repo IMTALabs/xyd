@@ -4,100 +4,72 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\PostResource\Pages;
 use App\Filament\Resources\PostResource\RelationManagers;
+use App\Filament\Roles;
 use App\Models\Post;
-use Closure;
-use Filament\Forms;
-use Filament\Forms\Components\Grid;
-use Filament\Forms\Components\Hidden;
-use Filament\Forms\Components\TextInput;
-use Filament\Resources\Form;
+use Filament\Resources\Forms\Components;
+use Filament\Resources\Forms\Form;
 use Filament\Resources\Resource;
-use Filament\Resources\Table;
-use Filament\Tables;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Illuminate\Support\Str;
+use Filament\Resources\Tables\Columns;
+use Filament\Resources\Tables\Filter;
+use Filament\Resources\Tables\Table;
 
 class PostResource extends Resource
 {
-    protected static ?string $model = Post::class;
+    public static $icon = 'heroicon-o-collection';
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    public static $model = Post::class;
 
-    public static function form(Form $form): Form
+    public static function form(Form $form)
     {
         return $form
             ->schema([
-                Grid::make(1)->schema([
-                    TextInput::make('title')
-                        ->afterStateUpdated(function (Closure $get, Closure $set, ?string $state) {
-                            if (!$get('is_slug_changed_manually') && filled($state)) {
-                                $set('slug', Str::slug($state));
-                            }
-                        })
-                        ->reactive()
-                        ->required(),
-                    TextInput::make('slug')
-                        ->afterStateUpdated(function (Closure $set) {
-                            $set('is_slug_changed_manually', true);
-                        })
-                        ->required(),
-                    Hidden::make('is_slug_changed_manually')
-                        ->default(false)
-                        ->dehydrated(false),
-                    Forms\Components\RichEditor::make('content')
-                        ->fileAttachmentsDisk('public')
-                        ->required(),
-                    Forms\Components\Textarea::make('description')
-                        ->required(),
-                    Forms\Components\FileUpload::make('image')
-                        ->disk('public')
+                Components\Grid::make([
+                    Components\TextInput::make('title')
+                        ->autofocus()
                         ->required()
-                        ->acceptedFileTypes(['image/*']),
-                    Forms\Components\Toggle::make('is_published')
-                        ->default(true)
-                        ->inline(false)
-                        ->label('Published'),
-
-                ]),
+                        ->max(255)
+                        ->placeholder(__('Title')),
+                    Components\Textarea::make('description')
+                        ->placeholder(__('Description')),
+                    Components\FileUpload::make('image')
+                        ->image(),
+                    Components\RichEditor::make('content')
+                        ->placeholder(__('Content')),
+                ])->columns(1),
             ]);
     }
 
-    public static function table(Table $table): Table
+    public static function table(Table $table)
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('title'),
-                Tables\Columns\TextColumn::make('slug'),
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime(),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime(),
+                Columns\Image::make('image'),
+                Columns\Text::make('title')
+                    ->primary()
+                    ->searchable()
+                    ->sortable(),
+                Columns\Text::make('updated_at')
+                    ->sortable()
+                    ->label('Last updated at'),
             ])
             ->filters([
                 //
-            ])
-            ->actions([
-                Tables\Actions\EditAction::make(),
-            ])
-            ->bulkActions([
-                Tables\Actions\DeleteBulkAction::make(),
             ]);
     }
 
-    public static function getRelations(): array
+    public static function relations()
     {
         return [
             //
         ];
     }
 
-    public static function getPages(): array
+    public static function routes()
     {
         return [
-            'index'  => Pages\ListPosts::route('/'),
-            'create' => Pages\CreatePost::route('/create'),
-            'edit'   => Pages\EditPost::route('/{record}/edit'),
+            Pages\ListPosts::routeTo('/', 'index'),
+            Pages\CreatePost::routeTo('/create', 'create'),
+            Pages\EditPost::routeTo('/{record}/edit', 'edit'),
         ];
     }
 }

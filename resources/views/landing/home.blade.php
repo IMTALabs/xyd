@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="flex items-end justify-center bg-cover bg-center aspect-[10/4] bg-secondary"
-         style="background-image: url('https://res.cloudinary.com/dyxp9ndma/image/upload/f_auto,q_auto/uoyxzczanz4617ouqaix')">
+         style="background-image: url('{{ asset('images/covers/home page.png') }}')">
         <div class="container mb-1 w-full py-2 text-center font-bold uppercase bg-primary text-secondary">
             {{ __('Here is quick access to') }}
         </div>
@@ -42,37 +42,72 @@
     <div class="pt-28 bg-secondary">
         <div class="mt-8 h-0.5 bg-primary"></div>
         <div class="container mx-auto w-full -translate-y-14 px-4 text-primary bg-secondary" x-data="{
-                tab: null
+                first: true,
+                second: true,
+                third: true,
+                move(position) {
+                    ['first', 'second', 'third'].forEach($ref => {
+                        this[$ref] = $ref === position;
+                        setTimeout(() => {
+                            if (this[$ref]) {
+                                if ($ref === 'first') {
+                                    this.$refs.first.style.zIndex = 999;
+                                    this.$refs.first.querySelector('.content').classList.remove('hidden');
+                                    // ...
+                                } else if ($ref === 'second') {
+                                    this.$refs.second.style.zIndex = 999;
+                                    this.$refs.second.classList.add('translate-x-0');
+                                    this.$refs.second.classList.remove('translate-x-[331px]');
+                                    this.$refs.second.querySelector('.content').classList.remove('hidden');
+                                } else {
+                                    this.$refs.third.style.zIndex = 999;
+                                    this.$refs.third.classList.add('translate-x-0');
+                                    this.$refs.third.classList.remove('translate-x-[662px]');
+                                    this.$refs.third.querySelector('.content').classList.remove('hidden');
+                                }
+                            }
+                        },0)
+                    });
+                },
+
+                restore() {
+                    this.$refs.first.querySelector('.content').classList.add('hidden');
+                    this.$refs.second.querySelector('.content').classList.add('hidden');
+                    this.$refs.third.querySelector('.content').classList.add('hidden');
+
+                    ['first', 'second', 'third'].forEach($ref => {
+                        {{--setTimeout(() => {--}}
+                            this[$ref] = true;
+                        {{--}, 100)--}}
+                    });
+
+                    this.$refs.first.classList.add('translate-x-0');
+                    this.$refs.first.style.zIndex = 0;
+
+                    this.$refs.second.classList.add('translate-x-[331px]');
+                    this.$refs.second.style.zIndex = 0;
+
+                    this.$refs.third.classList.add('translate-x-[662px]');
+                    this.$refs.third.style.zIndex = 0;
+                }
             }">
             <h2 class="w-fit text-3xl font-bold">{{ __('We strive to improve our services every day to always have the most optimal solution for our customers') }}</h2>
             <p class="mt-6 text-lg">
                 {{ __('Our objective is to constantly develop our services in order to deliver effective logistical solutions while providing the most value to our customers. Our distinct value rests in the following services:') }}
             </p>
-            <div class="mt-16 flex flex-col justify-center gap-16 lg:flex-row" x-show="tab === null">
-                <div class="flex flex-col items-center gap-4 font-bold" @mouseenter="tab = 1">
-                    <img  data-src="{{ asset('images/icons/Icon/Web icon-04.png') }}" class="h-24 w-24" alt="icon">
-                    {{ __('Supply Chain Solutions') }}
-                </div>
 
-                <div class="flex flex-col items-center gap-4 font-bold" @mouseenter="tab = 2">
-                    <img  data-src="{{ asset('images/icons/Icon/Web icon-05.png') }}" class="h-24 w-24" alt="icon">
-                    {{ __('A to Z Transportation Service') }}
-                </div>
-
-                <div class="flex flex-col items-center gap-4 font-bold" @mouseenter="tab = 3">
-                    <img  data-src="{{ asset('images/icons/Icon/Web icon-06.png') }}" class="h-24 w-24" alt="icon">
-                    {{ __('Consulting and Quotation') }}
-                </div>
-            </div>
-
-            <div x-show="tab !== null" style="display: none" class="pt-8" @mouseleave="tab = null">
-                <div class="mx-auto max-w-2xl min-h-[10rem]" x-show="tab === 1">
-                    <div class="flex max-lg:flex-col items-center gap-4">
+            <div class="pt-8 flex items-center justify-center w-[993px] min-h-[10rem] mt-8" x-ref="container"
+                 @mouseleave="restore()">
+                <div x-ref="first" class="w-full min-h-[10rem] transition-all absolute left-0 " x-transition
+                     x-transition.duration.75ms x-show="first"
+                     @mouseenter="move('first')">
+                    <div class="flex max-lg:flex-col items-center gap-4 px-16">
                         <div class="flex flex-col items-center gap-4 font-bold shrink-0">
-                            <img  data-src="{{ asset('images/icons/Icon/Web icon-04.png') }}" class="h-24 w-24" alt="icon">
+                            <img data-src="{{ asset('images/icons/Icon/Web icon-04.png') }}" class="h-24 w-24"
+                                 alt="icon">
                             {{ __('Supply Chain Solutions') }}
                         </div>
-                        <div>
+                        <div class="content hidden">
                             {{ __('Transportation is an essential need of economic development aimed at changing the location of goods and people from one place to another by means of transportation. Additionally, the development of cargo services is crucial for facilitating the movement of commodities. In a similar manner, the stages of distribution and circulation of goods both heavily rely on logistics') }}
                             <a href="{{ route('supply-chain-solution') }}"
                                class="mt-1 ml-auto block w-fit px-4 py-2 bg-primary text-secondary">
@@ -82,13 +117,14 @@
                     </div>
                 </div>
 
-                <div class="mx-auto max-w-2xl min-h-[10rem]" x-show="tab === 2">
-                    <div class="flex max-lg:flex-col items-center gap-4">
+                <div x-ref="second" class="w-full min-h-[10rem] transition-all absolute left-0 translate-x-[331px]"
+                     x-transition x-transition.duration.75ms x-show="second" @mouseenter="move('second')">
+                    <div class="flex max-lg:flex-col items-center gap-4 px-16">
                         <div class="flex flex-col items-center gap-4 font-bold shrink-0">
                             <img src="{{ asset('images/icons/Icon/Web icon-05.png') }}" class="h-24 w-24" alt="icon">
                             {{ __('A to Z Transportation Service') }}
                         </div>
-                        <div>
+                        <div class="content hidden">
                             {{ __('The first step that businesses must prepare in import and export procedures is customs documents. Customs procedures are surely no longer mysterious to businesses involved in import and export. While completing customs clearance procedures, it is inevitable for those who are inexperienced in the field to run into unforeseen difficulties') }}
                             <a href="{{ route('a-to-z') }}"
                                class="mt-1 ml-auto block w-fit px-4 py-2 bg-primary text-secondary">
@@ -98,13 +134,14 @@
                     </div>
                 </div>
 
-                <div class="mx-auto max-w-2xl min-h-[10rem]" x-show="tab === 3">
-                    <div class="flex max-lg:flex-col items-center gap-4">
+                <div x-ref="third" class="w-full min-h-[10rem] transition-all absolute left-0 translate-x-[662px]"
+                     x-transition x-transition.duration.75ms x-show="third" @mouseenter="move('third')">
+                    <div class="flex max-lg:flex-col items-center gap-4 px-16">
                         <div class="flex flex-col items-center gap-4 font-bold shrink-0">
                             <img src="{{ asset('images/icons/Icon/Web icon-06.png') }}" class="h-24 w-24" alt="icon">
                             {{ __('Consulting and Quotation') }}
                         </div>
-                        <div>
+                        <div class="content hidden">
                             {{ __('We put an emphasis on specialized training to ensure that you receive the best possible solution for your unique needs. In order to provide direction and detailed solutions to customer challenges, XYD consistently looks deeply into customer needs in an effort to identify essential solutions. Additionally, our dedication is accompanied by knowledge and enthusiasm. Your happiness is what makes XYD Express successful') }}
                             <a href="{{ route('consulting-and-quotation') }}"
                                class="mt-1 ml-auto block w-fit px-4 py-2 bg-primary text-secondary">
@@ -146,8 +183,10 @@
         </div>
     </div>
 
-    <div class="relative overflow-auto px-4 py-16 bg-secondary world-map">
+    <div class="relative overflow-auto px-4 py-16 bg-secondary">
         <h2 class="text-center text-3xl font-bold text-primary">{{ __('History & Achievement') }}</h2>
+    </div>
+    <div class="relative overflow-auto px-4 py-16 bg-secondary world-map">
         <div class="container relative mx-auto mt-16 flex items-center gap-8 min-w-[104rem]">
             <div class="w-[calc(100%-10rem)] h-0.5 bg-primary absolute top-[13.4rem] left-0"></div>
             <div class="flex flex-col gap-8">
@@ -278,47 +317,31 @@
             <h2 class="w-fit text-3xl font-semibold">{{ __('Our latest news') }}</h2>
             <div class="mt-16 grid grid-cols-2 gap-4 lg:grid-rows-3">
                 <div class="col-span-full flex lg:col-span-1 lg:row-span-3">
-                    <img data-src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaBoJ-HMLSuYzsi0aHkYCDVYwSSzgTqIsSvMHDcLmY_TSvH_b-4NRL3lmVy1O15-mXNLTNDoYzhE9KFPhZXFBmUiCr6GQg=w1830-h975" class="h-full w-1/2 object-cover" alt="">
+                    <img
+                        data-src="{{ Storage::url($posts->first()->image) }}"
+                        class="h-full w-1/2 object-cover" alt="">
                     <div class="bg-black p-2 min-w-[10rem]">
-                        <h3 class="text-3xl font-medium">
-                            {{ __('Fire driven, cohesion UP! Xiangyuda international logistics business group construction') }}
+                        <h3 class="text-3xl font-medium break-all">
+                            {{ $posts->first()->title }}
                         </h3>
-                        <a href="#" class="mt-2 block text-xs">{{ __('Read more') }} ...</a>
+                        <a href="{{ route('company-new-detail', ['id' => $posts->first()->id]) }}" class="mt-2 block">{{ __('Read more') }} ...</a>
                     </div>
                 </div>
-                <div class="col-span-full flex lg:col-span-1">
-                    <img data-src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaBEDE0Ol5J08OpG2Fy5WtYXm9k5bKirpX2m0ijD6rfTC9JrrBLSsAXPzk71Li-83OjKTrqSbmTFIxvPuJ-ieh21EM54xg=w1830-h975" class="aspect-square w-24 object-cover" alt="">
-                    <div class="ml-4 text-sm">
-                        <span class="mt-1 inline-block rounded-full bg-black px-8 py-1">{{ __('New release') }}</span>
-                        01/07/2023
-                        <h3 class="mt-2 text-3xl font-medium line-clamp-2">
-                            {{ __('Promote innovation and development, promote cooperation and win-win results, and Jitu International is invited to participate in the third "China Europe Cross border E-commerce Forum"') }}
-                        </h3>
-                        <a href="#" class="mt-2 block text-sm">{{ __('Read more') }} ...</a>
+                @foreach($posts->skip(1) as $post)
+                    <div class="col-span-full flex lg:col-span-1">
+                        <img
+                            data-src="{{ Storage::url($post->image) }}"
+                            class="aspect-square w-24 object-cover" alt="">
+                        <div class="ml-4 text-sm">
+                            <span class="mt-1 inline-block rounded-full bg-black px-8 py-1">{{ __('New release') }}</span>
+                            {{ $post->created_at->format('d/m/Y') }}
+                            <h3 class="mt-2 text-3xl font-medium line-clamp-2">
+                                {{ $post->title }}
+                            </h3>
+                            <a href="{{ route('company-new-detail', ['id' => $post->id]) }}" class="mt-2 block">{{ __('Read more') }} ...</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-span-full flex lg:col-span-1">
-                    <img data-src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaBEDE0Ol5J08OpG2Fy5WtYXm9k5bKirpX2m0ijD6rfTC9JrrBLSsAXPzk71Li-83OjKTrqSbmTFIxvPuJ-ieh21EM54xg=w1830-h975" class="aspect-square w-24 object-cover" alt="">
-                    <div class="ml-4 text-sm">
-                        <span class="mt-1 inline-block rounded-full bg-black px-8 py-1">{{ __('New release') }}</span>
-                        01/07/2023
-                        <h3 class="mt-2 text-3xl font-medium line-clamp-2">
-                            {{ __('Promote innovation and development, promote cooperation and win-win results, and Jitu International is invited to participate in the third "China Europe Cross border E-commerce Forum"') }}
-                        </h3>
-                        <a href="#" class="mt-2 block text-sm">{{ __('Read more') }} ...</a>
-                    </div>
-                </div>
-                <div class="col-span-full flex lg:col-span-1">
-                    <img data-src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaBEDE0Ol5J08OpG2Fy5WtYXm9k5bKirpX2m0ijD6rfTC9JrrBLSsAXPzk71Li-83OjKTrqSbmTFIxvPuJ-ieh21EM54xg=w1830-h975" class="aspect-square w-24 object-cover" alt="">
-                    <div class="ml-4 text-sm">
-                        <span class="mt-1 inline-block rounded-full bg-black px-8 py-1">{{ __('New release') }}</span>
-                        01/07/2023
-                        <h3 class="mt-2 text-3xl font-medium line-clamp-2">
-                            {{ __('Promote innovation and development, promote cooperation and win-win results, and Jitu International is invited to participate in the third "China Europe Cross border E-commerce Forum"') }}
-                        </h3>
-                        <a href="#" class="mt-2 block text-sm">{{ __('Read more') }} ...</a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
         <a href="{{ route('company-news') }}" class="mx-auto mt-8 block w-fit px-8 py-2 bg-secondary text-primary">
@@ -336,7 +359,7 @@
                 {{ __('Please leave your information so we can assist you') }}
             </h3>
             <p class="mt-6 text-center">{{ __('Required fields') }} *</p>
-            <form action="" class="mt-4 grid grid-cols-2 gap-4 lg:grid-rows-6">
+            <form action="{{ route('contact-us') }}" class="mt-4 grid grid-cols-2 gap-4 lg:grid-rows-6">
                 <input type="text"
                        class="col-span-1 px-2 py-1 placeholder:text-xs placeholder:text-primary row-span-1 bg-[#f5eccb]"
                        placeholder="{{ __('Please enter your full name') }} *">
@@ -356,59 +379,61 @@
                     class="col-span-full lg:col-span-1 px-2 py-1 placeholder:text-xs placeholder:text-primary row-span-2 bg-[#f5eccb] resize-none"
                     placeholder="{{ __('Please enter your problem so that we can assist you') }} *"></textarea>
             </form>
-            <a href="#" class="mx-auto mt-8 block w-fit bg-white px-8 py-2 text-primary">{{ __('Next') }}</a>
+            <a href="{{ route('contact-us') }}"
+               class="mx-auto mt-8 block w-fit bg-white px-8 py-2 text-primary">{{ __('Next') }}</a>
         </div>
 
         <div class="mt-8 h-0.5 bg-primary"></div>
         <div class="container mx-auto w-full -translate-y-4 px-4 text-primary">
             <h3 class="mx-auto w-fit px-4 text-center text-3xl font-semibold uppercase bg-secondary">{{ __('Our cooperation') }}</h3>
             <div class="mt-8 grid grid-cols-6 gap-x-8 gap-y-4 pb-4">
-                <div class="col-span-3 bg-white p-4 lg:col-span-1">
+                <div class="col-span-3 bg-white p-4 lg:col-span-1 overflow-hidden">
                     <img class="h-20 object-contain mx-auto" src="{{ asset('images/New/UPS Logo.png') }}"
                          alt="">
                 </div>
-                <div class="col-span-3 bg-white p-4 lg:col-span-1">
-                    <img class="h-20 object-contain mx-auto" src="{{ asset('images/New/The peopple nework.jpg') }}"
+                <div class="col-span-3 bg-white p-4 lg:col-span-1 overflow-hidden">
+                    <img class="h-20 object-contain mx-auto scale-[1.5] translate-x-2" src="{{ asset('images/New/The peopple nework.jpg') }}"
                          alt="">
                 </div>
-                <div class="col-span-3 bg-white p-4 lg:col-span-1">
+                <div class="col-span-3 bg-white p-4 lg:col-span-1 overflow-hidden">
                     <img class="h-20 object-contain mx-auto" src="{{ asset('images/New/aramex logo.png') }}"
                          alt="">
                 </div>
-                <div class="col-span-3 bg-white p-4 lg:col-span-1">
+                <div class="col-span-3 bg-white p-4 lg:col-span-1 overflow-hidden">
                     <img class="h-20 object-contain mx-auto" src="{{ asset('images/New/DHL_Logo.svg.png') }}"
                          alt="">
                 </div>
-                <div class="col-span-3 bg-white p-4 lg:col-span-1">
+                <div class="col-span-3 bg-white p-4 lg:col-span-1 overflow-hidden">
                     <img class="h-20 object-contain mx-auto" src="{{ asset('images/New/DHgate-Logo.png') }}"
                          alt="">
                 </div>
-                <div class="col-span-3 bg-white p-4 lg:col-span-1">
+                <div class="col-span-3 bg-white p-4 lg:col-span-1 overflow-hidden">
                     <img class="h-20 object-contain mx-auto" src="{{ asset('images/New/Fedex logo.png') }}"
                          alt="">
                 </div>
-                <div class="col-span-3 bg-white p-4 lg:col-span-1">
+                <div class="col-span-3 bg-white p-4 lg:col-span-1 overflow-hidden">
                     <img class="h-20 object-contain mx-auto" src="{{ asset('images/New/Hongkong_Post_Logo.svg.png') }}"
                          alt="">
                 </div>
-                <div class="col-span-3 bg-white p-4 lg:col-span-1">
+                <div class="col-span-3 bg-white p-4 lg:col-span-1 overflow-hidden">
                     <img class="h-20 object-contain mx-auto" src="{{ asset('images/New/EBay_logo.png') }}"
                          alt="">
                 </div>
-                <div class="col-span-3 bg-white p-4 lg:col-span-1">
+                <div class="col-span-3 bg-white p-4 lg:col-span-1 overflow-hidden">
                     <img class="h-20 object-contain mx-auto" src="{{ asset('images/New/17 track logo.png') }}"
                          alt="">
                 </div>
-                <div class="col-span-3 bg-white p-4 lg:col-span-1">
-                    <img class="h-20 object-contain mx-auto" src="{{ asset('images/New/china postal express and logistics logo.png') }}"
+                <div class="col-span-3 bg-white p-4 lg:col-span-1 overflow-hidden">
+                    <img class="h-20 object-contain mx-auto"
+                         src="{{ asset('images/New/china postal express and logistics logo.png') }}"
                          alt="">
                 </div>
-                <div class="col-span-3 bg-white p-4 lg:col-span-1">
+                <div class="col-span-3 bg-white p-4 lg:col-span-1 overflow-hidden">
                     <img class="h-20 object-contain mx-auto" src="{{ asset('images/New/Amazon-Logo.png') }}"
                          alt="">
                 </div>
-                <div class="col-span-3 bg-white p-4 lg:col-span-1">
-                    <img class="h-20 object-contain mx-auto" src="{{ asset('images/New/Alibaba-Logo.png') }}"
+                <div class="col-span-3 bg-white p-4 lg:col-span-1 overflow-hidden">
+                    <img class="h-20 object-contain mx-auto scale-[1.2]" src="{{ asset('images/New/Alibaba-Logo.png') }}"
                          alt="">
                 </div>
             </div>

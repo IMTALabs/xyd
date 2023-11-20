@@ -9,10 +9,16 @@
 
 body {
     font-family: 'Bahnschrift', sans-serif;
+    font-size: 20px;
+    overflow-x: hidden;
 }
 
 svg {
     @apply shrink-0;
+}
+
+.container {
+    @apply !max-w-[1024px];
 }
 
 .world-map::before {
@@ -27,6 +33,6 @@ svg {
     background-image: url('/images/pngwing.com.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80%;
+    background-size: contain;
     transform: translate(-50%, -50%);
 }

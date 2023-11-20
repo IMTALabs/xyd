@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="pt-8 pb-20 bg-secondary">
+    <div class="pt-16 pb-20 bg-secondary">
         <div class="container mx-auto text-primary">
             <h1 class="text-4xl font-bold uppercase">{{ __('Contact us') }}</h1>
 

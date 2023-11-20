@@ -18,18 +18,18 @@
         <h2 class="text-3xl">{{ __('Current Business Status') }}</h2>
 
         <div class="mx-auto mt-16 flex max-lg:flex-col">
-            <div class="w-full lg:w-1/3 text-justify lg:pr-16 text-lg leading-8">
+            <div class="w-full lg:w-2/5 text-justify lg:pr-16 leading-8">
                 {{ __("Currently, we have more than 5,000 square meters of domestic warehouse resources, 2,000 square meters of American warehouses, and 1,500 square meters of office space, distributed in Guangzhou, Shenzhen, Yiwu and other places. We can provide various types of storage services to customers nationwide to meet the customer's business needs.") }}
             </div>
 
-            <div class="w-full lg:w-2/3 flex flex-col gap-4 max-lg:mt-8 relative">
+            <div class="w-full lg:w-3/5 flex flex-col gap-4 max-lg:mt-8 relative">
                 <div
                     class="w-1 h-full bg-secondary absolute top-0 bottom-0 left-1/2 -translate-x-1/2 z-[-1] max-md:hidden"></div>
 
                 <div class="flex gap-4 w-full md:w-1/2">
                     <div class="grow">
                         <div
-                            class="whitespace-nowrap rounded-r-full px-8 py-1 text-center text-3xl font-bold shadow-xl bg-primary text-secondary">
+                            class="whitespace-nowrap text-xl rounded-r-full px-8 py-1 text-center font-bold shadow-xl bg-primary text-secondary">
                             {{ __('600 million +') }}
                         </div>
                         <div class="flex">
@@ -37,7 +37,7 @@
                                 <div class="h-16 origin-top-left -rotate-45 transform bg-orange-950"></div>
                             </div>
                             <div
-                                class="bg-secondary w-[calc(100%-3rem)] shadow-2xl flex items-center justify-center rounded-b-2xl px-2 text-center">
+                                class="bg-secondary w-[calc(100%-3rem)] text-lg shadow-2xl flex items-center justify-center rounded-b-2xl px-2 text-center">
                                 {{ __('Company annual revenue') }}
                             </div>
                         </div>
@@ -57,12 +57,12 @@
 
                     <div class="grow">
                         <div
-                            class="whitespace-nowrap rounded-l-full px-8 py-1 text-center text-3xl font-bold shadow-xl bg-primary text-secondary">
+                            class="whitespace-nowrap text-xl rounded-l-full px-8 py-1 text-center font-bold shadow-xl bg-primary text-secondary">
                             {{ __('20000 ton +') }}
                         </div>
                         <div class="flex justify-end">
                             <div
-                                class="bg-secondary w-[calc(100%-3rem)] shadow-2xl flex items-center justify-center rounded-b-2xl px-2 text-center">
+                                class="bg-secondary w-[calc(100%-3rem)] text-lg shadow-2xl flex items-center justify-center rounded-b-2xl px-2 text-center">
                                 {{ __('Freight weight in 2021.') }}
                             </div>
                             <div class="inline-block w-4 overflow-hidden">
@@ -75,7 +75,7 @@
                 <div class="flex gap-4 w-full md:w-1/2">
                     <div class="grow">
                         <div
-                            class="whitespace-nowrap rounded-r-full px-8 py-1 text-center text-3xl font-bold shadow-xl bg-primary text-secondary">
+                            class="whitespace-nowrap text-xl rounded-r-full px-8 py-1 text-center font-bold shadow-xl bg-primary text-secondary">
                             {{ __('40 million +') }}
                         </div>
                         <div class="flex">
@@ -83,7 +83,7 @@
                                 <div class="h-16 origin-top-left -rotate-45 transform bg-orange-950"></div>
                             </div>
                             <div
-                                class="bg-secondary w-[calc(100%-3rem)] shadow-2xl flex items-center justify-center rounded-b-2xl px-2 text-center">
+                                class="bg-secondary w-[calc(100%-3rem)] text-lg shadow-2xl flex items-center justify-center rounded-b-2xl px-2 text-center">
                                 {{ __('Total profit') }}
                             </div>
                         </div>
@@ -103,12 +103,12 @@
 
                     <div class="grow">
                         <div
-                            class="whitespace-nowrap rounded-l-full px-8 py-1 text-center text-3xl font-bold shadow-xl bg-primary text-secondary">
+                            class="whitespace-nowrap text-xl rounded-l-full px-8 py-1 text-center font-bold shadow-xl bg-primary text-secondary">
                             {{ __('40 million +') }}
                         </div>
                         <div class="flex justify-end">
                             <div
-                                class="bg-secondary w-[calc(100%-3rem)] shadow-2xl flex items-center justify-center rounded-b-2xl px-2 text-center">
+                                class="bg-secondary w-[calc(100%-3rem)] text-lg shadow-2xl flex items-center justify-center rounded-b-2xl px-2 text-center">
                                 {{ __('Total value of the company’s fixed assets') }}
                             </div>
                             <div class="inline-block w-4 overflow-hidden">
@@ -121,7 +121,7 @@
                 <div class="flex gap-4 w-full md:w-1/2">
                     <div class="grow">
                         <div
-                            class="whitespace-nowrap rounded-r-full px-8 py-1 text-center text-3xl font-bold shadow-xl bg-primary text-secondary">
+                            class="whitespace-nowrap text-xl rounded-r-full px-8 py-1 text-center font-bold shadow-xl bg-primary text-secondary">
                             {{ __('20 +') }}
                         </div>
                         <div class="flex">
@@ -129,7 +129,7 @@
                                 <div class="h-16 origin-top-left -rotate-45 transform bg-orange-950"></div>
                             </div>
                             <div
-                                class="bg-secondary w-[calc(100%-3rem)] shadow-2xl flex items-center justify-center rounded-b-2xl px-2 text-center">
+                                class="bg-secondary w-[calc(100%-3rem)] text-lg shadow-2xl flex items-center justify-center rounded-b-2xl px-2 text-center">
                                 {{ __('Freight trucks and fully automatic loading and unloading vehicles.') }}
                             </div>
                         </div>

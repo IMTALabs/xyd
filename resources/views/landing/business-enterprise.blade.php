@@ -42,7 +42,7 @@
                     </div>
                 </div>
 
-                <div class="flex items-center gap-4 absolute lg:right-[calc(100%)] xl:right-[calc(100%-2rem)] top-8">
+                <div class="flex items-center gap-4 absolute lg:right-[calc(100%)] top-8">
                     <div class="flex flex-col min-w-fit items-end text-primary">
                         <span class="text-xl font-medium">{{ __('Service Philosophy') }}</span>
                         <span class="text-sm">{{ __("Beginning with user's demand and ending with user's satisfaction.") }}</span>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
 
-                <div class="flex items-center gap-4 absolute lg:left-[calc(100%-6rem)] xl:left-[calc(100%-8rem)] top-8">
+                <div class="flex items-center gap-4 absolute lg:left-[calc(100%-6rem)] top-8">
                     <div class="flex h-20 w-20 shrink-0 items-center justify-center rounded-full shadow-xl bg-secondary">
                         <div class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-secondary">
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 3.5v11a2 2 0 0 0 2 2h11"/><path d="m6.5 12.5l3-3l2 2l5-5"/><path d="M16.5 9.5v-3h-3"/></g></svg>

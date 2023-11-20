@@ -48,8 +48,8 @@
 
                 <div
                     class="w-[calc(100%-3rem)] h-[calc(100%-3rem)] rounded-full bg-secondary shadow-2xl flex flex-col justify-center items-center text-center text-primary p-4">
-                    <h2 class="font-bold xl:text-3xl">{{ __('Professional') }}</h2>
-                    <p class="text-xs mt-4 xl:text-base">
+                    <h2 class="font-bold xl:text-base">{{ __('Professional') }}</h2>
+                    <p class="text-xs line-clamp-2 max-xl:text-xl mt-4 xl:text-base">
                         {{ __('Highly specialized consultants. Personalize service according to your requirements') }}
                     </p>
                 </div>
@@ -80,8 +80,8 @@
 
                 <div
                     class="w-[calc(100%-3rem)] h-[calc(100%-3rem)] rounded-full bg-secondary shadow-2xl flex flex-col justify-center items-center text-center text-primary p-4">
-                    <h2 class="font-bold xl:text-3xl">{{ __('Flexible Settlement') }}</h2>
-                    <p class="text-xs mt-4 xl:text-base">
+                    <h2 class="font-bold xl:text-base">{{ __('Flexible Settlement') }}</h2>
+                    <p class="text-xs line-clamp-2 max-xl:text-xl mt-4 xl:text-base">
                         {{ __('We provide advanced service so you can have flexible payment time.') }}
                     </p>
                 </div>
@@ -112,8 +112,8 @@
 
                 <div
                     class="w-[calc(100%-3rem)] h-[calc(100%-3rem)] rounded-full bg-secondary shadow-2xl flex flex-col justify-center items-center text-center text-primary p-4">
-                    <h2 class="font-bold xl:text-3xl">{{ __('Enthusiasm') }}</h2>
-                    <p class="text-xs mt-4 xl:text-base">
+                    <h2 class="font-bold xl:text-base">{{ __('Enthusiasm') }}</h2>
+                    <p class="text-xs line-clamp-2 max-xl:text-xl mt-4 xl:text-base">
                         {{ __('Enthusiastic consulting staff, 24/7 customer support') }}
                     </p>
                 </div>
@@ -134,8 +134,8 @@
 
                 <div
                     class="w-[calc(100%-3rem)] h-[calc(100%-3rem)] rounded-full bg-secondary shadow-2xl flex flex-col justify-center items-center text-center text-primary p-4">
-                    <h2 class="font-bold xl:text-3xl">{{ __('With great care') }}</h2>
-                    <p class="text-xs mt-4 xl:text-base">
+                    <h2 class="font-bold xl:text-base">{{ __('With great care') }}</h2>
+                    <p class="text-xs line-clamp-2 max-xl:text-xl mt-4 xl:text-base">
                         {{ __('We handle cargo with love and care') }}
                     </p>
                 </div>

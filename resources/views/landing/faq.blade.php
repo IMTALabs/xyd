@@ -39,7 +39,7 @@
                               d="M12.6 12L8.7 8.1q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.6 4.6q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l3.9-3.9Z"/>
                     </svg>
                 </h2>
-                <p class="mt-4" :class="{'hidden': collapse}">
+                <p class="mt-4 text-justify" :class="{'hidden': collapse}">
                     {{ __('The "CE" mark is a safety certification mark that is regarded as a passport for manufacturers to open and enter the European market.') }}
                     <br><br>
                     {{ __('In the EU market, the "CE" mark is a mandatory certification mark, whether it is a product produced by an enterprise within the EU, or a product produced in other countries, in order to circulate freely in the EU market, it must be affixed with the "CE" mark to show that the product meets the basic requirements of the EU\'s "New Method of Technical coordination and standardization" directive.') }}
@@ -67,7 +67,7 @@
                               d="M12.6 12L8.7 8.1q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.6 4.6q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l3.9-3.9Z"/>
                     </svg>
                 </h2>
-                <p class="mt-4" :class="{'hidden': collapse}">
+                <p class="mt-4 text-justify" :class="{'hidden': collapse}">
                     {{ __('FOB means free on board. It is the price at which the seller loads the goods on the carrier designated by the buyer at the port specified in the contract and bears all costs and risks until the goods are loaded on the carrier.') }}
                     <br><br>
                     {{ __('CNF belongs to the past tense, and according to InCOterms 2000, CFR is the abbreviation of Cost and Freight (the outdated abbreviations C and F, CNF or C+F should no longer be used), and C&F (CFR) usually refers to FOB+ freight. The Seller must pay the freight and expenses necessary to transport the goods to the named port of destination, but the risk of loss or damage to the goods after delivery and any additional costs due to various events pass from the Seller to the Buyer.') }}
@@ -101,7 +101,7 @@
                               d="M12.6 12L8.7 8.1q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.6 4.6q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l3.9-3.9Z"/>
                     </svg>
                 </h2>
-                <p class="mt-4" :class="{'hidden': collapse}">
+                <p class="mt-4 text-justify" :class="{'hidden': collapse}">
                     {{ __("UPS International Express is one of the three major international express delivery companies. It has many express products, the most common of which are blue and red express channels. The blue list is called UPS Worldwide expedited and is known as UPS World Express and is the fastest and lowest cost delivery method of UPS.") }}
                     <br><br>
                     {{ __("Ups International Express") }}
@@ -144,21 +144,21 @@
                               d="M12.6 12L8.7 8.1q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.6 4.6q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l3.9-3.9Z"/>
                     </svg>
                 </h2>
-                <p class="mt-4" :class="{'hidden': collapse}">
+                <p class="mt-4 text-justify" :class="{'hidden': collapse}">
                     {{ __("DHL is a joint venture express freight company founded in the United States and is currently a joint venture between Germany and the United States. It is one of the largest air express freight companies in the world.") }}
-
+                    <br><br>
                     {{ __("First, different names and partners") }}
-
+                    <br><br>
                     {{ __('Mainland DHL, is a joint venture between DHL and Sinotrans, self-proclaimed: Sinotrans DHL. In Hong Kong, DHL company incorporated DHL International, daily use of DHL, and in order to distinguish between Hong Kong DHL and mainland DHL, so in general, we call Hong Kong DHL: "Hong Kong DHL"') }}
-
+                    <br><br>
                     {{ __("Second, the difference and distinction of prices and policies") }}
-
+                    <br><br>
                     {{ __("Because DHL in mainland China is a joint venture, and the current domestic and international express business in mainland China is still") }}
-
+                    <br><br>
                     {{ __("It is a relatively monopolistic industry, coupled with underdeveloped domestic freight resources, so the current price of DHL in the mainland is relatively high. As an international freight transfer place, Hong Kong is relatively competitive, so the price of DHL in Hong Kong is relatively low. Taking a 0.5KGS document as an example, the price of DHL in Hong Kong and mainland DHL may differ by about 1 times the price. It can be seen why many customers prefer to choose Hong Kong DHL rather than mainland DHL in order to save costs. Hong Kong is a free trade port, and DHL transshipment in Hong Kong generally does not require customs declaration, which saves customers from cumbersome procedures and valuable time.") }}
-
+                    <br><br>
                     {{ __("Three, the delivery time is different and different") }}
-
+                    <br><br>
                     {{ __("Hong Kong DHL is generally through the Shenzhen agent customs clearance delivery to Hong Kong, and then by Hong Kong DHL directly on the plane to the world. Under normal circumstances, mainland DHL will send freight directly to the nearest international airport, such as Guangzhou, Shanghai, Shenzhen, etc., directly on the plane, and then shipped to all parts of the world. Therefore, under normal circumstances, the speed of DHL to the mainland will be about 1-2 days faster than that of DHL in Hong Kong. However, because the international flights in the mainland are not very developed, many international flights are also transited through Hong Kong. Therefore, in addition to Southeast Asia, South Korea, Japan and other regions, mainland DHL is faster than Hong Kong DHL, if you go to the Middle East, Africa, Europe and America and other places, There is basically no difference in the timeliness of the two, because in some relatively distant areas, mainland DHL also needs to first send the goods to Hong Kong and then operate. Domestic DHL generally receives the express, there will be a tracking number, which can be immediately queried on the DHL official website, and if it is sent to Hong Kong DHL, the tracking number must be generated through the replacement of the tracking number, which can be queried on the DHL official website, or the original tracking number can be queried by the sender's reference information on the DHL official website. Once the goods are delivered to DHL, other delivery times, insurance clause 2 basically makes no difference. Hong Kong DHL and domestic DHL that is safer, is it risky to take Hong Kong DHL? After the goods are delivered to DHL, the safety and risk of the two are basically no different, but because the goods sent to DHL in Hong Kong are delivered to DHL in Hong Kong by the mainland's domestic agency company, so as long as the regular agency company is selected, there is basically no risk.") }}
                 </p>
             </div>
@@ -178,7 +178,7 @@
                               d="M12.6 12L8.7 8.1q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.6 4.6q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l3.9-3.9Z"/>
                     </svg>
                 </h2>
-                <p class="mt-4" :class="{'hidden': collapse}">
+                <p class="mt-4 text-justify" :class="{'hidden': collapse}">
                     <a href="http://xydlog.com/arts_ds.php?id=15" target="_blank">http://xydlog.com/arts_ds.php?id=15</a>
                 </p>
             </div>
@@ -198,7 +198,7 @@
                               d="M12.6 12L8.7 8.1q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.6 4.6q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l3.9-3.9Z"/>
                     </svg>
                 </h2>
-                <p class="mt-4" :class="{'hidden': collapse}">
+                <p class="mt-4 text-justify" :class="{'hidden': collapse}">
                     {{ __("China's logistics terminology standard defines logistics as: logistics is the physical flow process of goods from the supply place to the receiving place, according to the actual needs, the transportation, storage, loading and unloading, handling, packaging, circulation processing, distribution, information processing and other functions organically combined to achieve user requirements.") }}
                 </p>
             </div>

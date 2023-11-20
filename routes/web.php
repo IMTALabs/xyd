@@ -31,6 +31,7 @@ Route::get('/support-center', [LandingController::class, 'supportCenter'])->name
 Route::get('/faq', [LandingController::class, 'faq'])->name('faq');
 
 Route::get('/company-news', [LandingController::class, 'companyNews'])->name('company-news');
+Route::get('/company-news/{id}', [LandingController::class, 'companyNewDetail'])->name('company-new-detail');
 Route::get('/resources', [LandingController::class, 'resources'])->name('resources');
 
 Route::get('/land-freight', [LandingController::class, 'landFreight'])->name('land-freight');

@@ -47,30 +47,96 @@
         <div x-show="mobileMenu" style="display: none"
              class="fixed z-50 lg:hidden w-screen h-[calc(100vh-3rem)] bg-secondary top-12 left-0 p-4 flex flex-col overflow-auto gap-3 text-primary">
             <a class="text-sm" href="{{ route('home') }}">{{ __('Home') }}</a>
-            <span class="mt-2 block text-sm font-bold">{{ __('About Us') }}</span>
-            <a class="text-sm" href="{{ route('about-us') }}">{{ __('About XYD Express') }}</a>
-            <a class="text-sm" href="{{ route('management-team') }}">{{ __('Management Team') }}</a>
-            <a class="text-sm" href="{{ route('long-term-vision') }}">{{ __('Long-term Vision') }}</a>
-            <a class="text-sm" href="{{ route('our-quality') }}">{{ __('Our Quality') }}</a>
-            <a class="text-sm" href="{{ route('business-enterprise') }}">{{ __('Business Enterprise') }}</a>
-            <a class="text-sm" href="{{ route('careers') }}">{{ __('Careers') }}</a>
-            <span class="mt-2 block text-sm font-bold">{{ __('Our Service') }}</span>
-            <a class="text-sm" href="{{ route('main-business-summary') }}">{{ __('Main Business Summary') }}</a>
-            <a class="text-sm" href="{{ route('consulting-and-quotation') }}">{{ __('Consulting and Quotation') }}</a>
-            <a class="text-sm" href="{{ route('supply-chain-solution') }}">{{ __('Supply Chain Solution') }}</a>
-            <a class="text-sm" href="{{ route('service-usage-process') }}">{{ __('Service Usage Process') }}</a>
-            <a class="text-sm" href="{{ route('a-to-z') }}">{{ __('A to Z Transportation Service') }}</a>
-            <span class="mt-2 block text-sm font-bold">{{ __('Main Channels') }}</span>
-            <a class="text-sm" href="{{ route('land-freight') }}">{{ __('Land Freight') }}</a>
-            <a class="text-sm" href="{{ route('sea-freight') }}">{{ __('Sea Freight') }}</a>
-            <a class="text-sm" href="{{ route('air-freight') }}">{{ __('Air Freight') }}</a>
-            <a class="text-sm" href="{{ route('warehouse') }}">{{ __('Warehouse & Value-Added Services') }}</a>
-            <span class="mt-2 block text-sm font-bold">{{ __('Help Center') }}</span>
-            <a class="text-sm" href="{{ route('support-center') }}">{{ __('Support Center') }}</a>
-            <a class="text-sm" href="{{ route('faq') }}">{{ __('FAQ') }}</a>
-            <span class="mt-2 block text-sm font-bold">{{ __('Insight & News') }}</span>
-            <a class="text-sm" href="{{ route('company-news') }}">{{ __('Company News') }}</a>
-            <a class="text-sm" href="{{ route('resources') }}">{{ __('Resources') }}</a>
+
+            <div x-data="{
+                show: false
+            }">
+                <span class="mt-2 text-sm font-bold flex items-center gap-1 cursor-pointer" @click="show = !show">
+                    {{ __('About Us') }}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                         :style="show && { transform: 'rotateX(180deg)' }">
+                        <path fill="currentColor" d="m12 15l-5-5h10l-5 5Z"/>
+                    </svg>
+                </span>
+                <div class="flex flex-col gap-3 mt-3" x-show="show">
+                    <a class="text-sm" href="{{ route('about-us') }}">{{ __('About XYD Express') }}</a>
+                    <a class="text-sm" href="{{ route('management-team') }}">{{ __('Management Team') }}</a>
+                    <a class="text-sm" href="{{ route('long-term-vision') }}">{{ __('Long-term Vision') }}</a>
+                    <a class="text-sm" href="{{ route('our-quality') }}">{{ __('Our Quality') }}</a>
+                    <a class="text-sm" href="{{ route('business-enterprise') }}">{{ __('Business Enterprise') }}</a>
+                    <a class="text-sm" href="{{ route('careers') }}">{{ __('Careers') }}</a>
+                </div>
+            </div>
+
+            <div x-data="{
+                show: false
+            }">
+                <span class="mt-2 text-sm font-bold flex items-center gap-1 cursor-pointer" @click="show = !show">
+                    {{ __('Our Service') }}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                         :style="show && { transform: 'rotateX(180deg)' }">
+                        <path fill="currentColor" d="m12 15l-5-5h10l-5 5Z"/>
+                    </svg>
+                </span>
+                <div class="flex flex-col gap-3 mt-3" x-show="show">
+                    <a class="text-sm" href="{{ route('main-business-summary') }}">{{ __('Main Business Summary') }}</a>
+                    <a class="text-sm"
+                       href="{{ route('consulting-and-quotation') }}">{{ __('Consulting and Quotation') }}</a>
+                    <a class="text-sm" href="{{ route('supply-chain-solution') }}">{{ __('Supply Chain Solution') }}</a>
+                    <a class="text-sm" href="{{ route('service-usage-process') }}">{{ __('Service Usage Process') }}</a>
+                    <a class="text-sm" href="{{ route('a-to-z') }}">{{ __('A to Z Transportation Service') }}</a>
+                </div>
+            </div>
+
+            <div x-data="{
+                show: false
+            }">
+                <span class="mt-2 text-sm font-bold flex items-center gap-1 cursor-pointer" @click="show = !show">
+                    {{ __('Main Channels') }}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                         :style="show && { transform: 'rotateX(180deg)' }">
+                        <path fill="currentColor" d="m12 15l-5-5h10l-5 5Z"/>
+                    </svg>
+                </span>
+                <div class="flex flex-col gap-3 mt-3" x-show="show">
+                    <a class="text-sm" href="{{ route('land-freight') }}">{{ __('Land Freight') }}</a>
+                    <a class="text-sm" href="{{ route('sea-freight') }}">{{ __('Sea Freight') }}</a>
+                    <a class="text-sm" href="{{ route('air-freight') }}">{{ __('Air Freight') }}</a>
+                    <a class="text-sm" href="{{ route('warehouse') }}">{{ __('Warehouse & Value-Added Services') }}</a>
+                </div>
+            </div>
+
+            <div x-data="{
+                show: false
+            }">
+                <span class="mt-2 text-sm font-bold flex items-center gap-1 cursor-pointer" @click="show = !show">
+                    {{ __('Help Center') }}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                         :style="show && { transform: 'rotateX(180deg)' }">
+                        <path fill="currentColor" d="m12 15l-5-5h10l-5 5Z"/>
+                    </svg>
+                </span>
+                <div class="flex flex-col gap-3 mt-3" x-show="show">
+                    <a class="text-sm" href="{{ route('support-center') }}">{{ __('Support Center') }}</a>
+                    <a class="text-sm" href="{{ route('faq') }}">{{ __('FAQ') }}</a>
+                </div>
+            </div>
+
+            <div x-data="{
+                show: false
+            }">
+                <span class="mt-2 text-sm font-bold flex items-center gap-1 cursor-pointer" @click="show = !show">
+                    {{ __('Insight & News') }}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                         :style="show && { transform: 'rotateX(180deg)' }">
+                        <path fill="currentColor" d="m12 15l-5-5h10l-5 5Z"/>
+                    </svg>
+                </span>
+                <div class="flex flex-col gap-3 mt-3" x-show="show">
+                    <a class="text-sm" href="{{ route('company-news') }}">{{ __('Company News') }}</a>
+                    <a class="text-sm" href="{{ route('resources') }}">{{ __('Resources') }}</a>
+                </div>
+            </div>
         </div>
 
         <a href="{{ route('home') }}">

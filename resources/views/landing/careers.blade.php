@@ -20,7 +20,7 @@
         <div class="w-full container mx-auto flex max-lg:flex-col pb-16">
             <div class="w-full lg:w-2/3 lg:pr-4 space-y-8">
                 <div>
-                    <img  data-src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAdgzuUMBUy0a37LywR2tcfgj8o7HDJ8Rrf5xaBHymIXaErq0SAJwr2OXwsqWHyWjlcsBZ5Yva4zNUtMa6BOpNJSgwu9A=w1830-h581" class="w-full" alt="">
+                    <img  data-src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAdgzuUMBUy0a37LywR2tcfgj8o7HDJ8Rrf5xaBHymIXaErq0SAJwr2OXwsqWHyWjlcsBZ5Yva4zNUtMa6BOpNJSgwu9A=w1830-h581" class="w-full h-[320px] object-cover" alt="">
                     <div class="bg-secondary flex p-8 pb-0 pt-4 gap-16">
                         <div class="flex flex-col items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
@@ -46,7 +46,7 @@
                 </div>
 
                 <div>
-                    <img  data-src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAdgzuUMBUy0a37LywR2tcfgj8o7HDJ8Rrf5xaBHymIXaErq0SAJwr2OXwsqWHyWjlcsBZ5Yva4zNUtMa6BOpNJSgwu9A=w1830-h581" class="w-full" alt="">
+                    <img  data-src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAdgzuUMBUy0a37LywR2tcfgj8o7HDJ8Rrf5xaBHymIXaErq0SAJwr2OXwsqWHyWjlcsBZ5Yva4zNUtMa6BOpNJSgwu9A=w1830-h581" class="w-full h-[320px] object-cover" alt="">
                     <div class="bg-secondary flex p-8 pb-0 pt-4 gap-16">
                         <div class="flex flex-col items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\SEOTools;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 
 class LandingController extends Controller
@@ -17,8 +18,10 @@ class LandingController extends Controller
 
     public function home()
     {
+        $posts = Post::orderBy('created_at', 'desc')->paginate(4);
+
         SEOMeta::setTitle(__('Home'));
-        return view('landing.home');
+        return view('landing.home', compact('posts'));
     }
 
     public function contactUs()
@@ -82,6 +85,18 @@ class LandingController extends Controller
 
         SEOTools::setTitle(__('Company news'));
         return view('landing.company-news', compact('posts'));
+    }
+
+    public function companyNewDetail($id)
+    {
+        try {
+            $post = Post::findOrFail($id);
+        } catch (ModelNotFoundException $e) {
+            return redirect()->route('company-news');
+        }
+
+        SEOTools::setTitle(__('Company news'));
+        return view('landing.company-new-detail', compact('post'));
     }
 
     public function resources()

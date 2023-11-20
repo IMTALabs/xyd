@@ -31,7 +31,7 @@
             </div>
 
             <div>
-                <img  data-src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaCW1hGZO06XreQGvMvSkkA1M1lm4dwy803yjJSqW8fBr3Uiwofc1I6pNJg-74ucWPJKK95QLWDedbs5snEQQZzhezrbxQ=w1830-h975" alt="" class="w-full">
+                <img  data-src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaCW1hGZO06XreQGvMvSkkA1M1lm4dwy803yjJSqW8fBr3Uiwofc1I6pNJg-74ucWPJKK95QLWDedbs5snEQQZzhezrbxQ=w1830-h975" alt="" class="w-full max-h-[300px] object-cover">
                 <div class="w-full container bg-secondary mx-auto -translate-y-24 lg:px-32 lg:py-16 p-4">
                     <h2 class="text-5xl font-bold text-center">{{ __('Vision') }}</h2>
                     <p class="text-center mt-8">
@@ -40,8 +40,8 @@
                 </div>
             </div>
 
-            <div class="w-full container mx-auto flex flex-col lg:flex-row pb-16">
-                <img  data-src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAGtdc7MGj00ksIwjkNK3ie4f4jfpxflPnEaO8cQC2LnUJZsSt7-l_5Tgzi_TwV0n4hV8Me229bk7rE6AwTt9DDTNC3=w1830-h581" alt="" class="w-full lg:max-w-[50%] container">
+            <div class="w-full container mx-auto flex flex-col lg:flex-row pb-16 items-center">
+                <img data-src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAGtdc7MGj00ksIwjkNK3ie4f4jfpxflPnEaO8cQC2LnUJZsSt7-l_5Tgzi_TwV0n4hV8Me229bk7rE6AwTt9DDTNC3=w1830-h581" alt="" class="w-full lg:w-1/2 lg:max-w-[50%] container">
                 <div class="w-full container lg:pl-8 mt-8 lg:mt-0">
                     <h1 class="text-5xl font-bold">{{ __('Mission') }}</h1>
                     <p class="mt-2 text-xl">
@@ -63,8 +63,8 @@
                     <div class="w-1/3 text-center py-4">{{ __('Belief') }}</div>
                 </div>
 
-                <div class="w-full container max-w-4xl flex flex-wrap justify-between mx-auto mt-16 gap-y-4">
-                    <div class="flex items-center gap-2 max-container">
+                <div class="w-full xl:container max-xl:max-w-xl xl:max-w-4xl flex flex-wrap justify-between mx-auto mt-16 gap-y-4">
+                    <div class="flex items-center gap-2 max-container w-full sm:w-1/2 xl:w-1/4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
                             <path fill="currentColor"
                                   d="M3 21q-.425 0-.713-.288T2 20q0-.425.288-.713T3 19h18q.425 0 .713.288T22 20q0 .425-.288.713T21 21H3Zm1.5-3q-.625 0-1.063-.438T3 16.5v-4q0-.625.438-1.063T4.5 11q.625 0 1.063.438T6 12.5v4q0 .625-.438 1.063T4.5 18Zm5 0q-.625 0-1.063-.438T8 16.5v-9q0-.625.438-1.063T9.5 6q.625 0 1.063.438T11 7.5v9q0 .625-.438 1.063T9.5 18Zm5 0q-.625 0-1.063-.438T13 16.5v-6q0-.625.438-1.063T14.5 9q.625 0 1.063.438T16 10.5v6q0 .625-.438 1.063T14.5 18Zm5 0q-.625 0-1.063-.438T18 16.5v-12q0-.625.438-1.063T19.5 3q.625 0 1.063.438T21 4.5v12q0 .625-.438 1.063T19.5 18Z"/>
@@ -75,7 +75,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-2 max-container">
+                    <div class="flex items-center gap-2 max-container w-full sm:w-1/2 xl:w-1/4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
                             <g fill="currentColor">
                                 <path
@@ -93,7 +93,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-2 max-container">
+                    <div class="flex items-center gap-2 max-container w-full sm:w-1/2 xl:w-1/4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
                             <path fill="currentColor"
                                   d="M11.8 20.025q-.825 0-1.413-.6T9.8 18q0-.825.588-1.413T11.8 16l.6-.575q.2-.2.463-.313T13.4 15q.575 0 .988.425t.412 1v.425q0 .5.325.825t.825.325q.375 0 .675-.225t.425-.575l.3-.825q.225-.6.725-.988t1.15-.387q.275-.7.438-1.45t.162-1.55q0-2.225-1.112-4.063T15.8 5.05V6q0 .825-.588 1.413T13.8 8h-1v2q0 .425-.288.713T11.8 11h-1v1.7q0 .55-.375.925T9.5 14q-.35 0-.638-.15t-.462-.425L6.8 11h-1v1q0 .775-.525 1.325t-1.25.65q.65 2.6 2.813 4.325t4.962 1.725Zm2-6.025q-.425 0-.713-.287T12.8 13q0-.425.288-.713T13.8 12h1q.425 0 .713.288T15.8 13q0 .425-.288.713T14.8 14h-1Zm2.325-3q-.5 0-.788-.387T15.2 9.75l.375-1.1q.1-.3.35-.475t.55-.175q.5 0 .788.388t.137.862l-.375 1.1q-.1.3-.35.475t-.55.175ZM11.8 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T1.8 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T11.8 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T21.8 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T11.8 22Z"/>
@@ -104,7 +104,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-2 max-container">
+                    <div class="flex items-center gap-2 max-container w-full sm:w-1/2 xl:w-1/4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 256 256">
                             <path fill="currentColor"
                                   d="M123.64 218.91A12 12 0 0 1 112 228a12.28 12.28 0 0 1-2.92-.36l-32-8a11.79 11.79 0 0 1-3.74-1.64l-24-16a12 12 0 0 1 13.32-20l22.27 14.85l30 7.5a12 12 0 0 1 8.71 14.56ZM255 122.75a19.88 19.88 0 0 1-10 11.56l-22.87 11.44l-53.58 54.73a12 12 0 0 1-11.4 3.16l-64-16a12.16 12.16 0 0 1-4.17-1.95L35 146.28l-23.94-12a20 20 0 0 1-9-26.83L27 57.79a20 20 0 0 1 26.83-8.94l20.59 10.31l50.21-14.68a12.07 12.07 0 0 1 6.74 0l50.21 14.68l20.63-10.32A20 20 0 0 1 229 57.79l24.85 49.69a19.86 19.86 0 0 1 1.15 15.27ZM200.3 134l-25-50h-26.44l-38.2 37.05c15.76 7.26 31.16.19 40.82-9.55a12 12 0 0 1 16-.91l31.26 25ZM25.37 114.63l10.53 5.27l21.27-42.53l-10.54-5.27ZM182 153l-21.7-17.43c-20.49 15.29-45.85 16.79-67 3.25a20 20 0 0 1-3.4-31l.12-.12l39.8-38.7l-1.82-.5l-46.34 13.55l-25.12 50.24l44.65 32.64l55.13 13.78Zm48.59-38.36L209.37 72.1l-10.54 5.27l21.27 42.53Z"/>
@@ -123,14 +123,14 @@
                     {{ __('The reason why you should choose us to be your transportation partner') }}
                 </p>
 
-                <div class="w-full container max-w-xl grid grid-cols-2 mx-auto mt-16 gap-8">
+                <div class="w-full !max-w-lg grid grid-cols-2 mx-auto mt-16 gap-8">
                     <div class="col-span-1 flex max-lg:gap-4 max-lg:flex-col items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
                             <path fill="currentColor"
                                   d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74c.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1c1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59l.3-.29M20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7v1m.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6Z"/>
                         </svg>
                         <div class="ml-4">
-                            <h3 class="text-xl">Responsibility</h3>
+                            <h3 class="text-xl">{{ __('Responsibility') }}</h3>
                         </div>
                     </div>
 
@@ -140,7 +140,7 @@
                                   d="M9.5 1A1.5 1.5 0 0 0 8 2.5v2a1.5 1.5 0 0 0 1 1.414V7a.5.5 0 0 0 .82.384L11.48 6h2.02A1.5 1.5 0 0 0 15 4.5v-2A1.5 1.5 0 0 0 13.5 1h-4ZM9 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2.2a.5.5 0 0 0-.32.116l-.98.816V5.5a.5.5 0 0 0-.5-.5a.5.5 0 0 1-.5-.5v-2ZM3 6a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm2-1a1 1 0 1 0 0 2a1 1 0 0 0 0-2ZM2.5 9h5A1.5 1.5 0 0 1 9 10.5c0 1.116-.459 2.01-1.212 2.615C7.047 13.71 6.053 14 5 14c-1.053 0-2.047-.29-2.788-.885C1.46 12.51 1 11.616 1 10.5A1.5 1.5 0 0 1 2.5 9Zm5 1h-5a.5.5 0 0 0-.5.5c0 .817.325 1.423.838 1.835C3.364 12.757 4.12 13 5 13c.88 0 1.636-.243 2.162-.665c.513-.412.838-1.018.838-1.835a.5.5 0 0 0-.5-.5Z"/>
                         </svg>
                         <div class="ml-4">
-                            <h3 class="text-xl">Quick feedback</h3>
+                            <h3 class="text-xl">{{ __('Quick feedback') }}</h3>
                         </div>
                     </div>
 
@@ -150,7 +150,7 @@
                                   d="M11.875 20q.1 0 .2-.05t.15-.1l8.2-8.2q.3-.3.438-.675t.137-.75q0-.4-.138-.763t-.437-.637l-4.25-4.25q-.275-.3-.638-.438T14.776 4q-.375 0-.75.138t-.675.437l-.275.275l1.85 1.875q.375.35.55.8t.175.95q0 1.05-.712 1.763t-1.763.712q-.5 0-.963-.175t-.812-.525L9.525 8.4L5.15 12.775q-.075.075-.113.163T5 13.124q0 .2.15.363t.35.162q.1 0 .2-.05t.15-.1l3.4-3.4l1.4 1.4l-3.375 3.4q-.075.075-.113.163t-.037.187q0 .2.15.35t.35.15q.1 0 .2-.05t.15-.1l3.4-3.375l1.4 1.4l-3.375 3.4q-.075.05-.113.15t-.037.2q0 .2.15.35t.35.15q.1 0 .188-.038t.162-.112l3.4-3.375l1.4 1.4l-3.4 3.4q-.075.075-.113.162t-.037.188q0 .2.163.35t.362.15Zm-.025 2q-.925 0-1.638-.613t-.837-1.537q-.85-.125-1.425-.7t-.7-1.425q-.85-.125-1.413-.713T5.15 15.6q-.95-.125-1.55-.825t-.6-1.65q0-.5.188-.962t.537-.813l5.8-5.775L12.8 8.85q.05.075.15.113t.2.037q.225 0 .375-.137t.15-.363q0-.1-.038-.2t-.112-.15L9.95 4.575q-.275-.3-.637-.438T8.55 4q-.375 0-.75.138t-.675.437L3.6 8.125q-.225.225-.375.525t-.2.6q-.05.3 0 .613t.2.587l-1.45 1.45q-.425-.575-.625-1.262T1 9.25q.05-.7.35-1.363T2.175 6.7L5.7 3.175Q6.3 2.6 7.038 2.3T8.55 2q.775 0 1.513.3t1.312.875l.275.275l.275-.275q.6-.575 1.338-.875t1.512-.3q.775 0 1.513.3t1.312.875L21.825 7.4q.575.575.875 1.325t.3 1.525q0 .775-.3 1.513t-.875 1.312l-8.2 8.175q-.35.35-.813.55t-.962.2ZM9.375 8Z"/>
                         </svg>
                         <div class="ml-4">
-                            <h3 class="text-xl">Professional</h3>
+                            <h3 class="text-xl">{{ __('Professional') }}</h3>
                         </div>
                     </div>
 
@@ -160,7 +160,7 @@
                                   d="M10.5 15.5h3V13H16v-3h-2.5V7.5h-3V10H8v3h2.5v2.5ZM12 22q-3.475-.875-5.738-3.988T4 11.1V5l8-3l8 3v6.1q0 3.8-2.263 6.913T12 22Zm0-2.1q2.6-.825 4.3-3.3t1.7-5.5V6.375l-6-2.25l-6 2.25V11.1q0 3.025 1.7 5.5t4.3 3.3Zm0-7.9Z"/>
                         </svg>
                         <div class="ml-4">
-                            <h3 class="text-xl">Safe solution</h3>
+                            <h3 class="text-xl">{{ __('Safe solution') }}</h3>
                         </div>
                     </div>
                 </div>

@@ -84,7 +84,7 @@
                 <div class="flex flex-col items-center gap-4 col-span-1">
                     <img class="w-20 h-20"  data-src="{{ asset('images/icons/Icon/Web icon-21.png') }}" alt="">
                     <h3 class="text-3xl font-semibold text-center line-clamp-2 h-[4.5rem]">
-                        {{ __('Europe and American International Air Freight Services ') }}s</h3>
+                        {{ __('Europe and American International Air Freight Services ') }}</h3>
                     <p class="text-center">
                         {{ __('Providing air freight for import and export cargoes. Provided destination customs clearance, door-to-door delivery, rail, land, air freight, and delivery. Provide personal item freight and customs clearance.') }}
                     </p>
